@@ -15,7 +15,8 @@ headers = {
 }
 
 keywords = [
-    'data-free', 'transformer', 'generative', 'Noise label correction', 'noise', 'diffusion', 'LLM'
+    'data-free', 'transformer', 'generative', 'label correction', 'noise', 'diffusion', 'LLM', 'segmentation',
+    'object detection'
 ]
 categories = ['cs.CV', 'cs.CL', 'cs.CR', 'cs.LG']
 
