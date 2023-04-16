@@ -1,5 +1,5 @@
 .gitignore
-.__pycache__/
+__pycache__/
 .idea
 ./html/.DS_Store
 ./rss/.DS_Store
