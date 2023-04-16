@@ -73,32 +73,6 @@ and highlight the importance of using appropriate evaluation criteria for
 comparing them.
 </p></li>
 </ul>
-<h3>Title: [CLS] Token is All You Need for Zero-Shot Semantic Segmentation. (arXiv:2304.06212v1 [cs.CV])</h3>
-<ul>
-<li>Paper URL: <a href="http://arxiv.org/abs/2304.06212">http://arxiv.org/abs/2304.06212</a></li>
-<li>Code URL: null</li>
-<li>Copy Paste: <code><input type="checkbox">[[2304.06212] [CLS] Token is All You Need for Zero-Shot Semantic Segmentation](http://arxiv.org/abs/2304.06212) #transformer</code></li>
-<li>Summary: <p>In this paper, we propose an embarrassingly simple yet highly effective
-zero-shot semantic segmentation (ZS3) method, based on the pre-trained
-vision-language model CLIP. First, our study provides a couple of key
-discoveries: (i) the global tokens (a.k.a [CLS] tokens in Transformer) of the
-text branch in CLIP provide a powerful representation of semantic information
-and (ii) these text-side [CLS] tokens can be regarded as category priors to
-guide CLIP visual encoder pay more attention on the corresponding region of
-interest. Based on that, we build upon the CLIP model as a backbone which we
-extend with a One-Way [CLS] token navigation from text to the visual branch
-that enables zero-shot dense prediction, dubbed \textbf{ClsCLIP}. Specifically,
-we use the [CLS] token output from the text branch, as an auxiliary semantic
-prompt, to replace the [CLS] token in shallow layers of the ViT-based visual
-encoder. This one-way navigation embeds such global category prior earlier and
-thus promotes semantic segmentation. Furthermore, to better segment tiny
-objects in ZS3, we further enhance ClsCLIP with a local zoom-in strategy, which
-employs a region proposal pre-processing and we get ClsCLIP+. Extensive
-experiments demonstrate that our proposed ZS3 method achieves a SOTA
-performance, and it is even comparable with those few-shot semantic
-segmentation methods.
-</p></li>
-</ul>
 <h3>Title: RSIR Transformer: Hierarchical Vision Transformer using Random Sampling Windows and Important Region Windows. (arXiv:2304.06250v1 [cs.CV])</h3>
 <ul>
 <li>Paper URL: <a href="http://arxiv.org/abs/2304.06250">http://arxiv.org/abs/2304.06250</a></li>
@@ -492,7 +466,7 @@ mistaken as novelty. Nevertheless, a novelty detection accuracy of 95.4% or
 trained classes.
 </p></li>
 </ul>
-<h2>Noise label correction</h2>
+<h2>label correction</h2>
 <h2>noise</h2>
 <h3>Title: An Edit Friendly DDPM Noise Space: Inversion and Manipulations. (arXiv:2304.06140v1 [cs.CV])</h3>
 <ul>
@@ -742,6 +716,464 @@ that our method outperforms strong baselines with quantitative evaluations.
 </p></li>
 </ul>
 <h2>LLM</h2>
+<h2>segmentation</h2>
+<h3>Title: Open-TransMind: A New Baseline and Benchmark for 1st Foundation Model Challenge of Intelligent Transportation. (arXiv:2304.06051v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06051">http://arxiv.org/abs/2304.06051</a></li>
+<li>Code URL: <a href="https://github.com/Traffic-X/Open-TransMind">https://github.com/Traffic-X/Open-TransMind</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06051] Open-TransMind: A New Baseline and Benchmark for 1st Foundation Model Challenge of Intelligent Transportation](http://arxiv.org/abs/2304.06051) #segmentation</code></li>
+<li>Summary: <p>With the continuous improvement of computing power and deep learning
+algorithms in recent years, the foundation model has grown in popularity.
+Because of its powerful capabilities and excellent performance, this technology
+is being adopted and applied by an increasing number of industries. In the
+intelligent transportation industry, artificial intelligence faces the
+following typical challenges: few shots, poor generalization, and a lack of
+multi-modal techniques. Foundation model technology can significantly alleviate
+the aforementioned issues. To address these, we designed the 1st Foundation
+Model Challenge, with the goal of increasing the popularity of foundation model
+technology in traffic scenarios and promoting the rapid development of the
+intelligent transportation industry. The challenge is divided into two tracks:
+all-in-one and cross-modal image retrieval. Furthermore, we provide a new
+baseline and benchmark for the two tracks, called Open-TransMind. According to
+our knowledge, Open-TransMind is the first open-source transportation
+foundation model with multi-task and multi-modal capabilities. Simultaneously,
+Open-TransMind can achieve state-of-the-art performance on detection,
+classification, and segmentation datasets of traffic scenarios. Our source code
+is available at https://github.com/Traffic-X/Open-TransMind.
+</p></li>
+</ul>
+<h3>Title: UniverSeg: Universal Medical Image Segmentation. (arXiv:2304.06131v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06131">http://arxiv.org/abs/2304.06131</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06131] UniverSeg: Universal Medical Image Segmentation](http://arxiv.org/abs/2304.06131) #segmentation</code></li>
+<li>Summary: <p>While deep learning models have become the predominant method for medical
+image segmentation, they are typically not capable of generalizing to unseen
+segmentation tasks involving new anatomies, image modalities, or labels. Given
+a new segmentation task, researchers generally have to train or fine-tune
+models, which is time-consuming and poses a substantial barrier for clinical
+researchers, who often lack the resources and expertise to train neural
+networks. We present UniverSeg, a method for solving unseen medical
+segmentation tasks without additional training. Given a query image and example
+set of image-label pairs that define a new segmentation task, UniverSeg employs
+a new Cross-Block mechanism to produce accurate segmentation maps without the
+need for additional training. To achieve generalization to new tasks, we have
+gathered and standardized a collection of 53 open-access medical segmentation
+datasets with over 22,000 scans, which we refer to as MegaMedical. We used this
+collection to train UniverSeg on a diverse set of anatomies and imaging
+modalities. We demonstrate that UniverSeg substantially outperforms several
+related methods on unseen tasks, and thoroughly analyze and draw insights about
+important aspects of the proposed system. The UniverSeg source code and model
+weights are freely available at https://universeg.csail.mit.edu
+</p></li>
+</ul>
+<h3>Title: Boosting Video Object Segmentation via Space-time Correspondence Learning. (arXiv:2304.06211v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06211">http://arxiv.org/abs/2304.06211</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06211] Boosting Video Object Segmentation via Space-time Correspondence Learning](http://arxiv.org/abs/2304.06211) #segmentation</code></li>
+<li>Summary: <p>Current top-leading solutions for video object segmentation (VOS) typically
+follow a matching-based regime: for each query frame, the segmentation mask is
+inferred according to its correspondence to previously processed and the first
+annotated frames. They simply exploit the supervisory signals from the
+groundtruth masks for learning mask prediction only, without posing any
+constraint on the space-time correspondence matching, which, however, is the
+fundamental building block of such regime. To alleviate this crucial yet
+commonly ignored issue, we devise a correspondence-aware training framework,
+which boosts matching-based VOS solutions by explicitly encouraging robust
+correspondence matching during network learning. Through comprehensively
+exploring the intrinsic coherence in videos on pixel and object levels, our
+algorithm reinforces the standard, fully supervised training of mask
+segmentation with label-free, contrastive correspondence learning. Without
+neither requiring extra annotation cost during training, nor causing speed
+delay during deployment, nor incurring architectural modification, our
+algorithm provides solid performance gains on four widely used benchmarks,
+i.e., DAVIS2016&amp;2017, and YouTube-VOS2018&amp;2019, on the top of famous
+matching-based VOS solutions.
+</p></li>
+</ul>
+<h3>Title: [CLS] Token is All You Need for Zero-Shot Semantic Segmentation. (arXiv:2304.06212v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06212">http://arxiv.org/abs/2304.06212</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06212] [CLS] Token is All You Need for Zero-Shot Semantic Segmentation](http://arxiv.org/abs/2304.06212) #segmentation</code></li>
+<li>Summary: <p>In this paper, we propose an embarrassingly simple yet highly effective
+zero-shot semantic segmentation (ZS3) method, based on the pre-trained
+vision-language model CLIP. First, our study provides a couple of key
+discoveries: (i) the global tokens (a.k.a [CLS] tokens in Transformer) of the
+text branch in CLIP provide a powerful representation of semantic information
+and (ii) these text-side [CLS] tokens can be regarded as category priors to
+guide CLIP visual encoder pay more attention on the corresponding region of
+interest. Based on that, we build upon the CLIP model as a backbone which we
+extend with a One-Way [CLS] token navigation from text to the visual branch
+that enables zero-shot dense prediction, dubbed \textbf{ClsCLIP}. Specifically,
+we use the [CLS] token output from the text branch, as an auxiliary semantic
+prompt, to replace the [CLS] token in shallow layers of the ViT-based visual
+encoder. This one-way navigation embeds such global category prior earlier and
+thus promotes semantic segmentation. Furthermore, to better segment tiny
+objects in ZS3, we further enhance ClsCLIP with a local zoom-in strategy, which
+employs a region proposal pre-processing and we get ClsCLIP+. Extensive
+experiments demonstrate that our proposed ZS3 method achieves a SOTA
+performance, and it is even comparable with those few-shot semantic
+segmentation methods.
+</p></li>
+</ul>
+<h3>Title: SPColor: Semantic Prior Guided Exemplar-based Image Colorization. (arXiv:2304.06255v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06255">http://arxiv.org/abs/2304.06255</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06255] SPColor: Semantic Prior Guided Exemplar-based Image Colorization](http://arxiv.org/abs/2304.06255) #segmentation</code></li>
+<li>Summary: <p>Exemplar-based image colorization aims to colorize a target grayscale image
+based on a color reference image, and the key is to establish accurate
+pixel-level semantic correspondence between these two images. Previous methods
+search for correspondence across the entire reference image, and this type of
+global matching is easy to get mismatch. We summarize the difficulties in two
+aspects: (1) When the reference image only contains a part of objects related
+to target image, improper correspondence will be established in unrelated
+regions. (2) It is prone to get mismatch in regions where the shape or texture
+of the object is easily confused. To overcome these issues, we propose SPColor,
+a semantic prior guided exemplar-based image colorization framework. Different
+from previous methods, SPColor first coarsely classifies pixels of the
+reference and target images to several pseudo-classes under the guidance of
+semantic prior, then the correspondences are only established locally between
+the pixels in the same class via the newly designed semantic prior guided
+correspondence network. In this way, improper correspondence between different
+semantic classes is explicitly excluded, and the mismatch is obviously
+alleviated. Besides, to better reserve the color from reference, a similarity
+masked perceptual loss is designed. Noting that the carefully designed SPColor
+utilizes the semantic prior provided by an unsupervised segmentation model,
+which is free for additional manual semantic annotations. Experiments
+demonstrate that our model outperforms recent state-of-the-art methods both
+quantitatively and qualitatively on public dataset.
+</p></li>
+</ul>
+<h3>Title: Leveraging triplet loss for unsupervised action segmentation. (arXiv:2304.06403v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06403">http://arxiv.org/abs/2304.06403</a></li>
+<li>Code URL: <a href="https://github.com/elenabbbuenob/tsa-actionseg">https://github.com/elenabbbuenob/tsa-actionseg</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06403] Leveraging triplet loss for unsupervised action segmentation](http://arxiv.org/abs/2304.06403) #segmentation</code></li>
+<li>Summary: <p>In this paper, we propose a novel fully unsupervised framework that learns
+action representations suitable for the action segmentation task from the
+single input video itself, without requiring any training data. Our method is a
+deep metric learning approach rooted in a shallow network with a triplet loss
+operating on similarity distributions and a novel triplet selection strategy
+that effectively models temporal and semantic priors to discover actions in the
+new representational space. Under these circumstances, we successfully recover
+temporal boundaries in the learned action representations with higher quality
+compared with existing unsupervised approaches. The proposed method is
+evaluated on two widely used benchmark datasets for the action segmentation
+task and it achieves competitive performance by applying a generic clustering
+algorithm on the learned representations.
+</p></li>
+</ul>
+<h3>Title: Tracking by 3D Model Estimation of Unknown Objects in Videos. (arXiv:2304.06419v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06419">http://arxiv.org/abs/2304.06419</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06419] Tracking by 3D Model Estimation of Unknown Objects in Videos](http://arxiv.org/abs/2304.06419) #segmentation</code></li>
+<li>Summary: <p>Most model-free visual object tracking methods formulate the tracking task as
+object location estimation given by a 2D segmentation or a bounding box in each
+video frame. We argue that this representation is limited and instead propose
+to guide and improve 2D tracking with an explicit object representation, namely
+the textured 3D shape and 6DoF pose in each video frame. Our representation
+tackles a complex long-term dense correspondence problem between all 3D points
+on the object for all video frames, including frames where some points are
+invisible. To achieve that, the estimation is driven by re-rendering the input
+video frames as well as possible through differentiable rendering, which has
+not been used for tracking before. The proposed optimization minimizes a novel
+loss function to estimate the best 3D shape, texture, and 6DoF pose. We improve
+the state-of-the-art in 2D segmentation tracking on three different datasets
+with mostly rigid objects.
+</p></li>
+</ul>
+<h3>Title: RadarGNN: Transformation Invariant Graph Neural Network for Radar-based Perception. (arXiv:2304.06547v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06547">http://arxiv.org/abs/2304.06547</a></li>
+<li>Code URL: <a href="https://github.com/tumftm/radargnn">https://github.com/tumftm/radargnn</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06547] RadarGNN: Transformation Invariant Graph Neural Network for Radar-based Perception](http://arxiv.org/abs/2304.06547) #segmentation</code></li>
+<li>Summary: <p>A reliable perception has to be robust against challenging environmental
+conditions. Therefore, recent efforts focused on the use of radar sensors in
+addition to camera and lidar sensors for perception applications. However, the
+sparsity of radar point clouds and the poor data availability remain
+challenging for current perception methods. To address these challenges, a
+novel graph neural network is proposed that does not just use the information
+of the points themselves but also the relationships between the points. The
+model is designed to consider both point features and point-pair features,
+embedded in the edges of the graph. Furthermore, a general approach for
+achieving transformation invariance is proposed which is robust against unseen
+scenarios and also counteracts the limited data availability. The
+transformation invariance is achieved by an invariant data representation
+rather than an invariant model architecture, making it applicable to other
+methods. The proposed RadarGNN model outperforms all previous methods on the
+RadarScenes dataset. In addition, the effects of different invariances on the
+object detection and semantic segmentation quality are investigated. The code
+is made available as open-source software under
+https://github.com/TUMFTM/RadarGNN.
+</p></li>
+</ul>
+<h3>Title: Brain Structure Ages -- A new biomarker for multi-disease classification. (arXiv:2304.06591v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06591">http://arxiv.org/abs/2304.06591</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06591] Brain Structure Ages -- A new biomarker for multi-disease classification](http://arxiv.org/abs/2304.06591) #segmentation</code></li>
+<li>Summary: <p>Age is an important variable to describe the expected brain's anatomy status
+across the normal aging trajectory. The deviation from that normative aging
+trajectory may provide some insights into neurological diseases. In
+neuroimaging, predicted brain age is widely used to analyze different diseases.
+However, using only the brain age gap information (\ie the difference between
+the chronological age and the estimated age) can be not enough informative for
+disease classification problems. In this paper, we propose to extend the notion
+of global brain age by estimating brain structure ages using structural
+magnetic resonance imaging. To this end, an ensemble of deep learning models is
+first used to estimate a 3D aging map (\ie voxel-wise age estimation). Then, a
+3D segmentation mask is used to obtain the final brain structure ages. This
+biomarker can be used in several situations. First, it enables to accurately
+estimate the brain age for the purpose of anomaly detection at the population
+level. In this situation, our approach outperforms several state-of-the-art
+methods. Second, brain structure ages can be used to compute the deviation from
+the normal aging process of each brain structure. This feature can be used in a
+multi-disease classification task for an accurate differential diagnosis at the
+subject level. Finally, the brain structure age deviations of individuals can
+be visualized, providing some insights about brain abnormality and helping
+clinicians in real medical contexts.
+</p></li>
+</ul>
+<h3>Title: STU-Net: Scalable and Transferable Medical Image Segmentation Models Empowered by Large-Scale Supervised Pre-training. (arXiv:2304.06716v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06716">http://arxiv.org/abs/2304.06716</a></li>
+<li>Code URL: <a href="https://github.com/ziyan-huang/stu-net">https://github.com/ziyan-huang/stu-net</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06716] STU-Net: Scalable and Transferable Medical Image Segmentation Models Empowered by Large-Scale Supervised Pre-training](http://arxiv.org/abs/2304.06716) #segmentation</code></li>
+<li>Summary: <p>Large-scale models pre-trained on large-scale datasets have profoundly
+advanced the development of deep learning. However, the state-of-the-art models
+for medical image segmentation are still small-scale, with their parameters
+only in the tens of millions. Further scaling them up to higher orders of
+magnitude is rarely explored. An overarching goal of exploring large-scale
+models is to train them on large-scale medical segmentation datasets for better
+transfer capacities. In this work, we design a series of Scalable and
+Transferable U-Net (STU-Net) models, with parameter sizes ranging from 14
+million to 1.4 billion. Notably, the 1.4B STU-Net is the largest medical image
+segmentation model to date. Our STU-Net is based on nnU-Net framework due to
+its popularity and impressive performance. We first refine the default
+convolutional blocks in nnU-Net to make them scalable. Then, we empirically
+evaluate different scaling combinations of network depth and width, discovering
+that it is optimal to scale model depth and width together. We train our
+scalable STU-Net models on a large-scale TotalSegmentator dataset and find that
+increasing model size brings a stronger performance gain. This observation
+reveals that a large model is promising in medical image segmentation.
+Furthermore, we evaluate the transferability of our model on 14 downstream
+datasets for direct inference and 3 datasets for further fine-tuning, covering
+various modalities and segmentation targets. We observe good performance of our
+pre-trained model in both direct inference and fine-tuning. The code and
+pre-trained models are available at https://github.com/Ziyan-Huang/STU-Net.
+</p></li>
+</ul>
+<h3>Title: Segment Everything Everywhere All at Once. (arXiv:2304.06718v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06718">http://arxiv.org/abs/2304.06718</a></li>
+<li>Code URL: <a href="https://github.com/ux-decoder/segment-everything-everywhere-all-at-once">https://github.com/ux-decoder/segment-everything-everywhere-all-at-once</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06718] Segment Everything Everywhere All at Once](http://arxiv.org/abs/2304.06718) #segmentation</code></li>
+<li>Summary: <p>Despite the growing demand for interactive AI systems, there have been few
+comprehensive studies on human-AI interaction in visual understanding e.g.
+segmentation. Inspired by the development of prompt-based universal interfaces
+for LLMs, this paper presents SEEM, a promptable, interactive model for
+Segmenting Everything Everywhere all at once in an image. SEEM has four
+desiderata: i) Versatility: by introducing a versatile prompting engine for
+different types of prompts, including points, boxes, scribbles, masks, texts,
+and referred regions of another image; ii) Compositionality: by learning a
+joint visual-semantic space for visual and textual prompts to compose queries
+on the fly for inference as shown in Fig 1; iii)Interactivity: by incorporating
+learnable memory prompts to retain dialog history information via mask-guided
+cross-attention; and iv) Semantic-awareness: by using a text encoder to encode
+text queries and mask labels for open-vocabulary segmentation.
+</p></li>
+</ul>
+<h3>Title: An Arrhythmia Classification-Guided Segmentation Model for Electrocardiogram Delineation. (arXiv:2304.06237v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06237">http://arxiv.org/abs/2304.06237</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06237] An Arrhythmia Classification-Guided Segmentation Model for Electrocardiogram Delineation](http://arxiv.org/abs/2304.06237) #segmentation</code></li>
+<li>Summary: <p>Accurate delineation of key waveforms in an ECG is a critical initial step in
+extracting relevant features to support the diagnosis and treatment of heart
+conditions. Although deep learning based methods using a segmentation model to
+locate P, QRS and T waves have shown promising results, their ability to handle
+signals exhibiting arrhythmia remains unclear. In this study, we propose a
+novel approach that leverages a deep learning model to accurately delineate
+signals with a wide range of arrhythmia. Our approach involves training a
+segmentation model using a hybrid loss function that combines segmentation with
+the task of arrhythmia classification. In addition, we use a diverse training
+set containing various arrhythmia types, enabling our model to handle a wide
+range of challenging cases. Experimental results show that our model accurately
+delineates signals with a broad range of abnormal rhythm types, and the
+combined training with classification guidance can effectively reduce false
+positive P wave predictions, particularly during atrial fibrillation and atrial
+flutter. Furthermore, our proposed method shows competitive performance with
+previous delineation algorithms on the Lobachevsky University Database (LUDB).
+</p></li>
+</ul>
+<h2>object detection</h2>
+<h3>Title: Gamifying Math Education using Object Detection. (arXiv:2304.06270v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06270">http://arxiv.org/abs/2304.06270</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06270] Gamifying Math Education using Object Detection](http://arxiv.org/abs/2304.06270) #object detection</code></li>
+<li>Summary: <p>Manipulatives used in the right way help improve mathematical concepts
+leading to better learning outcomes. In this paper, we present a phygital
+(physical + digital) curriculum inspired teaching system for kids aged 5-8 to
+learn geometry using shape tile manipulatives. Combining smaller shapes to form
+larger ones is an important skill kids learn early on which requires shape
+tiles to be placed close to each other in the play area. This introduces a
+challenge of oriented object detection for densely packed objects with
+arbitrary orientations. Leveraging simulated data for neural network training
+and light-weight mobile architectures, we enable our system to understand user
+interactions and provide real-time audiovisual feedback. Experimental results
+show that our network runs real-time with high precision/recall on consumer
+devices, thereby providing a consistent and enjoyable learning experience.
+</p></li>
+</ul>
+<h3>Title: Boosting Convolutional Neural Networks with Middle Spectrum Grouped Convolution. (arXiv:2304.06305v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06305">http://arxiv.org/abs/2304.06305</a></li>
+<li>Code URL: <a href="https://github.com/hellozhuo/msgc">https://github.com/hellozhuo/msgc</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06305] Boosting Convolutional Neural Networks with Middle Spectrum Grouped Convolution](http://arxiv.org/abs/2304.06305) #object detection</code></li>
+<li>Summary: <p>This paper proposes a novel module called middle spectrum grouped convolution
+(MSGC) for efficient deep convolutional neural networks (DCNNs) with the
+mechanism of grouped convolution. It explores the broad "middle spectrum" area
+between channel pruning and conventional grouped convolution. Compared with
+channel pruning, MSGC can retain most of the information from the input feature
+maps due to the group mechanism; compared with grouped convolution, MSGC
+benefits from the learnability, the core of channel pruning, for constructing
+its group topology, leading to better channel division. The middle spectrum
+area is unfolded along four dimensions: group-wise, layer-wise, sample-wise,
+and attention-wise, making it possible to reveal more powerful and
+interpretable structures. As a result, the proposed module acts as a booster
+that can reduce the computational cost of the host backbones for general image
+recognition with even improved predictive accuracy. For example, in the
+experiments on ImageNet dataset for image classification, MSGC can reduce the
+multiply-accumulates (MACs) of ResNet-18 and ResNet-50 by half but still
+increase the Top-1 accuracy by more than 1%. With 35% reduction of MACs, MSGC
+can also increase the Top-1 accuracy of the MobileNetV2 backbone. Results on MS
+COCO dataset for object detection show similar observations. Our code and
+trained models are available at https://github.com/hellozhuo/msgc.
+</p></li>
+</ul>
+<h3>Title: ODAM: Gradient-based instance-specific visual explanations for object detection. (arXiv:2304.06354v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06354">http://arxiv.org/abs/2304.06354</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06354] ODAM: Gradient-based instance-specific visual explanations for object detection](http://arxiv.org/abs/2304.06354) #object detection</code></li>
+<li>Summary: <p>We propose the gradient-weighted Object Detector Activation Maps (ODAM), a
+visualized explanation technique for interpreting the predictions of object
+detectors. Utilizing the gradients of detector targets flowing into the
+intermediate feature maps, ODAM produces heat maps that show the influence of
+regions on the detector's decision for each predicted attribute. Compared to
+previous works classification activation maps (CAM), ODAM generates
+instance-specific explanations rather than class-specific ones. We show that
+ODAM is applicable to both one-stage detectors and two-stage detectors with
+different types of detector backbones and heads, and produces higher-quality
+visual explanations than the state-of-the-art both effectively and efficiently.
+We next propose a training scheme, Odam-Train, to improve the explanation
+ability on object discrimination of the detector through encouraging
+consistency between explanations for detections on the same object, and
+distinct explanations for detections on different objects. Based on the heat
+maps produced by ODAM with Odam-Train, we propose Odam-NMS, which considers the
+information of the model's explanation for each prediction to distinguish the
+duplicate detected objects. We present a detailed analysis of the visualized
+explanations of detectors and carry out extensive experiments to validate the
+effectiveness of the proposed ODAM.
+</p></li>
+</ul>
+<h3>Title: You are here! Finding position and orientation on a 2D map from a single image: The Flatlandia localization problem and dataset. (arXiv:2304.06373v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06373">http://arxiv.org/abs/2304.06373</a></li>
+<li>Code URL: <a href="https://github.com/IIT-PAVIS/Flatlandia">https://github.com/IIT-PAVIS/Flatlandia</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06373] You are here! Finding position and orientation on a 2D map from a single image: The Flatlandia localization problem and dataset](http://arxiv.org/abs/2304.06373) #object detection</code></li>
+<li>Summary: <p>We introduce Flatlandia, a novel problem for visual localization of an image
+from object detections composed of two specific tasks: i) Coarse Map
+Localization: localizing a single image observing a set of objects in respect
+to a 2D map of object landmarks; ii) Fine-grained 3DoF Localization: estimating
+latitude, longitude, and orientation of the image within a 2D map. Solutions
+for these new tasks exploit the wide availability of open urban maps annotated
+with GPS locations of common objects (\eg via surveying or crowd-sourced). Such
+maps are also more storage-friendly than standard large-scale 3D models often
+used in visual localization while additionally being privacy-preserving. As
+existing datasets are unsuited for the proposed problem, we provide the
+Flatlandia dataset, designed for 3DoF visual localization in multiple urban
+settings and based on crowd-sourced data from five European cities. We use the
+Flatlandia dataset to validate the complexity of the proposed tasks.
+</p></li>
+</ul>
+<h3>Title: Learning Accurate Performance Predictors for Ultrafast Automated Model Compression. (arXiv:2304.06393v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06393">http://arxiv.org/abs/2304.06393</a></li>
+<li>Code URL: <a href="https://github.com/ziweiwangthu/seernet">https://github.com/ziweiwangthu/seernet</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06393] Learning Accurate Performance Predictors for Ultrafast Automated Model Compression](http://arxiv.org/abs/2304.06393) #object detection</code></li>
+<li>Summary: <p>In this paper, we propose an ultrafast automated model compression framework
+called SeerNet for flexible network deployment. Conventional
+non-differen-tiable methods discretely search the desirable compression policy
+based on the accuracy from exhaustively trained lightweight models, and
+existing differentiable methods optimize an extremely large supernet to obtain
+the required compressed model for deployment. They both cause heavy
+computational cost due to the complex compression policy search and evaluation
+process. On the contrary, we obtain the optimal efficient networks by directly
+optimizing the compression policy with an accurate performance predictor, where
+the ultrafast automated model compression for various computational cost
+constraint is achieved without complex compression policy search and
+evaluation. Specifically, we first train the performance predictor based on the
+accuracy from uncertain compression policies actively selected by efficient
+evolutionary search, so that informative supervision is provided to learn the
+accurate performance predictor with acceptable cost. Then we leverage the
+gradient that maximizes the predicted performance under the barrier complexity
+constraint for ultrafast acquisition of the desirable compression policy, where
+adaptive update stepsizes with momentum are employed to enhance optimality of
+the acquired pruning and quantization strategy. Compared with the
+state-of-the-art automated model compression methods, experimental results on
+image classification and object detection show that our method achieves
+competitive accuracy-complexity trade-offs with significant reduction of the
+search cost.
+</p></li>
+</ul>
+<h3>Title: Class-Incremental Learning of Plant and Disease Detection: Growing Branches with Knowledge Distillation. (arXiv:2304.06619v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06619">http://arxiv.org/abs/2304.06619</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06619] Class-Incremental Learning of Plant and Disease Detection: Growing Branches with Knowledge Distillation](http://arxiv.org/abs/2304.06619) #object detection</code></li>
+<li>Summary: <p>This paper investigates the problem of class-incremental object detection for
+agricultural applications where a model needs to learn new plant species and
+diseases incrementally without forgetting the previously learned ones. We adapt
+two public datasets to include new categories over time, simulating a more
+realistic and dynamic scenario. We then compare three class-incremental
+learning methods that leverage different forms of knowledge distillation to
+mitigate catastrophic forgetting. Our experiments show that all three methods
+suffer from catastrophic forgetting, but the recent Dynamic Y-KD approach,
+which additionally uses a dynamic architecture that grows new branches to learn
+new tasks, outperforms ILOD and Faster-ILOD in most scenarios both on new and
+old classes.
+</p></li>
+</ul>
+<p>These results highlight the challenges and opportunities of continual object
+detection for agricultural applications. In particular, the large intra-class
+and small inter-class variability that is typical of plant images exacerbate
+the difficulty of learning new categories without interfering with previous
+knowledge. We publicly release our code to encourage future work.
+</p>
+
+<h3>Title: Confident Object Detection via Conformal Prediction and Conformal Risk Control: an Application to Railway Signaling. (arXiv:2304.06052v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06052">http://arxiv.org/abs/2304.06052</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06052] Confident Object Detection via Conformal Prediction and Conformal Risk Control: an Application to Railway Signaling](http://arxiv.org/abs/2304.06052) #object detection</code></li>
+<li>Summary: <p>Deploying deep learning models in real-world certified systems requires the
+ability to provide confidence estimates that accurately reflect their
+uncertainty. In this paper, we demonstrate the use of the conformal prediction
+framework to construct reliable and trustworthy predictors for detecting
+railway signals. Our approach is based on a novel dataset that includes images
+taken from the perspective of a train operator and state-of-the-art object
+detectors. We test several conformal approaches and introduce a new method
+based on conformal risk control. Our findings demonstrate the potential of the
+conformal prediction framework to evaluate model performance and provide
+practical guidance for achieving formally guaranteed uncertainty bounds.
+</p></li>
+</ul>
 <script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
 <script>new ClipboardJS("#copy",{text:function(trigger){var res="[[2023-04-16]]\n\n";var input=document.querySelectorAll("input");for(var i=0;i<input.length;i++){if(input[i].type=="checkbox"&&input[i].checked){res+="- "+input[i].nextSibling.nodeValue+"\n"}}res+="\n";return res}}).on("success",function(e){e.clearSelection()});</script>
 <button id="copy">Copy All</button>
