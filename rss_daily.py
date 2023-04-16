@@ -5,7 +5,7 @@ from datetime import datetime
 
 import feedparser
 import requests
-# modified by yff
+
 from md2html import md2html
 
 headers = {
