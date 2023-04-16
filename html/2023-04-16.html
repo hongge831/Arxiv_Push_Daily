@@ -1,11 +1,10 @@
 <h2>data-free</h2>
-<h2>Transformer</h2>
-<h2>diffusion</h2>
+<h2>transformer</h2>
 <h3>Title: PATMAT: Person Aware Tuning of Mask-Aware Transformer for Face Inpainting. (arXiv:2304.06107v1 [cs.CV])</h3>
 <ul>
 <li>Paper URL: <a href="http://arxiv.org/abs/2304.06107">http://arxiv.org/abs/2304.06107</a></li>
 <li>Code URL: null</li>
-<li>Copy Paste: <code><input type="checkbox">[[2304.06107] PATMAT: Person Aware Tuning of Mask-Aware Transformer for Face Inpainting](http://arxiv.org/abs/2304.06107) #diffusion</code></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06107] PATMAT: Person Aware Tuning of Mask-Aware Transformer for Face Inpainting](http://arxiv.org/abs/2304.06107) #transformer</code></li>
 <li>Summary: <p>Generative models such as StyleGAN2 and Stable Diffusion have achieved
 state-of-the-art performance in computer vision tasks such as image synthesis,
 inpainting, and de-noising. However, current generative models for face
@@ -25,11 +24,481 @@ subject. Our results suggest that PATMAT can be a promising approach for
 improving the quality of personalized face inpainting.
 </p></li>
 </ul>
+<h3>Title: AutoShot: A Short Video Dataset and State-of-the-Art Shot Boundary Detection. (arXiv:2304.06116v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06116">http://arxiv.org/abs/2304.06116</a></li>
+<li>Code URL: <a href="https://github.com/wentaozhu/AutoShot">https://github.com/wentaozhu/AutoShot</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06116] AutoShot: A Short Video Dataset and State-of-the-Art Shot Boundary Detection](http://arxiv.org/abs/2304.06116) #transformer</code></li>
+<li>Summary: <p>The short-form videos have explosive popularity and have dominated the new
+social media trends. Prevailing short-video platforms,~\textit{e.g.}, Kuaishou
+(Kwai), TikTok, Instagram Reels, and YouTube Shorts, have changed the way we
+consume and create content. For video content creation and understanding, the
+shot boundary detection (SBD) is one of the most essential components in
+various scenarios. In this work, we release a new public Short video sHot
+bOundary deTection dataset, named SHOT, consisting of 853 complete short videos
+and 11,606 shot annotations, with 2,716 high quality shot boundary annotations
+in 200 test videos. Leveraging this new data wealth, we propose to optimize the
+model design for video SBD, by conducting neural architecture search in a
+search space encapsulating various advanced 3D ConvNets and Transformers. Our
+proposed approach, named AutoShot, achieves higher F1 scores than previous
+state-of-the-art approaches, e.g., outperforming TransNetV2 by 4.2%, when being
+derived and evaluated on our newly constructed SHOT dataset. Moreover, to
+validate the generalizability of the AutoShot architecture, we directly
+evaluate it on another three public datasets: ClipShots, BBC and RAI, and the
+F1 scores of AutoShot outperform previous state-of-the-art approaches by 1.1%,
+0.9% and 1.2%, respectively. The SHOT dataset and code can be found in
+https://github.com/wentaozhu/AutoShot.git .
+</p></li>
+</ul>
+<h3>Title: Towards Evaluating Explanations of Vision Transformers for Medical Imaging. (arXiv:2304.06133v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06133">http://arxiv.org/abs/2304.06133</a></li>
+<li>Code URL: <a href="https://github.com/piotr-komorowski/towards-evaluating-explanations-of-vit">https://github.com/piotr-komorowski/towards-evaluating-explanations-of-vit</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06133] Towards Evaluating Explanations of Vision Transformers for Medical Imaging](http://arxiv.org/abs/2304.06133) #transformer</code></li>
+<li>Summary: <p>As deep learning models increasingly find applications in critical domains
+such as medical imaging, the need for transparent and trustworthy
+decision-making becomes paramount. Many explainability methods provide insights
+into how these models make predictions by attributing importance to input
+features. As Vision Transformer (ViT) becomes a promising alternative to
+convolutional neural networks for image classification, its interpretability
+remains an open research question. This paper investigates the performance of
+various interpretation methods on a ViT applied to classify chest X-ray images.
+We introduce the notion of evaluating faithfulness, sensitivity, and complexity
+of ViT explanations. The obtained results indicate that Layerwise relevance
+propagation for transformers outperforms Local interpretable model-agnostic
+explanations and Attention visualization, providing a more accurate and
+reliable representation of what a ViT has actually learned. Our findings
+provide insights into the applicability of ViT explanations in medical imaging
+and highlight the importance of using appropriate evaluation criteria for
+comparing them.
+</p></li>
+</ul>
+<h3>Title: [CLS] Token is All You Need for Zero-Shot Semantic Segmentation. (arXiv:2304.06212v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06212">http://arxiv.org/abs/2304.06212</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06212] [CLS] Token is All You Need for Zero-Shot Semantic Segmentation](http://arxiv.org/abs/2304.06212) #transformer</code></li>
+<li>Summary: <p>In this paper, we propose an embarrassingly simple yet highly effective
+zero-shot semantic segmentation (ZS3) method, based on the pre-trained
+vision-language model CLIP. First, our study provides a couple of key
+discoveries: (i) the global tokens (a.k.a [CLS] tokens in Transformer) of the
+text branch in CLIP provide a powerful representation of semantic information
+and (ii) these text-side [CLS] tokens can be regarded as category priors to
+guide CLIP visual encoder pay more attention on the corresponding region of
+interest. Based on that, we build upon the CLIP model as a backbone which we
+extend with a One-Way [CLS] token navigation from text to the visual branch
+that enables zero-shot dense prediction, dubbed \textbf{ClsCLIP}. Specifically,
+we use the [CLS] token output from the text branch, as an auxiliary semantic
+prompt, to replace the [CLS] token in shallow layers of the ViT-based visual
+encoder. This one-way navigation embeds such global category prior earlier and
+thus promotes semantic segmentation. Furthermore, to better segment tiny
+objects in ZS3, we further enhance ClsCLIP with a local zoom-in strategy, which
+employs a region proposal pre-processing and we get ClsCLIP+. Extensive
+experiments demonstrate that our proposed ZS3 method achieves a SOTA
+performance, and it is even comparable with those few-shot semantic
+segmentation methods.
+</p></li>
+</ul>
+<h3>Title: RSIR Transformer: Hierarchical Vision Transformer using Random Sampling Windows and Important Region Windows. (arXiv:2304.06250v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06250">http://arxiv.org/abs/2304.06250</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06250] RSIR Transformer: Hierarchical Vision Transformer using Random Sampling Windows and Important Region Windows](http://arxiv.org/abs/2304.06250) #transformer</code></li>
+<li>Summary: <p>Recently, Transformers have shown promising performance in various vision
+tasks. However, the high costs of global self-attention remain challenging for
+Transformers, especially for high-resolution vision tasks. Local self-attention
+runs attention computation within a limited region for the sake of efficiency,
+resulting in insufficient context modeling as their receptive fields are small.
+In this work, we introduce two new attention modules to enhance the global
+modeling capability of the hierarchical vision transformer, namely, random
+sampling windows (RS-Win) and important region windows (IR-Win). Specifically,
+RS-Win sample random image patches to compose the window, following a uniform
+distribution, i.e., the patches in RS-Win can come from any position in the
+image. IR-Win composes the window according to the weights of the image patches
+in the attention map. Notably, RS-Win is able to capture global information
+throughout the entire model, even in earlier, high-resolution stages. IR-Win
+enables the self-attention module to focus on important regions of the image
+and capture more informative features. Incorporated with these designs,
+RSIR-Win Transformer demonstrates competitive performance on common vision
+tasks.
+</p></li>
+</ul>
+<h3>Title: EWT: Efficient Wavelet-Transformer for Single Image Denoising. (arXiv:2304.06274v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06274">http://arxiv.org/abs/2304.06274</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06274] EWT: Efficient Wavelet-Transformer for Single Image Denoising](http://arxiv.org/abs/2304.06274) #transformer</code></li>
+<li>Summary: <p>Transformer-based image denoising methods have achieved encouraging results
+in the past year. However, it must uses linear operations to model long-range
+dependencies, which greatly increases model inference time and consumes GPU
+storage space. Compared with convolutional neural network-based methods,
+current Transformer-based image denoising methods cannot achieve a balance
+between performance improvement and resource consumption. In this paper, we
+propose an Efficient Wavelet Transformer (EWT) for image denoising.
+Specifically, we use Discrete Wavelet Transform (DWT) and Inverse Wavelet
+Transform (IWT) for downsampling and upsampling, respectively. This method can
+fully preserve the image features while reducing the image resolution, thereby
+greatly reducing the device resource consumption of the Transformer model.
+Furthermore, we propose a novel Dual-stream Feature Extraction Block (DFEB) to
+extract image features at different levels, which can further reduce model
+inference time and GPU memory usage. Experiments show that our method speeds up
+the original Transformer by more than 80%, reduces GPU memory usage by more
+than 60%, and achieves excellent denoising results. All code will be public.
+</p></li>
+</ul>
+<h3>Title: Efficient Multimodal Fusion via Interactive Prompting. (arXiv:2304.06306v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06306">http://arxiv.org/abs/2304.06306</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06306] Efficient Multimodal Fusion via Interactive Prompting](http://arxiv.org/abs/2304.06306) #transformer</code></li>
+<li>Summary: <p>Large-scale pre-training has brought unimodal fields such as computer vision
+and natural language processing to a new era. Following this trend, the size of
+multi-modal learning models constantly increases, leading to an urgent need to
+reduce the massive computational cost of finetuning these models for downstream
+tasks. In this paper, we propose an efficient and flexible multimodal fusion
+method, namely PMF, tailored for fusing unimodally pre-trained transformers.
+Specifically, we first present a modular multimodal fusion framework that
+exhibits high flexibility and facilitates mutual interactions among different
+modalities. In addition, we disentangle vanilla prompts into three types in
+order to learn different optimizing objectives for multimodal learning. It is
+also worth noting that we propose to add prompt vectors only on the deep layers
+of the unimodal transformers, thus significantly reducing the training memory
+usage. Experiment results show that our proposed method achieves comparable
+performance to several other multimodal finetuning methods with less than 3%
+trainable parameters and up to 66% saving of training memory usage.
+</p></li>
+</ul>
+<h3>Title: DDT: Dual-branch Deformable Transformer for Image Denoising. (arXiv:2304.06346v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06346">http://arxiv.org/abs/2304.06346</a></li>
+<li>Code URL: <a href="https://github.com/merenguelkl/ddt">https://github.com/merenguelkl/ddt</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06346] DDT: Dual-branch Deformable Transformer for Image Denoising](http://arxiv.org/abs/2304.06346) #transformer</code></li>
+<li>Summary: <p>Transformer is beneficial for image denoising tasks since it can model
+long-range dependencies to overcome the limitations presented by inductive
+convolutional biases. However, directly applying the transformer structure to
+remove noise is challenging because its complexity grows quadratically with the
+spatial resolution. In this paper, we propose an efficient Dual-branch
+Deformable Transformer (DDT) denoising network which captures both local and
+global interactions in parallel. We divide features with a fixed patch size and
+a fixed number of patches in local and global branches, respectively. In
+addition, we apply deformable attention operation in both branches, which helps
+the network focus on more important regions and further reduces computational
+complexity. We conduct extensive experiments on real-world and synthetic
+denoising tasks, and the proposed DDT achieves state-of-the-art performance
+with significantly fewer computational costs.
+</p></li>
+</ul>
+<h3>Title: Sign Language Translation from Instructional Videos. (arXiv:2304.06371v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06371">http://arxiv.org/abs/2304.06371</a></li>
+<li>Code URL: <a href="https://github.com/imatge-upc/slt_how2sign_wicv2023">https://github.com/imatge-upc/slt_how2sign_wicv2023</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06371] Sign Language Translation from Instructional Videos](http://arxiv.org/abs/2304.06371) #transformer</code></li>
+<li>Summary: <p>The advances in automatic sign language translation (SLT) to spoken languages
+have been mostly benchmarked with datasets of limited size and restricted
+domains. Our work advances the state of the art by providing the first baseline
+results on How2Sign, a large and broad dataset.
+</p></li>
+</ul>
+<p>We train a Transformer over I3D video features, using the reduced BLEU as a
+reference metric for validation, instead of the widely used BLEU score. We
+report a result of 8.03 on the BLEU score, and publish the first open-source
+implementation of its kind to promote further advances.
+</p>
+
+<h3>Title: TransHP: Image Classification with Hierarchical Prompting. (arXiv:2304.06385v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06385">http://arxiv.org/abs/2304.06385</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06385] TransHP: Image Classification with Hierarchical Prompting](http://arxiv.org/abs/2304.06385) #transformer</code></li>
+<li>Summary: <p>This paper explores a hierarchical prompting mechanism for the hierarchical
+image classification (HIC) task. Different from prior HIC methods, our
+hierarchical prompting is the first to explicitly inject ancestor-class
+information as a tokenized hint that benefits the descendant-class
+discrimination. We think it well imitates human visual recognition, i.e.,
+humans may use the ancestor class as a prompt to draw focus on the subtle
+differences among descendant classes. We model this prompting mechanism into a
+Transformer with Hierarchical Prompting (TransHP). TransHP consists of three
+steps: 1) learning a set of prompt tokens to represent the coarse (ancestor)
+classes, 2) on-the-fly predicting the coarse class of the input image at an
+intermediate block, and 3) injecting the prompt token of the predicted coarse
+class into the intermediate feature. Though the parameters of TransHP maintain
+the same for all input images, the injected coarse-class prompt conditions
+(modifies) the subsequent feature extraction and encourages a dynamic focus on
+relatively subtle differences among the descendant classes. Extensive
+experiments show that TransHP improves image classification on accuracy (e.g.,
+improving ViT-B/16 by +2.83% ImageNet classification accuracy), training data
+efficiency (e.g., +12.69% improvement under 10% ImageNet training data), and
+model explainability. Moreover, TransHP also performs favorably against prior
+HIC methods, showing that TransHP well exploits the hierarchical information.
+</p></li>
+</ul>
+<h3>Title: VISION DIFFMASK: Faithful Interpretation of Vision Transformers with Differentiable Patch Masking. (arXiv:2304.06391v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06391">http://arxiv.org/abs/2304.06391</a></li>
+<li>Code URL: <a href="https://github.com/angelosnal/vision-diffmask">https://github.com/angelosnal/vision-diffmask</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06391] VISION DIFFMASK: Faithful Interpretation of Vision Transformers with Differentiable Patch Masking](http://arxiv.org/abs/2304.06391) #transformer</code></li>
+<li>Summary: <p>The lack of interpretability of the Vision Transformer may hinder its use in
+critical real-world applications despite its effectiveness. To overcome this
+issue, we propose a post-hoc interpretability method called VISION DIFFMASK,
+which uses the activations of the model's hidden layers to predict the relevant
+parts of the input that contribute to its final predictions. Our approach uses
+a gating mechanism to identify the minimal subset of the original input that
+preserves the predicted distribution over classes. We demonstrate the
+faithfulness of our method, by introducing a faithfulness task, and comparing
+it to other state-of-the-art attribution methods on CIFAR-10 and ImageNet-1K,
+achieving compelling results. To aid reproducibility and further extension of
+our work, we open source our implementation:
+https://github.com/AngelosNal/Vision-DiffMask
+</p></li>
+</ul>
+<h3>Title: SpectFormer: Frequency and Attention is what you need in a Vision Transformer. (arXiv:2304.06446v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06446">http://arxiv.org/abs/2304.06446</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06446] SpectFormer: Frequency and Attention is what you need in a Vision Transformer](http://arxiv.org/abs/2304.06446) #transformer</code></li>
+<li>Summary: <p>Vision transformers have been applied successfully for image recognition
+tasks. There have been either multi-headed self-attention based (ViT
+\cite{dosovitskiy2020image}, DeIT, \cite{touvron2021training}) similar to the
+original work in textual models or more recently based on spectral layers
+(Fnet\cite{lee2021fnet}, GFNet\cite{rao2021global},
+AFNO\cite{guibas2021efficient}). We hypothesize that both spectral and
+multi-headed attention plays a major role. We investigate this hypothesis
+through this work and observe that indeed combining spectral and multi-headed
+attention layers provides a better transformer architecture. We thus propose
+the novel Spectformer architecture for transformers that combines spectral and
+multi-headed attention layers. We believe that the resulting representation
+allows the transformer to capture the feature representation appropriately and
+it yields improved performance over other transformer representations. For
+instance, it improves the top-1 accuracy by 2\% on ImageNet compared to both
+GFNet-H and LiT. SpectFormer-S reaches 84.25\% top-1 accuracy on ImageNet-1K
+(state of the art for small version). Further, Spectformer-L achieves 85.7\%
+that is the state of the art for the comparable base version of the
+transformers. We further ensure that we obtain reasonable results in other
+scenarios such as transfer learning on standard datasets such as CIFAR-10,
+CIFAR-100, Oxford-IIIT-flower, and Standford Car datasets. We then investigate
+its use in downstream tasks such of object detection and instance segmentation
+on the MS-COCO dataset and observe that Spectformer shows consistent
+performance that is comparable to the best backbones and can be further
+optimized and improved. Hence, we believe that combined spectral and attention
+layers are what are needed for vision transformers.
+</p></li>
+</ul>
+<h3>Title: NeRD: Neural field-based Demosaicking. (arXiv:2304.06566v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06566">http://arxiv.org/abs/2304.06566</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06566] NeRD: Neural field-based Demosaicking](http://arxiv.org/abs/2304.06566) #transformer</code></li>
+<li>Summary: <p>We introduce NeRD, a new demosaicking method for generating full-color images
+from Bayer patterns. Our approach leverages advancements in neural fields to
+perform demosaicking by representing an image as a coordinate-based neural
+network with sine activation functions. The inputs to the network are spatial
+coordinates and a low-resolution Bayer pattern, while the outputs are the
+corresponding RGB values. An encoder network, which is a blend of ResNet and
+U-net, enhances the implicit neural representation of the image to improve its
+quality and ensure spatial consistency through prior learning. Our experimental
+results demonstrate that NeRD outperforms traditional and state-of-the-art
+CNN-based methods and significantly closes the gap to transformer-based
+methods.
+</p></li>
+</ul>
+<h3>Title: DynaMITe: Dynamic Query Bootstrapping for Multi-object Interactive Segmentation Transformer. (arXiv:2304.06668v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06668">http://arxiv.org/abs/2304.06668</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06668] DynaMITe: Dynamic Query Bootstrapping for Multi-object Interactive Segmentation Transformer](http://arxiv.org/abs/2304.06668) #transformer</code></li>
+<li>Summary: <p>Most state-of-the-art instance segmentation methods rely on large amounts of
+pixel-precise ground-truth annotations for training, which are expensive to
+create. Interactive segmentation networks help generate such annotations based
+on an image and the corresponding user interactions such as clicks. Existing
+methods for this task can only process a single instance at a time and each
+user interaction requires a full forward pass through the entire deep network.
+We introduce a more efficient approach, called DynaMITe, in which we represent
+user interactions as spatio-temporal queries to a Transformer decoder with a
+potential to segment multiple object instances in a single iteration. Our
+architecture also alleviates any need to re-compute image features during
+refinement, and requires fewer interactions for segmenting multiple instances
+in a single image when compared to other methods. DynaMITe achieves
+state-of-the-art results on multiple existing interactive segmentation
+benchmarks, and also on the new multi-instance benchmark that we propose in
+this paper.
+</p></li>
+</ul>
+<h3>Title: Remote Sensing Change Detection With Transformers Trained from Scratch. (arXiv:2304.06710v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06710">http://arxiv.org/abs/2304.06710</a></li>
+<li>Code URL: <a href="https://github.com/mustansarfiaz/scratchformer">https://github.com/mustansarfiaz/scratchformer</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06710] Remote Sensing Change Detection With Transformers Trained from Scratch](http://arxiv.org/abs/2304.06710) #transformer</code></li>
+<li>Summary: <p>Current transformer-based change detection (CD) approaches either employ a
+pre-trained model trained on large-scale image classification ImageNet dataset
+or rely on first pre-training on another CD dataset and then fine-tuning on the
+target benchmark. This current strategy is driven by the fact that transformers
+typically require a large amount of training data to learn inductive biases,
+which is insufficient in standard CD datasets due to their small size. We
+develop an end-to-end CD approach with transformers that is trained from
+scratch and yet achieves state-of-the-art performance on four public
+benchmarks. Instead of using conventional self-attention that struggles to
+capture inductive biases when trained from scratch, our architecture utilizes a
+shuffled sparse-attention operation that focuses on selected sparse informative
+regions to capture the inherent characteristics of the CD data. Moreover, we
+introduce a change-enhanced feature fusion (CEFF) module to fuse the features
+from input image pairs by performing a per-channel re-weighting. Our CEFF
+module aids in enhancing the relevant semantic changes while suppressing the
+noisy ones. Extensive experiments on four CD datasets reveal the merits of the
+proposed contributions, achieving gains as high as 14.27\% in
+intersection-over-union (IoU) score, compared to the best-published results in
+the literature. Code is available at
+\url{https://github.com/mustansarfiaz/ScratchFormer}.
+</p></li>
+</ul>
+<h2>generative</h2>
+<h3>Title: ALR-GAN: Adaptive Layout Refinement for Text-to-Image Synthesis. (arXiv:2304.06297v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06297">http://arxiv.org/abs/2304.06297</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06297] ALR-GAN: Adaptive Layout Refinement for Text-to-Image Synthesis](http://arxiv.org/abs/2304.06297) #generative</code></li>
+<li>Summary: <p>We propose a novel Text-to-Image Generation Network, Adaptive Layout
+Refinement Generative Adversarial Network (ALR-GAN), to adaptively refine the
+layout of synthesized images without any auxiliary information. The ALR-GAN
+includes an Adaptive Layout Refinement (ALR) module and a Layout Visual
+Refinement (LVR) loss. The ALR module aligns the layout structure (which refers
+to locations of objects and background) of a synthesized image with that of its
+corresponding real image. In ALR module, we proposed an Adaptive Layout
+Refinement (ALR) loss to balance the matching of hard and easy features, for
+more efficient layout structure matching. Based on the refined layout
+structure, the LVR loss further refines the visual representation within the
+layout area. Experimental results on two widely-used datasets show that ALR-GAN
+performs competitively at the Text-to-Image generation task.
+</p></li>
+</ul>
+<h3>Title: Intriguing properties of synthetic images: from generative adversarial networks to diffusion models. (arXiv:2304.06408v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06408">http://arxiv.org/abs/2304.06408</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06408] Intriguing properties of synthetic images: from generative adversarial networks to diffusion models](http://arxiv.org/abs/2304.06408) #generative</code></li>
+<li>Summary: <p>Detecting fake images is becoming a major goal of computer vision. This need
+is becoming more and more pressing with the continuous improvement of synthesis
+methods based on Generative Adversarial Networks (GAN), and even more with the
+appearance of powerful methods based on Diffusion Models (DM). Towards this
+end, it is important to gain insight into which image features better
+discriminate fake images from real ones. In this paper we report on our
+systematic study of a large number of image generators of different families,
+aimed at discovering the most forensically relevant characteristics of real and
+generated images. Our experiments provide a number of interesting observations
+and shed light on some intriguing properties of synthetic images: (1) not only
+the GAN models but also the DM and VQ-GAN (Vector Quantized Generative
+Adversarial Networks) models give rise to visible artifacts in the Fourier
+domain and exhibit anomalous regular patterns in the autocorrelation; (2) when
+the dataset used to train the model lacks sufficient variety, its biases can be
+transferred to the generated images; (3) synthetic and real images exhibit
+significant differences in the mid-high frequency signal content, observable in
+their radial and angular spectral power distributions.
+</p></li>
+</ul>
+<h3>Title: LasUIE: Unifying Information Extraction with Latent Adaptive Structure-aware Generative Language Model. (arXiv:2304.06248v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06248">http://arxiv.org/abs/2304.06248</a></li>
+<li>Code URL: <a href="https://github.com/chocowu/lasuie">https://github.com/chocowu/lasuie</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06248] LasUIE: Unifying Information Extraction with Latent Adaptive Structure-aware Generative Language Model](http://arxiv.org/abs/2304.06248) #generative</code></li>
+<li>Summary: <p>Universally modeling all typical information extraction tasks (UIE) with one
+generative language model (GLM) has revealed great potential by the latest
+study, where various IE predictions are unified into a linearized hierarchical
+expression under a GLM. Syntactic structure information, a type of effective
+feature which has been extensively utilized in IE community, should also be
+beneficial to UIE. In this work, we propose a novel structure-aware GLM, fully
+unleashing the power of syntactic knowledge for UIE. A heterogeneous structure
+inductor is explored to unsupervisedly induce rich heterogeneous structural
+representations by post-training an existing GLM. In particular, a structural
+broadcaster is devised to compact various latent trees into explicit high-order
+forests, helping to guide a better generation during decoding. We finally
+introduce a task-oriented structure fine-tuning mechanism, further adjusting
+the learned structures to most coincide with the end-task's need. Over 12 IE
+benchmarks across 7 tasks our system shows significant improvements over the
+baseline UIE system. Further in-depth analyses show that our GLM learns rich
+task-adaptive structural bias that greatly resolves the UIE crux, the
+long-range dependence issue and boundary identifying. Source codes are open at
+https://github.com/ChocoWu/LasUIE.
+</p></li>
+</ul>
+<h3>Title: G2T: A simple but versatile framework for topic modeling based on pretrained language model and community detection. (arXiv:2304.06653v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06653">http://arxiv.org/abs/2304.06653</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06653] G2T: A simple but versatile framework for topic modeling based on pretrained language model and community detection](http://arxiv.org/abs/2304.06653) #generative</code></li>
+<li>Summary: <p>It has been reported that clustering-based topic models, which cluster
+high-quality sentence embeddings with an appropriate word selection method, can
+generate better topics than generative probabilistic topic models. However,
+these approaches suffer from the inability to select appropriate parameters and
+incomplete models that overlook the quantitative relation between words with
+topics and topics with text. To solve these issues, we propose graph to topic
+(G2T), a simple but effective framework for topic modelling. The framework is
+composed of four modules. First, document representation is acquired using
+pretrained language models. Second, a semantic graph is constructed according
+to the similarity between document representations. Third, communities in
+document semantic graphs are identified, and the relationship between topics
+and documents is quantified accordingly. Fourth, the word--topic distribution
+is computed based on a variant of TFIDF. Automatic evaluation suggests that G2T
+achieved state-of-the-art performance on both English and Chinese documents
+with different lengths. Human judgements demonstrate that G2T can produce
+topics with better interpretability and coverage than baselines. In addition,
+G2T can not only determine the topic number automatically but also give the
+probabilistic distribution of words in topics and topics in documents. Finally,
+G2T is publicly available, and the distillation experiments provide instruction
+on how it works.
+</p></li>
+</ul>
+<h3>Title: Energy-guided Entropic Neural Optimal Transport. (arXiv:2304.06094v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06094">http://arxiv.org/abs/2304.06094</a></li>
+<li>Code URL: <a href="https://github.com/rosinality/igebm-pytorch">https://github.com/rosinality/igebm-pytorch</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06094] Energy-guided Entropic Neural Optimal Transport](http://arxiv.org/abs/2304.06094) #generative</code></li>
+<li>Summary: <p>Energy-Based Models (EBMs) are known in the Machine Learning community for
+the decades. Since the seminal works devoted to EBMs dating back to the
+noughties there have been appearing a lot of efficient methods which solve the
+generative modelling problem by means of energy potentials (unnormalized
+likelihood functions). In contrast, the realm of Optimal Transport (OT) and, in
+particular, neural OT solvers is much less explored and limited by few recent
+works (excluding WGAN based approaches which utilize OT as a loss function and
+do not model OT maps themselves). In our work, we bridge the gap between EBMs
+and Entropy-regularized OT. We present the novel methodology which allows
+utilizing the recent developments and technical improvements of the former in
+order to enrich the latter. We validate the applicability of our method on toy
+2D scenarios as well as standard unpaired image-to-image translation problems.
+For the sake of simplicity, we choose simple short- and long- run EBMs as a
+backbone of our Energy-guided Entropic OT method, leaving the application of
+more sophisticated EBMs for future research.
+</p></li>
+</ul>
+<h3>Title: Improving novelty detection with generative adversarial networks on hand gesture data. (arXiv:2304.06696v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06696">http://arxiv.org/abs/2304.06696</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06696] Improving novelty detection with generative adversarial networks on hand gesture data](http://arxiv.org/abs/2304.06696) #generative</code></li>
+<li>Summary: <p>We propose a novel way of solving the issue of classification of
+out-of-vocabulary gestures using Artificial Neural Networks (ANNs) trained in
+the Generative Adversarial Network (GAN) framework. A generative model augments
+the data set in an online fashion with new samples and stochastic target
+vectors, while a discriminative model determines the class of the samples. The
+approach was evaluated on the UC2017 SG and UC2018 DualMyo data sets. The
+generative models performance was measured with a distance metric between
+generated and real samples. The discriminative models were evaluated by their
+accuracy on trained and novel classes. In terms of sample generation quality,
+the GAN is significantly better than a random distribution (noise) in mean
+distance, for all classes. In the classification tests, the baseline neural
+network was not capable of identifying untrained gestures. When the proposed
+methodology was implemented, we found that there is a trade-off between the
+detection of trained and untrained gestures, with some trained samples being
+mistaken as novelty. Nevertheless, a novelty detection accuracy of 95.4% or
+90.2% (depending on the data set) was achieved with just 5% loss of accuracy on
+trained classes.
+</p></li>
+</ul>
+<h2>Noise label correction</h2>
+<h2>noise</h2>
 <h3>Title: An Edit Friendly DDPM Noise Space: Inversion and Manipulations. (arXiv:2304.06140v1 [cs.CV])</h3>
 <ul>
 <li>Paper URL: <a href="http://arxiv.org/abs/2304.06140">http://arxiv.org/abs/2304.06140</a></li>
 <li>Code URL: null</li>
-<li>Copy Paste: <code><input type="checkbox">[[2304.06140] An Edit Friendly DDPM Noise Space: Inversion and Manipulations](http://arxiv.org/abs/2304.06140) #diffusion</code></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06140] An Edit Friendly DDPM Noise Space: Inversion and Manipulations](http://arxiv.org/abs/2304.06140) #noise</code></li>
 <li>Summary: <p>Denoising diffusion probabilistic models (DDPMs) employ a sequence of white
 Gaussian noise samples to generate an image. In analogy with GANs, those noise
 maps could be considered as the latent code associated with the generated
@@ -51,30 +520,105 @@ inversion). We also show how it can be used within existing diffusion-based
 editing methods to improve their quality and diversity.
 </p></li>
 </ul>
-<h3>Title: Intriguing properties of synthetic images: from generative adversarial networks to diffusion models. (arXiv:2304.06408v1 [cs.CV])</h3>
+<h3>Title: Noisy Correspondence Learning with Meta Similarity Correction. (arXiv:2304.06275v1 [cs.CV])</h3>
 <ul>
-<li>Paper URL: <a href="http://arxiv.org/abs/2304.06408">http://arxiv.org/abs/2304.06408</a></li>
-<li>Code URL: null</li>
-<li>Copy Paste: <code><input type="checkbox">[[2304.06408] Intriguing properties of synthetic images: from generative adversarial networks to diffusion models](http://arxiv.org/abs/2304.06408) #diffusion</code></li>
-<li>Summary: <p>Detecting fake images is becoming a major goal of computer vision. This need
-is becoming more and more pressing with the continuous improvement of synthesis
-methods based on Generative Adversarial Networks (GAN), and even more with the
-appearance of powerful methods based on Diffusion Models (DM). Towards this
-end, it is important to gain insight into which image features better
-discriminate fake images from real ones. In this paper we report on our
-systematic study of a large number of image generators of different families,
-aimed at discovering the most forensically relevant characteristics of real and
-generated images. Our experiments provide a number of interesting observations
-and shed light on some intriguing properties of synthetic images: (1) not only
-the GAN models but also the DM and VQ-GAN (Vector Quantized Generative
-Adversarial Networks) models give rise to visible artifacts in the Fourier
-domain and exhibit anomalous regular patterns in the autocorrelation; (2) when
-the dataset used to train the model lacks sufficient variety, its biases can be
-transferred to the generated images; (3) synthetic and real images exhibit
-significant differences in the mid-high frequency signal content, observable in
-their radial and angular spectral power distributions.
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06275">http://arxiv.org/abs/2304.06275</a></li>
+<li>Code URL: <a href="https://github.com/hhc1997/mscn">https://github.com/hhc1997/mscn</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06275] Noisy Correspondence Learning with Meta Similarity Correction](http://arxiv.org/abs/2304.06275) #noise</code></li>
+<li>Summary: <p>Despite the success of multimodal learning in cross-modal retrieval task, the
+remarkable progress relies on the correct correspondence among multimedia data.
+However, collecting such ideal data is expensive and time-consuming. In
+practice, most widely used datasets are harvested from the Internet and
+inevitably contain mismatched pairs. Training on such noisy correspondence
+datasets causes performance degradation because the cross-modal retrieval
+methods can wrongly enforce the mismatched data to be similar. To tackle this
+problem, we propose a Meta Similarity Correction Network (MSCN) to provide
+reliable similarity scores. We view a binary classification task as the
+meta-process that encourages the MSCN to learn discrimination from positive and
+negative meta-data. To further alleviate the influence of noise, we design an
+effective data purification strategy using meta-data as prior knowledge to
+remove the noisy samples. Extensive experiments are conducted to demonstrate
+the strengths of our method in both synthetic and real-world noises, including
+Flickr30K, MS-COCO, and Conceptual Captions.
 </p></li>
 </ul>
+<h3>Title: Certified Zeroth-order Black-Box Defense with Robust UNet Denoiser. (arXiv:2304.06430v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06430">http://arxiv.org/abs/2304.06430</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06430] Certified Zeroth-order Black-Box Defense with Robust UNet Denoiser](http://arxiv.org/abs/2304.06430) #noise</code></li>
+<li>Summary: <p>Certified defense methods against adversarial perturbations have been
+recently investigated in the black-box setting with a zeroth-order (ZO)
+perspective. However, these methods suffer from high model variance with low
+performance on high-dimensional datasets due to the ineffective design of the
+denoiser and are limited in their utilization of ZO techniques. To this end, we
+propose a certified ZO preprocessing technique for removing adversarial
+perturbations from the attacked image in the black-box setting using only model
+queries. We propose a robust UNet denoiser (RDUNet) that ensures the robustness
+of black-box models trained on high-dimensional datasets. We propose a novel
+black-box denoised smoothing (DS) defense mechanism, ZO-RUDS, by prepending our
+RDUNet to the black-box model, ensuring black-box defense. We further propose
+ZO-AE-RUDS in which RDUNet followed by autoencoder (AE) is prepended to the
+black-box model. We perform extensive experiments on four classification
+datasets, CIFAR-10, CIFAR-10, Tiny Imagenet, STL-10, and the MNIST dataset for
+image reconstruction tasks. Our proposed defense methods ZO-RUDS and ZO-AE-RUDS
+beat SOTA with a huge margin of $35\%$ and $9\%$, for low dimensional
+(CIFAR-10) and with a margin of $20.61\%$ and $23.51\%$ for high-dimensional
+(STL-10) datasets, respectively.
+</p></li>
+</ul>
+<h3>Title: Event-based tracking of human hands. (arXiv:2304.06534v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06534">http://arxiv.org/abs/2304.06534</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06534] Event-based tracking of human hands](http://arxiv.org/abs/2304.06534) #noise</code></li>
+<li>Summary: <p>This paper proposes a novel method for human hands tracking using data from
+an event camera. The event camera detects changes in brightness, measuring
+motion, with low latency, no motion blur, low power consumption and high
+dynamic range. Captured frames are analysed using lightweight algorithms
+reporting 3D hand position data. The chosen pick-and-place scenario serves as
+an example input for collaborative human-robot interactions and in obstacle
+avoidance for human-robot safety applications. Events data are pre-processed
+into intensity frames. The regions of interest (ROI) are defined through object
+edge event activity, reducing noise. ROI features are extracted for use
+in-depth perception. Event-based tracking of human hand demonstrated feasible,
+in real time and at a low computational cost. The proposed ROI-finding method
+reduces noise from intensity images, achieving up to 89% of data reduction in
+relation to the original, while preserving the features. The depth estimation
+error in relation to ground truth (measured with wearables), measured using
+dynamic time warping and using a single event camera, is from 15 to 30
+millimetres, depending on the plane it is measured. Tracking of human hands in
+3D space using a single event camera data and lightweight algorithms to define
+ROI features (hands tracking in space).
+</p></li>
+</ul>
+<h3>Title: Sequential Monte Carlo applied to virtual flow meter calibration. (arXiv:2304.06310v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.06310">http://arxiv.org/abs/2304.06310</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.06310] Sequential Monte Carlo applied to virtual flow meter calibration](http://arxiv.org/abs/2304.06310) #noise</code></li>
+<li>Summary: <p>Soft-sensors are gaining popularity due to their ability to provide estimates
+of key process variables with little intervention required on the asset and at
+a low cost. In oil and gas production, virtual flow metering (VFM) is a popular
+soft-sensor that attempts to estimate multiphase flow rates in real time. VFMs
+are based on models, and these models require calibration. The calibration is
+highly dependent on the application, both due to the great diversity of the
+models, and in the available measurements. The most accurate calibration is
+achieved by careful tuning of the VFM parameters to well tests, but this can be
+work intensive, and not all wells have frequent well test data available. This
+paper presents a calibration method based on the measurement provided by the
+production separator, and the assumption that the observed flow should be equal
+to the sum of flow rates from each individual well. This allows us to jointly
+calibrate the VFMs continuously. The method applies Sequential Monte Carlo
+(SMC) to infer a tuning factor and the flow composition for each well. The
+method is tested on a case with ten wells, using both synthetic and real data.
+The results are promising and the method is able to provide reasonable
+estimates of the parameters without relying on well tests. However, some
+challenges are identified and discussed, particularly related to the process
+noise and how to manage varying data quality.
+</p></li>
+</ul>
+<h2>diffusion</h2>
 <h3>Title: DiffFit: Unlocking Transferability of Large Diffusion Models via Simple Parameter-Efficient Fine-Tuning. (arXiv:2304.06648v1 [cs.CV])</h3>
 <ul>
 <li>Paper URL: <a href="http://arxiv.org/abs/2304.06648">http://arxiv.org/abs/2304.06648</a></li>
@@ -197,6 +741,7 @@ present various examples of image generation from rich text and demonstrate
 that our method outperforms strong baselines with quantitative evaluations.
 </p></li>
 </ul>
+<h2>LLM</h2>
 <script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
 <script>new ClipboardJS("#copy",{text:function(trigger){var res="[[2023-04-16]]\n\n";var input=document.querySelectorAll("input");for(var i=0;i<input.length;i++){if(input[i].type=="checkbox"&&input[i].checked){res+="- "+input[i].nextSibling.nodeValue+"\n"}}res+="\n";return res}}).on("success",function(e){e.clearSelection()});</script>
 <button id="copy">Copy All</button>
