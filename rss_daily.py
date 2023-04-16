@@ -10,12 +10,12 @@ from md2html import md2html
 
 headers = {
     'User-Agent':
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44',
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44',
     'Connection': 'close'
 }
 
 keywords = [
-    'data-free', 'Transformer', 'diffusion'
+    'data-free', 'transformer', 'generative', 'Noise label correction', 'noise', 'diffusion', 'LLM'
 ]
 categories = ['cs.CV', 'cs.CL', 'cs.CR', 'cs.LG']
 
