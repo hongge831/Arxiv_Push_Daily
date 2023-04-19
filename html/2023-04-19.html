@@ -1,0 +1,1143 @@
+<h2>data-free</h2>
+<h2>transformer</h2>
+<h3>Title: AutoTaskFormer: Searching Vision Transformers for Multi-task Learning. (arXiv:2304.08756v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08756">http://arxiv.org/abs/2304.08756</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08756] AutoTaskFormer: Searching Vision Transformers for Multi-task Learning](http://arxiv.org/abs/2304.08756) #transformer</code></li>
+<li>Summary: <p>Vision Transformers have shown great performance in single tasks such as
+classification and segmentation. However, real-world problems are not isolated,
+which calls for vision transformers that can perform multiple tasks
+concurrently. Existing multi-task vision transformers are handcrafted and
+heavily rely on human expertise. In this work, we propose a novel one-shot
+neural architecture search framework, dubbed AutoTaskFormer (Automated
+Multi-Task Vision TransFormer), to automate this process. AutoTaskFormer not
+only identifies the weights to share across multiple tasks automatically, but
+also provides thousands of well-trained vision transformers with a wide range
+of parameters (e.g., number of heads and network depth) for deployment under
+various resource constraints. Experiments on both small-scale (2-task
+Cityscapes and 3-task NYUv2) and large-scale (16-task Taskonomy) datasets show
+that AutoTaskFormer outperforms state-of-the-art handcrafted vision
+transformers in multi-task learning. The entire code and models will be
+open-sourced.
+</p></li>
+</ul>
+<h3>Title: Deep Unrestricted Document Image Rectification. (arXiv:2304.08796v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08796">http://arxiv.org/abs/2304.08796</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08796] Deep Unrestricted Document Image Rectification](http://arxiv.org/abs/2304.08796) #transformer</code></li>
+<li>Summary: <p>In recent years, tremendous efforts have been made on document image
+rectification, but existing advanced algorithms are limited to processing
+restricted document images, i.e., the input images must incorporate a complete
+document. Once the captured image merely involves a local text region, its
+rectification quality is degraded and unsatisfactory. Our previously proposed
+DocTr, a transformer-assisted network for document image rectification, also
+suffers from this limitation. In this work, we present DocTr++, a novel unified
+framework for document image rectification, without any restrictions on the
+input distorted images. Our major technical improvements can be concluded in
+three aspects. Firstly, we upgrade the original architecture by adopting a
+hierarchical encoder-decoder structure for multi-scale representation
+extraction and parsing. Secondly, we reformulate the pixel-wise mapping
+relationship between the unrestricted distorted document images and the
+distortion-free counterparts. The obtained data is used to train our DocTr++
+for unrestricted document image rectification. Thirdly, we contribute a
+real-world test set and metrics applicable for evaluating the rectification
+quality. To our best knowledge, this is the first learning-based method for the
+rectification of unrestricted document images. Extensive experiments are
+conducted, and the results demonstrate the effectiveness and superiority of our
+method. We hope our DocTr++ will serve as a strong baseline for generic
+document image rectification, prompting the further advancement and application
+of learning-based algorithms. The source code and the proposed dataset are
+publicly available at https://github.com/fh2019ustc/DocTr-Plus.
+</p></li>
+</ul>
+<h3>Title: MLP-AIR: An Efficient MLP-Based Method for Actor Interaction Relation Learning in Group Activity Recognition. (arXiv:2304.08803v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08803">http://arxiv.org/abs/2304.08803</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08803] MLP-AIR: An Efficient MLP-Based Method for Actor Interaction Relation Learning in Group Activity Recognition](http://arxiv.org/abs/2304.08803) #transformer</code></li>
+<li>Summary: <p>The task of Group Activity Recognition (GAR) aims to predict the activity
+category of the group by learning the actor spatial-temporal interaction
+relation in the group. Therefore, an effective actor relation learning method
+is crucial for the GAR task. The previous works mainly learn the interaction
+relation by the well-designed GCNs or Transformers. For example, to infer the
+actor interaction relation, GCNs need a learnable adjacency, and Transformers
+need to calculate the self-attention. Although the above methods can model the
+interaction relation effectively, they also increase the complexity of the
+model (the number of parameters and computations). In this paper, we design a
+novel MLP-based method for Actor Interaction Relation learning (MLP-AIR) in
+GAR. Compared with GCNs and Transformers, our method has a competitive but
+conceptually and technically simple alternative, significantly reducing the
+complexity. Specifically, MLP-AIR includes three sub-modules: MLP-based Spatial
+relation modeling module (MLP-S), MLP-based Temporal relation modeling module
+(MLP-T), and MLP-based Relation refining module (MLP-R). MLP-S is used to model
+the spatial relation between different actors in each frame. MLP-T is used to
+model the temporal relation between different frames for each actor. MLP-R is
+used further to refine the relation between different dimensions of relation
+features to improve the feature's expression ability. To evaluate the MLP-AIR,
+we conduct extensive experiments on two widely used benchmarks, including the
+Volleyball and Collective Activity datasets. Experimental results demonstrate
+that MLP-AIR can get competitive results but with low complexity.
+</p></li>
+</ul>
+<h3>Title: SViTT: Temporal Learning of Sparse Video-Text Transformers. (arXiv:2304.08809v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08809">http://arxiv.org/abs/2304.08809</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08809] SViTT: Temporal Learning of Sparse Video-Text Transformers](http://arxiv.org/abs/2304.08809) #transformer</code></li>
+<li>Summary: <p>Do video-text transformers learn to model temporal relationships across
+frames? Despite their immense capacity and the abundance of multimodal training
+data, recent work has revealed the strong tendency of video-text models towards
+frame-based spatial representations, while temporal reasoning remains largely
+unsolved. In this work, we identify several key challenges in temporal learning
+of video-text transformers: the spatiotemporal trade-off from limited network
+size; the curse of dimensionality for multi-frame modeling; and the diminishing
+returns of semantic information by extending clip length. Guided by these
+findings, we propose SViTT, a sparse video-text architecture that performs
+multi-frame reasoning with significantly lower cost than naive transformers
+with dense attention. Analogous to graph-based networks, SViTT employs two
+forms of sparsity: edge sparsity that limits the query-key communications
+between tokens in self-attention, and node sparsity that discards uninformative
+visual tokens. Trained with a curriculum which increases model sparsity with
+the clip length, SViTT outperforms dense transformer baselines on multiple
+video-text retrieval and question answering benchmarks, with a fraction of
+computational cost. Project page: <a href="http://svcl.ucsd.edu/projects/svitt.">this http URL</a>
+</p></li>
+</ul>
+<h3>Title: Saliency-aware Stereoscopic Video Retargeting. (arXiv:2304.08852v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08852">http://arxiv.org/abs/2304.08852</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08852] Saliency-aware Stereoscopic Video Retargeting](http://arxiv.org/abs/2304.08852) #transformer</code></li>
+<li>Summary: <p>Stereo video retargeting aims to resize an image to a desired aspect ratio.
+The quality of retargeted videos can be significantly impacted by the stereo
+videos spatial, temporal, and disparity coherence, all of which can be impacted
+by the retargeting process. Due to the lack of a publicly accessible annotated
+dataset, there is little research on deep learning-based methods for stereo
+video retargeting. This paper proposes an unsupervised deep learning-based
+stereo video retargeting network. Our model first detects the salient objects
+and shifts and warps all objects such that it minimizes the distortion of the
+salient parts of the stereo frames. We use 1D convolution for shifting the
+salient objects and design a stereo video Transformer to assist the retargeting
+process. To train the network, we use the parallax attention mechanism to fuse
+the left and right views and feed the retargeted frames to a reconstruction
+module that reverses the retargeted frames to the input frames. Therefore, the
+network is trained in an unsupervised manner. Extensive qualitative and
+quantitative experiments and ablation studies on KITTI stereo 2012 and 2015
+datasets demonstrate the efficiency of the proposed method over the existing
+state-of-the-art methods. The code is available at
+https://github.com/z65451/SVR/.
+</p></li>
+</ul>
+<h3>Title: Audio-Driven Talking Face Generation with Diverse yet Realistic Facial Animations. (arXiv:2304.08945v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08945">http://arxiv.org/abs/2304.08945</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08945] Audio-Driven Talking Face Generation with Diverse yet Realistic Facial Animations](http://arxiv.org/abs/2304.08945) #transformer</code></li>
+<li>Summary: <p>Audio-driven talking face generation, which aims to synthesize talking faces
+with realistic facial animations (including accurate lip movements, vivid
+facial expression details and natural head poses) corresponding to the audio,
+has achieved rapid progress in recent years. However, most existing work
+focuses on generating lip movements only without handling the closely
+correlated facial expressions, which degrades the realism of the generated
+faces greatly. This paper presents DIRFA, a novel method that can generate
+talking faces with diverse yet realistic facial animations from the same
+driving audio. To accommodate fair variation of plausible facial animations for
+the same audio, we design a transformer-based probabilistic mapping network
+that can model the variational facial animation distribution conditioned upon
+the input audio and autoregressively convert the audio signals into a facial
+animation sequence. In addition, we introduce a temporally-biased mask into the
+mapping network, which allows to model the temporal dependency of facial
+animations and produce temporally smooth facial animation sequence. With the
+generated facial animation sequence and a source image, photo-realistic talking
+faces can be synthesized with a generic generation network. Extensive
+experiments show that DIRFA can generate talking faces with realistic facial
+animations effectively.
+</p></li>
+</ul>
+<h3>Title: GUILGET: GUI Layout GEneration with Transformer. (arXiv:2304.09012v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.09012">http://arxiv.org/abs/2304.09012</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.09012] GUILGET: GUI Layout GEneration with Transformer](http://arxiv.org/abs/2304.09012) #transformer</code></li>
+<li>Summary: <p>Sketching out Graphical User Interface (GUI) layout is part of the pipeline
+of designing a GUI and a crucial task for the success of a software
+application. Arranging all components inside a GUI layout manually is a
+time-consuming task. In order to assist designers, we developed a method named
+GUILGET to automatically generate GUI layouts from positional constraints
+represented as GUI arrangement graphs (GUI-AGs). The goal is to support the
+initial step of GUI design by producing realistic and diverse GUI layouts. The
+existing image layout generation techniques often cannot incorporate GUI design
+constraints. Thus, GUILGET needs to adapt existing techniques to generate GUI
+layouts that obey to constraints specific to GUI designs. GUILGET is based on
+transformers in order to capture the semantic in relationships between elements
+from GUI-AG. Moreover, the model learns constraints through the minimization of
+losses responsible for placing each component inside its parent layout, for not
+letting components overlap if they are inside the same parent, and for
+component alignment. Our experiments, which are conducted on the CLAY dataset,
+reveal that our model has the best understanding of relationships from GUI-AG
+and has the best performances in most of evaluation metrics. Therefore, our
+work contributes to improved GUI layout generation by proposing a novel method
+that effectively accounts for the constraints on GUI elements and paves the
+road for a more efficient GUI design pipeline.
+</p></li>
+</ul>
+<h3>Title: Classification of US Supreme Court Cases using BERT-Based Techniques. (arXiv:2304.08649v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08649">http://arxiv.org/abs/2304.08649</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08649] Classification of US Supreme Court Cases using BERT-Based Techniques](http://arxiv.org/abs/2304.08649) #transformer</code></li>
+<li>Summary: <p>Models based on bidirectional encoder representations from transformers
+(BERT) produce state of the art (SOTA) results on many natural language
+processing (NLP) tasks such as named entity recognition (NER), part-of-speech
+(POS) tagging etc. An interesting phenomenon occurs when classifying long
+documents such as those from the US supreme court where BERT-based models can
+be considered difficult to use on a first-pass or out-of-the-box basis. In this
+paper, we experiment with several BERT-based classification techniques for US
+supreme court decisions or supreme court database (SCDB) and compare them with
+the previous SOTA results. We then compare our results specifically with SOTA
+models for long documents. We compare our results for two classification tasks:
+(1) a broad classification task with 15 categories and (2) a fine-grained
+classification task with 279 categories. Our best result produces an accuracy
+of 80\% on the 15 broad categories and 60\% on the fine-grained 279 categories
+which marks an improvement of 8\% and 28\% respectively from previously
+reported SOTA results.
+</p></li>
+</ul>
+<h3>Title: Transfer to a Low-Resource Language via Close Relatives: The Case Study on Faroese. (arXiv:2304.08823v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08823">http://arxiv.org/abs/2304.08823</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08823] Transfer to a Low-Resource Language via Close Relatives: The Case Study on Faroese](http://arxiv.org/abs/2304.08823) #transformer</code></li>
+<li>Summary: <p>Multilingual language models have pushed state-of-the-art in cross-lingual
+NLP transfer. The majority of zero-shot cross-lingual transfer, however, use
+one and the same massively multilingual transformer (e.g., mBERT or XLM-R) to
+transfer to all target languages, irrespective of their typological,
+etymological, and phylogenetic relations to other languages. In particular,
+readily available data and models of resource-rich sibling languages are often
+ignored. In this work, we empirically show, in a case study for Faroese -- a
+low-resource language from a high-resource language family -- that by
+leveraging the phylogenetic information and departing from the
+'one-size-fits-all' paradigm, one can improve cross-lingual transfer to
+low-resource languages. In particular, we leverage abundant resources of other
+Scandinavian languages (i.e., Danish, Norwegian, Swedish, and Icelandic) for
+the benefit of Faroese. Our evaluation results show that we can substantially
+improve the transfer performance to Faroese by exploiting data and models of
+closely-related high-resource languages. Further, we release a new web corpus
+of Faroese and Faroese datasets for named entity recognition (NER), semantic
+text similarity (STS), and new language models trained on all Scandinavian
+languages.
+</p></li>
+</ul>
+<h3>Title: Approximate Nearest Neighbour Phrase Mining for Contextual Speech Recognition. (arXiv:2304.08862v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08862">http://arxiv.org/abs/2304.08862</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08862] Approximate Nearest Neighbour Phrase Mining for Contextual Speech Recognition](http://arxiv.org/abs/2304.08862) #transformer</code></li>
+<li>Summary: <p>This paper presents an extension to train end-to-end Context-Aware
+Transformer Transducer ( CATT ) models by using a simple, yet efficient method
+of mining hard negative phrases from the latent space of the context encoder.
+During training, given a reference query, we mine a number of similar phrases
+using approximate nearest neighbour search. These sampled phrases are then used
+as negative examples in the context list alongside random and ground truth
+contextual information. By including approximate nearest neighbour phrases
+(ANN-P) in the context list, we encourage the learned representation to
+disambiguate between similar, but not identical, biasing phrases. This improves
+biasing accuracy when there are several similar phrases in the biasing
+inventory. We carry out experiments in a large-scale data regime obtaining up
+to 7% relative word error rate reductions for the contextual portion of test
+data. We also extend and evaluate CATT approach in streaming applications.
+</p></li>
+</ul>
+<h3>Title: Outlier Suppression+: Accurate quantization of large language models by equivalent and optimal shifting and scaling. (arXiv:2304.09145v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.09145">http://arxiv.org/abs/2304.09145</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.09145] Outlier Suppression+: Accurate quantization of large language models by equivalent and optimal shifting and scaling](http://arxiv.org/abs/2304.09145) #transformer</code></li>
+<li>Summary: <p>Quantization of transformer language models faces significant challenges due
+to the existence of detrimental outliers in activations. We observe that these
+outliers are asymmetric and concentrated in specific channels. To address this
+issue, we propose the Outlier Suppression+ framework. First, we introduce
+channel-wise shifting and scaling operations to eliminate asymmetric
+presentation and scale down problematic channels. We demonstrate that these
+operations can be seamlessly migrated into subsequent modules while maintaining
+equivalence. Second, we quantitatively analyze the optimal values for shifting
+and scaling, taking into account both the asymmetric property and quantization
+errors of weights in the next layer. Our lightweight framework can incur
+minimal performance degradation under static and standard post-training
+quantization settings. Comprehensive results across various tasks and models
+reveal that our approach achieves near-floating-point performance on both small
+models, such as BERT, and large language models (LLMs) including OPTs, BLOOM,
+and BLOOMZ at 8-bit and 6-bit settings. Furthermore, we establish a new state
+of the art for 4-bit BERT.
+</p></li>
+</ul>
+<h3>Title: CyFormer: Accurate State-of-Health Prediction of Lithium-Ion Batteries via Cyclic Attention. (arXiv:2304.08502v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08502">http://arxiv.org/abs/2304.08502</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08502] CyFormer: Accurate State-of-Health Prediction of Lithium-Ion Batteries via Cyclic Attention](http://arxiv.org/abs/2304.08502) #transformer</code></li>
+<li>Summary: <p>Predicting the State-of-Health (SoH) of lithium-ion batteries is a
+fundamental task of battery management systems on electric vehicles. It aims at
+estimating future SoH based on historical aging data. Most existing deep
+learning methods rely on filter-based feature extractors (e.g., CNN or Kalman
+filters) and recurrent time sequence models. Though efficient, they generally
+ignore cyclic features and the domain gap between training and testing
+batteries. To address this problem, we present CyFormer, a transformer-based
+cyclic time sequence model for SoH prediction. Instead of the conventional
+CNN-RNN structure, we adopt an encoder-decoder architecture. In the encoder,
+row-wise and column-wise attention blocks effectively capture intra-cycle and
+inter-cycle connections and extract cyclic features. In the decoder, the SoH
+queries cross-attend to these features to form the final predictions. We
+further utilize a transfer learning strategy to narrow the domain gap between
+the training and testing set. To be specific, we use fine-tuning to shift the
+model to a target working condition. Finally, we made our model more efficient
+by pruning. The experiment shows that our method attains an MAE of 0.75\% with
+only 10\% data for fine-tuning on a testing battery, surpassing prior methods
+by a large margin. Effective and robust, our method provides a potential
+solution for all cyclic time sequence prediction tasks.
+</p></li>
+</ul>
+<h2>generative</h2>
+<h3>Title: Bridging Discrete and Backpropagation: Straight-Through and Beyond. (arXiv:2304.08612v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08612">http://arxiv.org/abs/2304.08612</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08612] Bridging Discrete and Backpropagation: Straight-Through and Beyond](http://arxiv.org/abs/2304.08612) #generative</code></li>
+<li>Summary: <p>Backpropagation, the cornerstone of deep learning, is limited to computing
+gradients solely for continuous variables. This limitation hinders various
+research on problems involving discrete latent variables. To address this
+issue, we propose a novel approach for approximating the gradient of parameters
+involved in generating discrete latent variables. First, we examine the widely
+used Straight-Through (ST) heuristic and demonstrate that it works as a
+first-order approximation of the gradient. Guided by our findings, we propose a
+novel method called ReinMax, which integrates Heun's Method, a second-order
+numerical method for solving ODEs, to approximate the gradient. Our method
+achieves second-order accuracy without requiring Hessian or other second-order
+derivatives. We conduct experiments on structured output prediction and
+unsupervised generative modeling tasks. Our results show that \ours brings
+consistent improvements over the state of the art, including ST and
+Straight-Through Gumbel-Softmax. Implementations are released at
+https://github.com/microsoft/ReinMax.
+</p></li>
+</ul>
+<h3>Title: Insta(nt) Pet Therapy: GAN-generated Images for Therapeutic Social Media Content. (arXiv:2304.08665v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08665">http://arxiv.org/abs/2304.08665</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08665] Insta(nt) Pet Therapy: GAN-generated Images for Therapeutic Social Media Content](http://arxiv.org/abs/2304.08665) #generative</code></li>
+<li>Summary: <p>The positive therapeutic effect of viewing pet images online has been
+well-studied. However, it is difficult to obtain large-scale production of such
+content since it relies on pet owners to capture photographs and upload them. I
+use a Generative Adversarial Network-based framework for the creation of fake
+pet images at scale. These images are uploaded on an Instagram account where
+they drive user engagement at levels comparable to those seen with images from
+accounts with traditional pet photographs, underlining the applicability of the
+framework to be used for pet-therapy social media content.
+</p></li>
+</ul>
+<h3>Title: TTIDA: Controllable Generative Data Augmentation via Text-to-Text and Text-to-Image Models. (arXiv:2304.08821v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08821">http://arxiv.org/abs/2304.08821</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08821] TTIDA: Controllable Generative Data Augmentation via Text-to-Text and Text-to-Image Models](http://arxiv.org/abs/2304.08821) #generative</code></li>
+<li>Summary: <p>Data augmentation has been established as an efficacious approach to
+supplement useful information for low-resource datasets. Traditional
+augmentation techniques such as noise injection and image transformations have
+been widely used. In addition, generative data augmentation (GDA) has been
+shown to produce more diverse and flexible data. While generative adversarial
+networks (GANs) have been frequently used for GDA, they lack diversity and
+controllability compared to text-to-image diffusion models. In this paper, we
+propose TTIDA (Text-to-Text-to-Image Data Augmentation) to leverage the
+capabilities of large-scale pre-trained Text-to-Text (T2T) and Text-to-Image
+(T2I) generative models for data augmentation. By conditioning the T2I model on
+detailed descriptions produced by T2T models, we are able to generate
+photo-realistic labeled images in a flexible and controllable manner.
+Experiments on in-domain classification, cross-domain classification, and image
+captioning tasks show consistent improvements over other data augmentation
+baselines. Analytical studies in varied settings, including few-shot,
+long-tail, and adversarial, further reinforce the effectiveness of TTIDA in
+enhancing performance and increasing robustness.
+</p></li>
+</ul>
+<h3>Title: Generative modeling of living cells with SO(3)-equivariant implicit neural representations. (arXiv:2304.08960v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08960">http://arxiv.org/abs/2304.08960</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08960] Generative modeling of living cells with SO(3)-equivariant implicit neural representations](http://arxiv.org/abs/2304.08960) #generative</code></li>
+<li>Summary: <p>Data-driven cell tracking and segmentation methods in biomedical imaging
+require diverse and information-rich training data. In cases where the number
+of training samples is limited, synthetic computer-generated data sets can be
+used to improve these methods. This requires the synthesis of cell shapes as
+well as corresponding microscopy images using generative models. To synthesize
+realistic living cell shapes, the shape representation used by the generative
+model should be able to accurately represent fine details and changes in
+topology, which are common in cells. These requirements are not met by 3D voxel
+masks, which are restricted in resolution, and polygon meshes, which do not
+easily model processes like cell growth and mitosis. In this work, we propose
+to represent living cell shapes as level sets of signed distance functions
+(SDFs) which are estimated by neural networks. We optimize a fully-connected
+neural network to provide an implicit representation of the SDF value at any
+point in a 3D+time domain, conditioned on a learned latent code that is
+disentangled from the rotation of the cell shape. We demonstrate the
+effectiveness of this approach on cells that exhibit rapid deformations
+(Platynereis dumerilii), cells that grow and divide (C. elegans), and cells
+that have growing and branching filopodial protrusions (A549 human lung
+carcinoma cells). A quantitative evaluation using shape features, Hausdorff
+distance, and Dice similarity coefficients of real and synthetic cell shapes
+shows that our model can generate topologically plausible complex cell shapes
+in 3D+time with high similarity to real living cell shapes. Finally, we show
+how microscopy images of living cells that correspond to our generated cell
+shapes can be synthesized using an image-to-image model.
+</p></li>
+</ul>
+<h3>Title: Look ATME: The Discriminator Mean Entropy Needs Attention. (arXiv:2304.09024v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.09024">http://arxiv.org/abs/2304.09024</a></li>
+<li>Code URL: <a href="https://github.com/dlr-mi/atme">https://github.com/dlr-mi/atme</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.09024] Look ATME: The Discriminator Mean Entropy Needs Attention](http://arxiv.org/abs/2304.09024) #generative</code></li>
+<li>Summary: <p>Generative adversarial networks (GANs) are successfully used for image
+synthesis but are known to face instability during training. In contrast,
+probabilistic diffusion models (DMs) are stable and generate high-quality
+images, at the cost of an expensive sampling procedure. In this paper, we
+introduce a simple method to allow GANs to stably converge to their theoretical
+optimum, while bringing in the denoising machinery from DMs. These models are
+combined into a simpler model (ATME) that only requires a forward pass during
+inference, making predictions cheaper and more accurate than DMs and popular
+GANs. ATME breaks an information asymmetry existing in most GAN models in which
+the discriminator has spatial knowledge of where the generator is failing. To
+restore the information symmetry, the generator is endowed with knowledge of
+the entropic state of the discriminator, which is leveraged to allow the
+adversarial game to converge towards equilibrium. We demonstrate the power of
+our method in several image-to-image translation tasks, showing superior
+performance than state-of-the-art methods at a lesser cost. Code is available
+at https://github.com/DLR-MI/atme
+</p></li>
+</ul>
+<h3>Title: Stochastic Parrots Looking for Stochastic Parrots: LLMs are Easy to Fine-Tune and Hard to Detect with other LLMs. (arXiv:2304.08968v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08968">http://arxiv.org/abs/2304.08968</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08968] Stochastic Parrots Looking for Stochastic Parrots: LLMs are Easy to Fine-Tune and Hard to Detect with other LLMs](http://arxiv.org/abs/2304.08968) #generative</code></li>
+<li>Summary: <p>The self-attention revolution allowed generative language models to scale and
+achieve increasingly impressive abilities. Such models - commonly referred to
+as Large Language Models (LLMs) - have recently gained prominence with the
+general public, thanks to conversational fine-tuning, putting their behavior in
+line with public expectations regarding AI. This prominence amplified prior
+concerns regarding the misuse of LLMs and led to the emergence of numerous
+tools to detect LLMs in the wild.
+</p></li>
+</ul>
+<p>Unfortunately, most such tools are critically flawed. While major
+publications in the LLM detectability field suggested that LLMs were easy to
+detect with fine-tuned autoencoders, the limitations of their results are easy
+to overlook. Specifically, they assumed publicly available generative models
+without fine-tunes or non-trivial prompts. While the importance of these
+assumptions has been demonstrated, until now, it remained unclear how well such
+detection could be countered.
+</p>
+<p>Here, we show that an attacker with access to such detectors' reference human
+texts and output not only evades detection but can fully frustrate the detector
+training - with a reasonable budget and all its outputs labeled as such.
+Achieving it required combining common "reinforcement from critic" loss
+function modification and AdamW optimizer, which led to surprisingly good
+fine-tuning generalization. Finally, we warn against the temptation to
+transpose the conclusions obtained in RNN-driven text GANs to LLMs due to their
+better representative ability.
+</p>
+<p>These results have critical implications for the detection and prevention of
+malicious use of generative language models, and we hope they will aid the
+designers of generative models and detectors.
+</p>
+
+<h3>Title: CodeKGC: Code Language Model for Generative Knowledge Graph Construction. (arXiv:2304.09048v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.09048">http://arxiv.org/abs/2304.09048</a></li>
+<li>Code URL: <a href="https://github.com/zjunlp/DeepKE/tree/main/example/llm">https://github.com/zjunlp/DeepKE/tree/main/example/llm</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.09048] CodeKGC: Code Language Model for Generative Knowledge Graph Construction](http://arxiv.org/abs/2304.09048) #generative</code></li>
+<li>Summary: <p>Current generative knowledge graph construction approaches usually fail to
+capture structural knowledge by simply flattening natural language into
+serialized texts or a specification language. However, large generative
+language model trained on structured data such as code has demonstrated
+impressive capability in understanding natural language for structural
+prediction and reasoning tasks. Intuitively, we address the task of generative
+knowledge graph construction with code language model: given a code-format
+natural language input, the target is to generate triples which can be
+represented as code completion tasks. Specifically, we develop schema-aware
+prompts that effectively utilize the semantic structure within the knowledge
+graph. As code inherently possesses structure, such as class and function
+definitions, it serves as a useful model for prior semantic structural
+knowledge. Furthermore, we employ a rationale-enhanced generation method to
+boost the performance. Rationales provide intermediate steps, thereby improving
+knowledge extraction abilities. Experimental results indicate that the proposed
+approach can obtain better performance on benchmark datasets compared with
+baselines. Code and datasets are available in
+https://github.com/zjunlp/DeepKE/tree/main/example/llm.
+</p></li>
+</ul>
+<h3>Title: Semi-supervised Learning of Pushforwards For Domain Translation &amp; Adaptation. (arXiv:2304.08673v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08673">http://arxiv.org/abs/2304.08673</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08673] Semi-supervised Learning of Pushforwards For Domain Translation &amp; Adaptation](http://arxiv.org/abs/2304.08673) #generative</code></li>
+<li>Summary: <p>Given two probability densities on related data spaces, we seek a map pushing
+one density to the other while satisfying application-dependent constraints.
+For maps to have utility in a broad application space (including domain
+translation, domain adaptation, and generative modeling), the map must be
+available to apply on out-of-sample data points and should correspond to a
+probabilistic model over the two spaces. Unfortunately, existing approaches,
+which are primarily based on optimal transport, do not address these needs. In
+this paper, we introduce a novel pushforward map learning algorithm that
+utilizes normalizing flows to parameterize the map. We first re-formulate the
+classical optimal transport problem to be map-focused and propose a learning
+algorithm to select from all possible maps under the constraint that the map
+minimizes a probability distance and application-specific regularizers; thus,
+our method can be seen as solving a modified optimal transport problem. Once
+the map is learned, it can be used to map samples from a source domain to a
+target domain. In addition, because the map is parameterized as a composition
+of normalizing flows, it models the empirical distributions over the two data
+spaces and allows both sampling and likelihood evaluation for both data sets.
+We compare our method (parOT) to related optimal transport approaches in the
+context of domain adaptation and domain translation on benchmark data sets.
+Finally, to illustrate the impact of our work on applied problems, we apply
+parOT to a real scientific application: spectral calibration for
+high-dimensional measurements from two vastly different environments
+</p></li>
+</ul>
+<h3>Title: CF-VAE: Causal Disentangled Representation Learning with VAE and Causal Flows. (arXiv:2304.09010v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.09010">http://arxiv.org/abs/2304.09010</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.09010] CF-VAE: Causal Disentangled Representation Learning with VAE and Causal Flows](http://arxiv.org/abs/2304.09010) #generative</code></li>
+<li>Summary: <p>Learning disentangled representations is important in representation
+learning, aiming to learn a low dimensional representation of data where each
+dimension corresponds to one underlying generative factor. Due to the
+possibility of causal relationships between generative factors, causal
+disentangled representation learning has received widespread attention. In this
+paper, we first propose a new flows that can incorporate causal structure
+information into the model, called causal flows. Based on the variational
+autoencoders(VAE) commonly used in disentangled representation learning, we
+design a new model, CF-VAE, which enhances the disentanglement ability of the
+VAE encoder by utilizing the causal flows. By further introducing the
+supervision of ground-truth factors, we demonstrate the disentanglement
+identifiability of our model. Experimental results on both synthetic and real
+datasets show that CF-VAE can achieve causal disentanglement and perform
+intervention experiments. Moreover, CF-VAE exhibits outstanding performance on
+downstream tasks and has the potential to learn causal structure among factors.
+</p></li>
+</ul>
+<h2>label correction</h2>
+<h2>noise</h2>
+<h3>Title: SDFReg: Learning Signed Distance Functions for Point Cloud Registration. (arXiv:2304.08929v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08929">http://arxiv.org/abs/2304.08929</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08929] SDFReg: Learning Signed Distance Functions for Point Cloud Registration](http://arxiv.org/abs/2304.08929) #noise</code></li>
+<li>Summary: <p>Learning-based point cloud registration methods can handle clean point clouds
+well, while it is still challenging to generalize to noisy and partial point
+clouds. To this end, we propose a novel framework for noisy and partial point
+cloud registration. By introducing a neural implicit function representation,
+we replace the problem of rigid registration between point clouds with a
+registration problem between the point cloud and the neural implicit function.
+We then alternately optimize the implicit function representation and the
+registration between the implicit function and point cloud. In this way, point
+cloud registration can be performed in a coarse-to-fine manner. Since our
+method avoids computing point correspondences, it is robust to the noise and
+incompleteness of point clouds. Compared with the registration methods based on
+global features, our method can deal with surfaces with large density
+variations and achieve higher registration accuracy. Experimental results and
+comparisons demonstrate the effectiveness of the proposed framework.
+</p></li>
+</ul>
+<h3>Title: MER 2023: Multi-label Learning, Modality Robustness, and Semi-Supervised Learning. (arXiv:2304.08981v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08981">http://arxiv.org/abs/2304.08981</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08981] MER 2023: Multi-label Learning, Modality Robustness, and Semi-Supervised Learning](http://arxiv.org/abs/2304.08981) #noise</code></li>
+<li>Summary: <p>Over the past few decades, multimodal emotion recognition has made remarkable
+progress with the development of deep learning. However, existing technologies
+are difficult to meet the demand for practical applications. To improve the
+robustness, we launch a Multimodal Emotion Recognition Challenge (MER 2023) to
+motivate global researchers to build innovative technologies that can further
+accelerate and foster research. For this year's challenge, we present three
+distinct sub-challenges: (1) MER-MULTI, in which participants recognize both
+discrete and dimensional emotions; (2) MER-NOISE, in which noise is added to
+test videos for modality robustness evaluation; (3) MER-SEMI, which provides
+large amounts of unlabeled samples for semi-supervised learning. In this paper,
+we test a variety of multimodal features and provide a competitive baseline for
+each sub-challenge. Our system achieves 77.57% on the F1 score and 0.82 on the
+mean squared error (MSE) for MER-MULTI, 69.82% on the F1 score and 1.12 on MSE
+for MER-NOISE, and 86.75% on the F1 score for MER-SEMI, respectively. Baseline
+code is available at https://github.com/zeroQiaoba/MER2023-Baseline.
+</p></li>
+</ul>
+<h3>Title: Variational Relational Point Completion Network for Robust 3D Classification. (arXiv:2304.09131v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.09131">http://arxiv.org/abs/2304.09131</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.09131] Variational Relational Point Completion Network for Robust 3D Classification](http://arxiv.org/abs/2304.09131) #noise</code></li>
+<li>Summary: <p>Real-scanned point clouds are often incomplete due to viewpoint, occlusion,
+and noise, which hampers 3D geometric modeling and perception. Existing point
+cloud completion methods tend to generate global shape skeletons and hence lack
+fine local details. Furthermore, they mostly learn a deterministic
+partial-to-complete mapping, but overlook structural relations in man-made
+objects. To tackle these challenges, this paper proposes a variational
+framework, Variational Relational point Completion Network (VRCNet) with two
+appealing properties: 1) Probabilistic Modeling. In particular, we propose a
+dual-path architecture to enable principled probabilistic modeling across
+partial and complete clouds. One path consumes complete point clouds for
+reconstruction by learning a point VAE. The other path generates complete
+shapes for partial point clouds, whose embedded distribution is guided by
+distribution obtained from the reconstruction path during training. 2)
+Relational Enhancement. Specifically, we carefully design point self-attention
+kernel and point selective kernel module to exploit relational point features,
+which refines local shape details conditioned on the coarse completion. In
+addition, we contribute multi-view partial point cloud datasets (MVP and MVP-40
+dataset) containing over 200,000 high-quality scans, which render partial 3D
+shapes from 26 uniformly distributed camera poses for each 3D CAD model.
+Extensive experiments demonstrate that VRCNet outperforms state-of-the-art
+methods on all standard point cloud completion benchmarks. Notably, VRCNet
+shows great generalizability and robustness on real-world point cloud scans.
+Moreover, we can achieve robust 3D classification for partial point clouds with
+the help of VRCNet, which can highly increase classification accuracy.
+</p></li>
+</ul>
+<h3>Title: Revisiting k-NN for Pre-trained Language Models. (arXiv:2304.09058v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.09058">http://arxiv.org/abs/2304.09058</a></li>
+<li>Code URL: <a href="https://github.com/zjunlp/Revisit-KNN">https://github.com/zjunlp/Revisit-KNN</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.09058] Revisiting k-NN for Pre-trained Language Models](http://arxiv.org/abs/2304.09058) #noise</code></li>
+<li>Summary: <p>Pre-trained Language Models (PLMs), as parametric-based eager learners, have
+become the de-facto choice for current paradigms of Natural Language Processing
+(NLP). In contrast, k-Nearest-Neighbor (k-NN) classifiers, as the lazy learning
+paradigm, tend to mitigate over-fitting and isolated noise. In this paper, we
+revisit k-NN classifiers for augmenting the PLMs-based classifiers. From the
+methodological level, we propose to adopt k-NN with textual representations of
+PLMs in two steps: (1) Utilize k-NN as prior knowledge to calibrate the
+training process. (2) Linearly interpolate the probability distribution
+predicted by k-NN with that of the PLMs' classifier. At the heart of our
+approach is the implementation of k-NN-calibrated training, which treats
+predicted results as indicators for easy versus hard examples during the
+training process. From the perspective of the diversity of application
+scenarios, we conduct extensive experiments on fine-tuning, prompt-tuning
+paradigms and zero-shot, few-shot and fully-supervised settings, respectively,
+across eight diverse end-tasks. We hope our exploration will encourage the
+community to revisit the power of classical methods for efficient
+NLP\footnote{Code and datasets are available in
+https://github.com/zjunlp/Revisit-KNN.
+</p></li>
+</ul>
+<h3>Title: Forecasting with Sparse but Informative Variables: A Case Study in Predicting Blood Glucose. (arXiv:2304.08593v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08593">http://arxiv.org/abs/2304.08593</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08593] Forecasting with Sparse but Informative Variables: A Case Study in Predicting Blood Glucose](http://arxiv.org/abs/2304.08593) #noise</code></li>
+<li>Summary: <p>In time-series forecasting, future target values may be affected by both
+intrinsic and extrinsic effects. When forecasting blood glucose, for example,
+intrinsic effects can be inferred from the history of the target signal alone
+(\textit{i.e.} blood glucose), but accurately modeling the impact of extrinsic
+effects requires auxiliary signals, like the amount of carbohydrates ingested.
+Standard forecasting techniques often assume that extrinsic and intrinsic
+effects vary at similar rates. However, when auxiliary signals are generated at
+a much lower frequency than the target variable (e.g., blood glucose
+measurements are made every 5 minutes, while meals occur once every few hours),
+even well-known extrinsic effects (e.g., carbohydrates increase blood glucose)
+may prove difficult to learn. To better utilize these \textit{sparse but
+informative variables} (SIVs), we introduce a novel encoder/decoder forecasting
+approach that accurately learns the per-timepoint effect of the SIV, by (i)
+isolating it from intrinsic effects and (ii) restricting its learned effect
+based on domain knowledge. On a simulated dataset pertaining to the task of
+blood glucose forecasting, when the SIV is accurately recorded our approach
+outperforms baseline approaches in terms of rMSE (13.07 [95% CI: 11.77,14.16]
+vs. 14.14 [12.69,15.27]). In the presence of a corrupted SIV, the proposed
+approach can still result in lower error compared to the baseline but the
+advantage is reduced as noise increases. By isolating their effects and
+incorporating domain knowledge, our approach makes it possible to better
+utilize SIVs in forecasting.
+</p></li>
+</ul>
+<h3>Title: Provably Feedback-Efficient Reinforcement Learning via Active Reward Learning. (arXiv:2304.08944v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08944">http://arxiv.org/abs/2304.08944</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08944] Provably Feedback-Efficient Reinforcement Learning via Active Reward Learning](http://arxiv.org/abs/2304.08944) #noise</code></li>
+<li>Summary: <p>An appropriate reward function is of paramount importance in specifying a
+task in reinforcement learning (RL). Yet, it is known to be extremely
+challenging in practice to design a correct reward function for even simple
+tasks. Human-in-the-loop (HiL) RL allows humans to communicate complex goals to
+the RL agent by providing various types of feedback. However, despite achieving
+great empirical successes, HiL RL usually requires too much feedback from a
+human teacher and also suffers from insufficient theoretical understanding. In
+this paper, we focus on addressing this issue from a theoretical perspective,
+aiming to provide provably feedback-efficient algorithmic frameworks that take
+human-in-the-loop to specify rewards of given tasks. We provide an
+active-learning-based RL algorithm that first explores the environment without
+specifying a reward function and then asks a human teacher for only a few
+queries about the rewards of a task at some state-action pairs. After that, the
+algorithm guarantees to provide a nearly optimal policy for the task with high
+probability. We show that, even with the presence of random noise in the
+feedback, the algorithm only takes $\widetilde{O}(H{{\dim_{R}^2}})$ queries on
+the reward function to provide an $\epsilon$-optimal policy for any $\epsilon >
+0$. Here $H$ is the horizon of the RL environment, and $\dim_{R}$ specifies the
+complexity of the function class representing the reward function. In contrast,
+standard RL algorithms require to query the reward function for at least
+$\Omega(\operatorname{poly}(d, 1/\epsilon))$ state-action pairs where $d$
+depends on the complexity of the environmental transition.
+</p></li>
+</ul>
+<h2>diffusion</h2>
+<h3>Title: Avatars Grow Legs: Generating Smooth Human Motion from Sparse Tracking Inputs with Diffusion Model. (arXiv:2304.08577v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08577">http://arxiv.org/abs/2304.08577</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08577] Avatars Grow Legs: Generating Smooth Human Motion from Sparse Tracking Inputs with Diffusion Model](http://arxiv.org/abs/2304.08577) #diffusion</code></li>
+<li>Summary: <p>With the recent surge in popularity of AR/VR applications, realistic and
+accurate control of 3D full-body avatars has become a highly demanded feature.
+A particular challenge is that only a sparse tracking signal is available from
+standalone HMDs (Head Mounted Devices), often limited to tracking the user's
+head and wrists. While this signal is resourceful for reconstructing the upper
+body motion, the lower body is not tracked and must be synthesized from the
+limited information provided by the upper body joints. In this paper, we
+present AGRoL, a novel conditional diffusion model specifically designed to
+track full bodies given sparse upper-body tracking signals. Our model is based
+on a simple multi-layer perceptron (MLP) architecture and a novel conditioning
+scheme for motion data. It can predict accurate and smooth full-body motion,
+particularly the challenging lower body movement. Unlike common diffusion
+architectures, our compact architecture can run in real-time, making it
+suitable for online body-tracking applications. We train and evaluate our model
+on AMASS motion capture dataset, and demonstrate that our approach outperforms
+state-of-the-art methods in generated motion accuracy and smoothness. We
+further justify our design choices through extensive experiments and ablation
+studies.
+</p></li>
+</ul>
+<h3>Title: Align your Latents: High-Resolution Video Synthesis with Latent Diffusion Models. (arXiv:2304.08818v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08818">http://arxiv.org/abs/2304.08818</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08818] Align your Latents: High-Resolution Video Synthesis with Latent Diffusion Models](http://arxiv.org/abs/2304.08818) #diffusion</code></li>
+<li>Summary: <p>Latent Diffusion Models (LDMs) enable high-quality image synthesis while
+avoiding excessive compute demands by training a diffusion model in a
+compressed lower-dimensional latent space. Here, we apply the LDM paradigm to
+high-resolution video generation, a particularly resource-intensive task. We
+first pre-train an LDM on images only; then, we turn the image generator into a
+video generator by introducing a temporal dimension to the latent space
+diffusion model and fine-tuning on encoded image sequences, i.e., videos.
+Similarly, we temporally align diffusion model upsamplers, turning them into
+temporally consistent video super resolution models. We focus on two relevant
+real-world applications: Simulation of in-the-wild driving data and creative
+content creation with text-to-video modeling. In particular, we validate our
+Video LDM on real driving videos of resolution 512 x 1024, achieving
+state-of-the-art performance. Furthermore, our approach can easily leverage
+off-the-shelf pre-trained image LDMs, as we only need to train a temporal
+alignment model in that case. Doing so, we turn the publicly available,
+state-of-the-art text-to-image LDM Stable Diffusion into an efficient and
+expressive text-to-video model with resolution up to 1280 x 2048. We show that
+the temporal layers trained in this way generalize to different fine-tuned
+text-to-image LDMs. Utilizing this property, we show the first results for
+personalized text-to-video generation, opening exciting directions for future
+content creation. Project page:
+https://research.nvidia.com/labs/toronto-ai/VideoLDM/
+</p></li>
+</ul>
+<h3>Title: UPGPT: Universal Diffusion Model for Person Image Generation, Editing and Pose Transfer. (arXiv:2304.08870v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08870">http://arxiv.org/abs/2304.08870</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08870] UPGPT: Universal Diffusion Model for Person Image Generation, Editing and Pose Transfer](http://arxiv.org/abs/2304.08870) #diffusion</code></li>
+<li>Summary: <p>Existing person image generative models can do either image generation or
+pose transfer but not both. We propose a unified diffusion model, UPGPT to
+provide a universal solution to perform all the person image tasks -
+generative, pose transfer, and editing. With fine-grained multimodality and
+disentanglement capabilities, our approach offers fine-grained control over the
+generation and the editing process of images using a combination of pose, text,
+and image, all without needing a semantic segmentation mask which can be
+challenging to obtain or edit. We also pioneer the parameterized body SMPL
+model in pose-guided person image generation to demonstrate new capability -
+simultaneous pose and camera view interpolation while maintaining a person's
+appearance. Results on the benchmark DeepFashion dataset show that UPGPT is the
+new state-of-the-art while simultaneously pioneering new capabilities of edit
+and pose transfer in human image generation.
+</p></li>
+</ul>
+<h3>Title: Two-stage Denoising Diffusion Model for Source Localization in Graph Inverse Problems. (arXiv:2304.08841v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08841">http://arxiv.org/abs/2304.08841</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08841] Two-stage Denoising Diffusion Model for Source Localization in Graph Inverse Problems](http://arxiv.org/abs/2304.08841) #diffusion</code></li>
+<li>Summary: <p>Source localization is the inverse problem of graph information dissemination
+and has broad practical applications.
+</p></li>
+</ul>
+<p>However, the inherent intricacy and uncertainty in information dissemination
+pose significant challenges, and the ill-posed nature of the source
+localization problem further exacerbates these challenges. Recently, deep
+generative models, particularly diffusion models inspired by classical
+non-equilibrium thermodynamics, have made significant progress. While diffusion
+models have proven to be powerful in solving inverse problems and producing
+high-quality reconstructions, applying them directly to the source localization
+is infeasible for two reasons. Firstly, it is impossible to calculate the
+posterior disseminated results on a large-scale network for iterative denoising
+sampling, which would incur enormous computational costs. Secondly, in the
+existing methods for this field, the training data itself are ill-posed
+(many-to-one); thus simply transferring the diffusion model would only lead to
+local optima.
+</p>
+<p>To address these challenges, we propose a two-stage optimization framework,
+the source localization denoising diffusion model (SL-Diff). In the coarse
+stage, we devise the source proximity degrees as the supervised signals to
+generate coarse-grained source predictions. This aims to efficiently initialize
+the next stage, significantly reducing its convergence time and calibrating the
+convergence process. Furthermore, the introduction of cascade temporal
+information in this training method transforms the many-to-one mapping
+relationship into a one-to-one relationship, perfectly addressing the ill-posed
+problem. In the fine stage, we design a diffusion model for the graph inverse
+problem that can quantify the uncertainty in the dissemination. The proposed
+SL-Diff yields excellent prediction results within a reasonable sampling time
+at extensive experiments.
+</p>
+
+<h2>LLM</h2>
+<h2>segmentation</h2>
+<h3>Title: ProPanDL: A Modular Architecture for Uncertainty-Aware Panoptic Segmentation. (arXiv:2304.08645v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08645">http://arxiv.org/abs/2304.08645</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08645] ProPanDL: A Modular Architecture for Uncertainty-Aware Panoptic Segmentation](http://arxiv.org/abs/2304.08645) #segmentation</code></li>
+<li>Summary: <p>We introduce ProPanDL, a family of networks capable of uncertainty-aware
+panoptic segmentation. Unlike existing segmentation methods, ProPanDL is
+capable of estimating full probability distributions for both the semantic and
+spatial aspects of panoptic segmentation. We implement and evaluate ProPanDL
+variants capable of estimating both parametric (Variance Network) and
+parameter-free (SampleNet) distributions quantifying pixel-wise spatial
+uncertainty. We couple these approaches with two methods (Temperature Scaling
+and Evidential Deep Learning) for semantic uncertainty estimation. To evaluate
+the uncertainty-aware panoptic segmentation task, we address limitations with
+existing approaches by proposing new metrics that enable separate evaluation of
+spatial and semantic uncertainty. We additionally propose the use of the energy
+score, a proper scoring rule, for more robust evaluation of spatial output
+distributions. Using these metrics, we conduct an extensive evaluation of
+ProPanDL variants. Our results demonstrate that ProPanDL is capable of
+estimating well-calibrated and meaningful output distributions while still
+retaining strong performance on the base panoptic segmentation task.
+</p></li>
+</ul>
+<h3>Title: An end-to-end, interactive Deep Learning based Annotation system for cursive and print English handwritten text. (arXiv:2304.08670v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08670">http://arxiv.org/abs/2304.08670</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08670] An end-to-end, interactive Deep Learning based Annotation system for cursive and print English handwritten text](http://arxiv.org/abs/2304.08670) #segmentation</code></li>
+<li>Summary: <p>With the surging inclination towards carrying out tasks on computational
+devices and digital mediums, any method that converts a task that was
+previously carried out manually, to a digitized version, is always welcome.
+Irrespective of the various documentation tasks that can be done online today,
+there are still many applications and domains where handwritten text is
+inevitable, which makes the digitization of handwritten documents a very
+essential task. Over the past decades, there has been extensive research on
+offline handwritten text recognition. In the recent past, most of these
+attempts have shifted to Machine learning and Deep learning based approaches.
+In order to design more complex and deeper networks, and ensure stellar
+performances, it is essential to have larger quantities of annotated data. Most
+of the databases present for offline handwritten text recognition today, have
+either been manually annotated or semi automatically annotated with a lot of
+manual involvement. These processes are very time consuming and prone to human
+errors. To tackle this problem, we present an innovative, complete end-to-end
+pipeline, that annotates offline handwritten manuscripts written in both print
+and cursive English, using Deep Learning and User Interaction techniques. This
+novel method, which involves an architectural combination of a detection system
+built upon a state-of-the-art text detection model, and a custom made Deep
+Learning model for the recognition system, is combined with an easy-to-use
+interactive interface, aiming to improve the accuracy of the detection,
+segmentation, serialization and recognition phases, in order to ensure high
+quality annotated data with minimal human interaction.
+</p></li>
+</ul>
+<h3>Title: GlobalMind: Global Multi-head Interactive Self-attention Network for Hyperspectral Change Detection. (arXiv:2304.08687v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08687">http://arxiv.org/abs/2304.08687</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08687] GlobalMind: Global Multi-head Interactive Self-attention Network for Hyperspectral Change Detection](http://arxiv.org/abs/2304.08687) #segmentation</code></li>
+<li>Summary: <p>High spectral resolution imagery of the Earth's surface enables users to
+monitor changes over time in fine-grained scale, playing an increasingly
+important role in agriculture, defense, and emergency response. However, most
+current algorithms are still confined to describing local features and fail to
+incorporate a global perspective, which limits their ability to capture
+interactions between global features, thus usually resulting in incomplete
+change regions. In this paper, we propose a Global Multi-head INteractive
+self-attention change Detection network (GlobalMind) to explore the implicit
+correlation between different surface objects and variant land cover
+transformations, acquiring a comprehensive understanding of the data and
+accurate change detection result. Firstly, a simple but effective Global Axial
+Segmentation (GAS) strategy is designed to expand the self-attention
+computation along the row space or column space of hyperspectral images,
+allowing the global connection with high efficiency. Secondly, with GAS, the
+global spatial multi-head interactive self-attention (Global-M) module is
+crafted to mine the abundant spatial-spectral feature involving potential
+correlations between the ground objects from the entire rich and complex
+hyperspectral space. Moreover, to acquire the accurate and complete
+cross-temporal changes, we devise a global temporal interactive multi-head
+self-attention (GlobalD) module which incorporates the relevance and variation
+of bi-temporal spatial-spectral features, deriving the integrate potential same
+kind of changes in the local and global range with the combination of GAS. We
+perform extensive experiments on five mostly used hyperspectral datasets, and
+our method outperforms the state-of-the-art algorithms with high accuracy and
+efficiency.
+</p></li>
+</ul>
+<h3>Title: Motion-state Alignment for Video Semantic Segmentation. (arXiv:2304.08820v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08820">http://arxiv.org/abs/2304.08820</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08820] Motion-state Alignment for Video Semantic Segmentation](http://arxiv.org/abs/2304.08820) #segmentation</code></li>
+<li>Summary: <p>In recent years, video semantic segmentation has made great progress with
+advanced deep neural networks. However, there still exist two main challenges
+\ie, information inconsistency and computation cost. To deal with the two
+difficulties, we propose a novel motion-state alignment framework for video
+semantic segmentation to keep both motion and state consistency. In the
+framework, we first construct a motion alignment branch armed with an efficient
+decoupled transformer to capture dynamic semantics, guaranteeing region-level
+temporal consistency. Then, a state alignment branch composed of a stage
+transformer is designed to enrich feature spaces for the current frame to
+extract static semantics and achieve pixel-level state consistency. Next, by a
+semantic assignment mechanism, the region descriptor of each semantic category
+is gained from dynamic semantics and linked with pixel descriptors from static
+semantics. Benefiting from the alignment of these two kinds of effective
+information, the proposed method picks up dynamic and static semantics in a
+targeted way, so that video semantic regions are consistently segmented to
+obtain precise locations with low computational complexity. Extensive
+experiments on Cityscapes and CamVid datasets show that the proposed approach
+outperforms state-of-the-art methods and validates the effectiveness of the
+motion-state alignment framework.
+</p></li>
+</ul>
+<h3>Title: Perceive, Excavate and Purify: A Novel Object Mining Framework for Instance Segmentation. (arXiv:2304.08826v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08826">http://arxiv.org/abs/2304.08826</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08826] Perceive, Excavate and Purify: A Novel Object Mining Framework for Instance Segmentation](http://arxiv.org/abs/2304.08826) #segmentation</code></li>
+<li>Summary: <p>Recently, instance segmentation has made great progress with the rapid
+development of deep neural networks. However, there still exist two main
+challenges including discovering indistinguishable objects and modeling the
+relationship between instances. To deal with these difficulties, we propose a
+novel object mining framework for instance segmentation. In this framework, we
+first introduce the semantics perceiving subnetwork to capture pixels that may
+belong to an obvious instance from the bottom up. Then, we propose an object
+excavating mechanism to discover indistinguishable objects. In the mechanism,
+preliminary perceived semantics are regarded as original instances with
+classifications and locations, and then indistinguishable objects around these
+original instances are mined, which ensures that hard objects are fully
+excavated. Next, an instance purifying strategy is put forward to model the
+relationship between instances, which pulls the similar instances close and
+pushes away different instances to keep intra-instance similarity and
+inter-instance discrimination. In this manner, the same objects are combined as
+the one instance and different objects are distinguished as independent
+instances. Extensive experiments on the COCO dataset show that the proposed
+approach outperforms state-of-the-art methods, which validates the
+effectiveness of the proposed object mining framework.
+</p></li>
+</ul>
+<h3>Title: UDTIRI: An Open-Source Road Pothole Detection Benchmark Suite. (arXiv:2304.08842v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08842">http://arxiv.org/abs/2304.08842</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08842] UDTIRI: An Open-Source Road Pothole Detection Benchmark Suite](http://arxiv.org/abs/2304.08842) #segmentation</code></li>
+<li>Summary: <p>It is seen that there is enormous potential to leverage powerful deep
+learning methods in the emerging field of urban digital twins. It is
+particularly in the area of intelligent road inspection where there is
+currently limited research and data available. To facilitate progress in this
+field, we have developed a well-labeled road pothole dataset named Urban
+Digital Twins Intelligent Road Inspection (UDTIRI) dataset. We hope this
+dataset will enable the use of powerful deep learning methods in urban road
+inspection, providing algorithms with a more comprehensive understanding of the
+scene and maximizing their potential. Our dataset comprises 1000 images of
+potholes, captured in various scenarios with different lighting and humidity
+conditions. Our intention is to employ this dataset for object detection,
+semantic segmentation, and instance segmentation tasks. Our team has devoted
+significant effort to conducting a detailed statistical analysis, and
+benchmarking a selection of representative algorithms from recent years. We
+also provide a multi-task platform for researchers to fully exploit the
+performance of various algorithms with the support of UDTIRI dataset.
+</p></li>
+</ul>
+<h3>Title: Unsupervised Semantic Segmentation of 3D Point Clouds via Cross-modal Distillation and Super-Voxel Clustering. (arXiv:2304.08965v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08965">http://arxiv.org/abs/2304.08965</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08965] Unsupervised Semantic Segmentation of 3D Point Clouds via Cross-modal Distillation and Super-Voxel Clustering](http://arxiv.org/abs/2304.08965) #segmentation</code></li>
+<li>Summary: <p>Semantic segmentation of point clouds usually requires exhausting efforts of
+human annotations, hence it attracts wide attention to the challenging topic of
+learning from unlabeled or weaker forms of annotations. In this paper, we take
+the first attempt for fully unsupervised semantic segmentation of point clouds,
+which aims to delineate semantically meaningful objects without any form of
+annotations. Previous works of unsupervised pipeline on 2D images fails in this
+task of point clouds, due to: 1) Clustering Ambiguity caused by limited
+magnitude of data and imbalanced class distribution; 2) Irregularity Ambiguity
+caused by the irregular sparsity of point cloud. Therefore, we propose a novel
+framework, PointDC, which is comprised of two steps that handle the
+aforementioned problems respectively: Cross-Modal Distillation (CMD) and
+Super-Voxel Clustering (SVC). In the first stage of CMD, multi-view visual
+features are back-projected to the 3D space and aggregated to a unified point
+feature to distill the training of the point representation. In the second
+stage of SVC, the point features are aggregated to super-voxels and then fed to
+the iterative clustering process for excavating semantic classes. PointDC
+yields a significant improvement over the prior state-of-the-art unsupervised
+methods, on both the ScanNet-v2 (+18.4 mIoU) and S3DIS (+11.5 mIoU) semantic
+segmentation benchmarks.
+</p></li>
+</ul>
+<h3>Title: Neural Architecture Search for Visual Anomaly Segmentation. (arXiv:2304.08975v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08975">http://arxiv.org/abs/2304.08975</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08975] Neural Architecture Search for Visual Anomaly Segmentation](http://arxiv.org/abs/2304.08975) #segmentation</code></li>
+<li>Summary: <p>This paper presents AutoPatch, the first application of neural architecture
+search to the complex task of segmenting visual anomalies. Measurement of
+anomaly segmentation quality is challenging due to imbalanced anomaly pixels,
+varying region areas, and various types of anomalies. First, the weighted
+average precision (wAP) metric is proposed as an alternative to AUROC and
+AUPRO, which does not need to be limited to a specific maximum FPR. Second, a
+novel neural architecture search method is proposed, which enables efficient
+segmentation of visual anomalies without any training. By leveraging a
+pre-trained supernet, a black-box optimization algorithm can directly minimize
+FLOPS and maximize wAP on a small validation set of anomalous examples.
+Finally, compelling results on the widely studied MVTec [3] dataset are
+presented, demonstrating that AutoPatch outperforms the current
+state-of-the-art method PatchCore [12] with more than 18x fewer FLOPS, using
+only one example per anomaly type. These results highlight the potential of
+automated machine learning to optimize throughput in industrial quality
+control. The code for AutoPatch is available at:
+https://github.com/tommiekerssies/AutoPatch
+</p></li>
+</ul>
+<h3>Title: Coupling Global Context and Local Contents for Weakly-Supervised Semantic Segmentation. (arXiv:2304.09059v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.09059">http://arxiv.org/abs/2304.09059</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.09059] Coupling Global Context and Local Contents for Weakly-Supervised Semantic Segmentation](http://arxiv.org/abs/2304.09059) #segmentation</code></li>
+<li>Summary: <p>Thanks to the advantages of the friendly annotations and the satisfactory
+performance, Weakly-Supervised Semantic Segmentation (WSSS) approaches have
+been extensively studied. Recently, the single-stage WSSS was awakened to
+alleviate problems of the expensive computational costs and the complicated
+training procedures in multi-stage WSSS. However, results of such an immature
+model suffer from problems of \emph{background incompleteness} and \emph{object
+incompleteness}. We empirically find that they are caused by the insufficiency
+of the global object context and the lack of the local regional contents,
+respectively. Under these observations, we propose a single-stage WSSS model
+with only the image-level class label supervisions, termed as
+\textbf{W}eakly-\textbf{S}upervised \textbf{F}eature \textbf{C}oupling
+\textbf{N}etwork (\textbf{WS-FCN}), which can capture the multi-scale context
+formed from the adjacent feature grids, and encode the fine-grained spatial
+information from the low-level features into the high-level ones. Specifically,
+a flexible context aggregation module is proposed to capture the global object
+context in different granular spaces. Besides, a semantically consistent
+feature fusion module is proposed in a bottom-up parameter-learnable fashion to
+aggregate the fine-grained local contents. Based on these two modules,
+\textbf{WS-FCN} lies in a self-supervised end-to-end training fashion.
+Extensive experimental results on the challenging PASCAL VOC 2012 and MS COCO
+2014 demonstrate the effectiveness and efficiency of \textbf{WS-FCN}, which can
+achieve state-of-the-art results by $65.02\%$ and $64.22\%$ mIoU on PASCAL VOC
+2012 \emph{val} set and \emph{test} set, $34.12\%$ mIoU on MS COCO 2014
+\emph{val} set, respectively. The code and weight have been released
+at:~\href{https://github.com/ChunyanWang1/ws-fcn}{WS-FCN}.
+</p></li>
+</ul>
+<h3>Title: SAM Fails to Segment Anything? -- SAM-Adapter: Adapting SAM in Underperformed Scenes: Camouflage, Shadow, and More. (arXiv:2304.09148v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.09148">http://arxiv.org/abs/2304.09148</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.09148] SAM Fails to Segment Anything? -- SAM-Adapter: Adapting SAM in Underperformed Scenes: Camouflage, Shadow, and More](http://arxiv.org/abs/2304.09148) #segmentation</code></li>
+<li>Summary: <p>The emergence of large models, also known as foundation models, has brought
+significant advancements to AI research. One such model is Segment Anything
+(SAM), which is designed for image segmentation tasks. However, as with other
+foundation models, our experimental findings suggest that SAM may fail or
+perform poorly in certain segmentation tasks, such as shadow detection and
+camouflaged object detection (concealed object detection). This study first
+paves the way for applying the large pre-trained image segmentation model SAM
+to these downstream tasks, even in situations where SAM performs poorly. Rather
+than fine-tuning the SAM network, we propose \textbf{SAM-Adapter}, which
+incorporates domain-specific information or visual prompts into the
+segmentation network by using simple yet effective adapters. Our extensive
+experiments show that SAM-Adapter can significantly elevate the performance of
+SAM in challenging tasks and we can even outperform task-specific network
+models and achieve state-of-the-art performance in the task we tested:
+camouflaged object detection and shadow detection. We believe our work opens up
+opportunities for utilizing SAM in downstream tasks, with potential
+applications in various fields, including medical image processing,
+agriculture, remote sensing, and more.
+</p></li>
+</ul>
+<h2>object detection</h2>
+<h3>Title: PALF: Pre-Annotation and Camera-LiDAR Late Fusion for the Easy Annotation of Point Clouds. (arXiv:2304.08591v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08591">http://arxiv.org/abs/2304.08591</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08591] PALF: Pre-Annotation and Camera-LiDAR Late Fusion for the Easy Annotation of Point Clouds](http://arxiv.org/abs/2304.08591) #object detection</code></li>
+<li>Summary: <p>3D object detection has become indispensable in the field of autonomous
+driving. To date, gratifying breakthroughs have been recorded in 3D object
+detection research, attributed to deep learning. However, deep learning
+algorithms are data-driven and require large amounts of annotated point cloud
+data for training and evaluation. Unlike 2D image labels, annotating point
+cloud data is difficult due to the limitations of sparsity, irregularity, and
+low resolution, which requires more manual work, and the annotation efficiency
+is much lower than 2D image.Therefore, we propose an annotation algorithm for
+point cloud data, which is pre-annotation and camera-LiDAR late fusion
+algorithm to easily and accurately annotate. The contributions of this study
+are as follows. We propose (1) a pre-annotation algorithm that employs 3D
+object detection and auto fitting for the easy annotation of point clouds, (2)
+a camera-LiDAR late fusion algorithm using 2D and 3D results for easily error
+checking, which helps annotators easily identify missing objects, and (3) a
+point cloud annotation evaluation pipeline to evaluate our experiments. The
+experimental results show that the proposed algorithm improves the annotating
+speed by 6.5 times and the annotation quality in terms of the 3D Intersection
+over Union and precision by 8.2 points and 5.6 points, respectively;
+additionally, the miss rate is reduced by 31.9 points.
+</p></li>
+</ul>
+<h3>Title: You Only Need Two Detectors to Achieve Multi-Modal 3D Multi-Object Tracking. (arXiv:2304.08709v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08709">http://arxiv.org/abs/2304.08709</a></li>
+<li>Code URL: <a href="https://github.com/wangxiyang2022/YONTD-MOT">https://github.com/wangxiyang2022/YONTD-MOT</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08709] You Only Need Two Detectors to Achieve Multi-Modal 3D Multi-Object Tracking](http://arxiv.org/abs/2304.08709) #object detection</code></li>
+<li>Summary: <p>Firstly, a new multi-object tracking framework is proposed in this paper
+based on multi-modal fusion. By integrating object detection and multi-object
+tracking into the same model, this framework avoids the complex data
+association process in the classical TBD paradigm, and requires no additional
+training. Secondly, confidence of historical trajectory regression is explored,
+possible states of a trajectory in the current frame (weak object or strong
+object) are analyzed and a confidence fusion module is designed to guide
+non-maximum suppression of trajectory and detection for ordered association.
+Finally, extensive experiments are conducted on the KITTI and Waymo datasets.
+The results show that the proposed method can achieve robust tracking by using
+only two modal detectors and it is more accurate than many of the latest TBD
+paradigm-based multi-modal tracking methods. The source codes of the proposed
+method are available at https://github.com/wangxiyang2022/YONTD-MOT
+</p></li>
+</ul>
+<h3>Title: Dynamic Coarse-to-Fine Learning for Oriented Tiny Object Detection. (arXiv:2304.08876v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2304.08876">http://arxiv.org/abs/2304.08876</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2304.08876] Dynamic Coarse-to-Fine Learning for Oriented Tiny Object Detection](http://arxiv.org/abs/2304.08876) #object detection</code></li>
+<li>Summary: <p>Detecting arbitrarily oriented tiny objects poses intense challenges to
+existing detectors, especially for label assignment. Despite the exploration of
+adaptive label assignment in recent oriented object detectors, the extreme
+geometry shape and limited feature of oriented tiny objects still induce severe
+mismatch and imbalance issues. Specifically, the position prior, positive
+sample feature, and instance are mismatched, and the learning of extreme-shaped
+objects is biased and unbalanced due to little proper feature supervision. To
+tackle these issues, we propose a dynamic prior along with the coarse-to-fine
+assigner, dubbed DCFL. For one thing, we model the prior, label assignment, and
+object representation all in a dynamic manner to alleviate the mismatch issue.
+For another, we leverage the coarse prior matching and finer posterior
+constraint to dynamically assign labels, providing appropriate and relatively
+balanced supervision for diverse instances. Extensive experiments on six
+datasets show substantial improvements to the baseline. Notably, we obtain the
+state-of-the-art performance for one-stage detectors on the DOTA-v1.5,
+DOTA-v2.0, and DIOR-R datasets under single-scale training and testing. Codes
+are available at https://github.com/Chasel-Tsui/mmrotate-dcfl.
+</p></li>
+</ul>
+<script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script>new ClipboardJS("#copy",{text:function(trigger){var res="[[2023-04-19]]\n\n";var input=document.querySelectorAll("input");for(var i=0;i<input.length;i++){if(input[i].type=="checkbox"&&input[i].checked){res+="- "+input[i].nextSibling.nodeValue+"\n"}}res+="\n";return res}}).on("success",function(e){e.clearSelection()});</script>
+<button id="copy">Copy All</button>
