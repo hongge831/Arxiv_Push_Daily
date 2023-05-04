@@ -1,0 +1,874 @@
+<h2>data-free</h2>
+<h2>transformer</h2>
+<h3>Title: High-Resolution Synthetic RGB-D Datasets for Monocular Depth Estimation. (arXiv:2305.01732v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01732">http://arxiv.org/abs/2305.01732</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01732] High-Resolution Synthetic RGB-D Datasets for Monocular Depth Estimation](http://arxiv.org/abs/2305.01732) #transformer</code></li>
+<li>Summary: <p>Accurate depth maps are essential in various applications, such as autonomous
+driving, scene reconstruction, point-cloud creation, etc. However,
+monocular-depth estimation (MDE) algorithms often fail to provide enough
+texture &amp; sharpness, and also are inconsistent for homogeneous scenes. These
+algorithms mostly use CNN or vision transformer-based architectures requiring
+large datasets for supervised training. But, MDE algorithms trained on
+available depth datasets do not generalize well and hence fail to perform
+accurately in diverse real-world scenes. Moreover, the ground-truth depth maps
+are either lower resolution or sparse leading to relatively inconsistent depth
+maps. In general, acquiring a high-resolution ground truth dataset with
+pixel-level precision for accurate depth prediction is an expensive, and
+time-consuming challenge.
+</p></li>
+</ul>
+<p>In this paper, we generate a high-resolution synthetic depth dataset (HRSD)
+of dimension 1920 X 1080 from Grand Theft Auto (GTA-V), which contains 100,000
+color images and corresponding dense ground truth depth maps. The generated
+datasets are diverse and have scenes from indoors to outdoors, from homogeneous
+surfaces to textures. For experiments and analysis, we train the DPT algorithm,
+a state-of-the-art transformer-based MDE algorithm on the proposed synthetic
+dataset, which significantly increases the accuracy of depth maps on different
+scenes by 9 %. Since the synthetic datasets are of higher resolution, we
+propose adding a feature extraction module in the transformer encoder and
+incorporating an attention-based loss, further improving the accuracy by 15 %.
+</p>
+
+<h3>Title: "Glitch in the Matrix!": A Large Scale Benchmark for Content Driven Audio-Visual Forgery Detection and Localization. (arXiv:2305.01979v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01979">http://arxiv.org/abs/2305.01979</a></li>
+<li>Code URL: <a href="https://github.com/ControlNet/LAV-DF">https://github.com/ControlNet/LAV-DF</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01979] "Glitch in the Matrix!": A Large Scale Benchmark for Content Driven Audio-Visual Forgery Detection and Localization](http://arxiv.org/abs/2305.01979) #transformer</code></li>
+<li>Summary: <p>Most deepfake detection methods focus on detecting spatial and/or
+spatio-temporal changes in facial attributes. This is because available
+benchmark datasets contain mostly visual-only modifications. However, a
+sophisticated deepfake may include small segments of audio or audio-visual
+manipulations that can completely change the meaning of the content. To
+addresses this gap, we propose and benchmark a new dataset, Localized Audio
+Visual DeepFake (LAV-DF), consisting of strategic content-driven audio, visual
+and audio-visual manipulations. The proposed baseline method, Boundary Aware
+Temporal Forgery Detection (BA-TFD), is a 3D Convolutional Neural Network-based
+architecture which efficiently captures multimodal manipulations. We further
+improve (i.e. BA-TFD+) the baseline method by replacing the backbone with a
+Multiscale Vision Transformer and guide the training process with contrastive,
+frame classification, boundary matching and multimodal boundary matching loss
+functions. The quantitative analysis demonstrates the superiority of BA- TFD+
+on temporal forgery localization and deepfake detection tasks using several
+benchmark datasets including our newly proposed dataset. The dataset, models
+and code are available at https://github.com/ControlNet/LAV-DF.
+</p></li>
+</ul>
+<h3>Title: Unsupervised Mutual Transformer Learning for Multi-Gigapixel Whole Slide Image Classification. (arXiv:2305.02032v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.02032">http://arxiv.org/abs/2305.02032</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.02032] Unsupervised Mutual Transformer Learning for Multi-Gigapixel Whole Slide Image Classification](http://arxiv.org/abs/2305.02032) #transformer</code></li>
+<li>Summary: <p>Classification of gigapixel Whole Slide Images (WSIs) is an important
+prediction task in the emerging area of computational pathology. There has been
+a surge of research in deep learning models for WSI classification with
+clinical applications such as cancer detection or prediction of molecular
+mutations from WSIs. Most methods require expensive and labor-intensive manual
+annotations by expert pathologists. Weakly supervised Multiple Instance
+Learning (MIL) methods have recently demonstrated excellent performance;
+however, they still require large slide-level labeled training datasets that
+need a careful inspection of each slide by an expert pathologist. In this work,
+we propose a fully unsupervised WSI classification algorithm based on mutual
+transformer learning. Instances from gigapixel WSI (i.e., image patches) are
+transformed into a latent space and then inverse-transformed to the original
+space. Using the transformation loss, pseudo-labels are generated and cleaned
+using a transformer label-cleaner. The proposed transformer-based pseudo-label
+generation and cleaning modules mutually train each other iteratively in an
+unsupervised manner. A discriminative learning mechanism is introduced to
+improve normal versus cancerous instance labeling. In addition to unsupervised
+classification, we demonstrate the effectiveness of the proposed framework for
+weak supervision for cancer subtype classification as downstream analysis.
+Extensive experiments on four publicly available datasets show excellent
+performance compared to the state-of-the-art methods. We intend to make the
+source code of our algorithm publicly available soon.
+</p></li>
+</ul>
+<h3>Title: A Vision Transformer Approach for Efficient Near-Field Irregular SAR Super-Resolution. (arXiv:2305.02074v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.02074">http://arxiv.org/abs/2305.02074</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.02074] A Vision Transformer Approach for Efficient Near-Field Irregular SAR Super-Resolution](http://arxiv.org/abs/2305.02074) #transformer</code></li>
+<li>Summary: <p>In this paper, we develop a novel super-resolution algorithm for near-field
+synthetic-aperture radar (SAR) under irregular scanning geometries. As
+fifth-generation (5G) millimeter-wave (mmWave) devices are becoming
+increasingly affordable and available, high-resolution SAR imaging is feasible
+for end-user applications and non-laboratory environments. Emerging
+applications such freehand imaging, wherein a handheld radar is scanned
+throughout space by a user, unmanned aerial vehicle (UAV) imaging, and
+automotive SAR face several unique challenges for high-resolution imaging.
+First, recovering a SAR image requires knowledge of the array positions
+throughout the scan. While recent work has introduced camera-based positioning
+systems capable of adequately estimating the position, recovering the algorithm
+efficiently is a requirement to enable edge and Internet of Things (IoT)
+technologies. Efficient algorithms for non-cooperative near-field SAR sampling
+have been explored in recent work, but suffer image defocusing under position
+estimation error and can only produce medium-fidelity images. In this paper, we
+introduce a mobile-friend vision transformer (ViT) architecture to address
+position estimation error and perform SAR image super-resolution (SR) under
+irregular sampling geometries. The proposed algorithm, Mobile-SRViT, is the
+first to employ a ViT approach for SAR image enhancement and is validated in
+simulation and via empirical studies.
+</p></li>
+</ul>
+<h3>Title: Rethinking the Encoding of Satellite Image Time Series. (arXiv:2305.02086v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.02086">http://arxiv.org/abs/2305.02086</a></li>
+<li>Code URL: <a href="https://github.com/TotalVariation/Exchanger4SITS">https://github.com/TotalVariation/Exchanger4SITS</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.02086] Rethinking the Encoding of Satellite Image Time Series](http://arxiv.org/abs/2305.02086) #transformer</code></li>
+<li>Summary: <p>Representation learning of Satellite Image Time Series (SITS) presents its
+unique challenges, such as prohibitive computation burden caused by high
+spatiotemporal resolutions, irregular acquisition times, and complex
+spatiotemporal interactions, leading to highly-specialized neural network
+architectures for SITS analysis. Despite the promising results achieved by some
+pioneering work, we argue that satisfactory representation learning paradigms
+have not yet been established for SITS analysis, causing an isolated island
+where transferring successful paradigms or the latest advances from Computer
+Vision (CV) to SITS is arduous. In this paper, we develop a unique perspective
+of SITS processing as a direct set prediction problem, inspired by the recent
+trend in adopting query-based transformer decoders to streamline the object
+detection or image segmentation pipeline, and further propose to decompose the
+representation learning process of SITS into three explicit steps:
+collect--update--distribute, which is computationally efficient and suits for
+irregularly-sampled and asynchronous temporal observations. Facilitated by the
+unique reformulation and effective feature extraction framework proposed, our
+models pre-trained on pixel-set format input and then fine-tuned on downstream
+dense prediction tasks by simply appending a commonly-used segmentation network
+have attained new state-of-the-art (SoTA) results on PASTIS dataset compared to
+bespoke neural architectures such as U-TAE. Furthermore, the clear separation,
+conceptually and practically, between temporal and spatial components in the
+panoptic segmentation pipeline of SITS allows us to leverage the recent
+advances in CV, such as Mask2Former, a universal segmentation architecture,
+resulting in a noticeable 8.8 points increase in PQ compared to the best score
+reported so far.
+</p></li>
+</ul>
+<h3>Title: Learngene: Inheriting Condensed Knowledge from the Ancestry Model to Descendant Models. (arXiv:2305.02279v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.02279">http://arxiv.org/abs/2305.02279</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.02279] Learngene: Inheriting Condensed Knowledge from the Ancestry Model to Descendant Models](http://arxiv.org/abs/2305.02279) #transformer</code></li>
+<li>Summary: <p>During the continuous evolution of one organism's ancestry, its genes
+accumulate extensive experiences and knowledge, enabling newborn descendants to
+rapidly adapt to their specific environments. Motivated by this observation, we
+propose a novel machine learning paradigm \textit{Learngene} to enable learning
+models to incorporate three key characteristics of genes. (i) Accumulating: the
+knowledge is accumulated during the continuous learning of an \textbf{ancestry
+model}. (ii) Condensing: the exhaustive accumulated knowledge is condensed into
+a much more compact information piece, \ie \textbf{learngene}. (iii):
+Inheriting: the condensed \textbf{learngene} is inherited to make it easier for
+\textbf{descendant models} to adapt to new environments. Since accumulating has
+been studied in some well-developed paradigms like large-scale pre-training and
+lifelong learning, we focus on condensing and inheriting, which induces three
+key issues and we provide the preliminary solutions to these issues in this
+paper: (i) \textit{Learngene} Form: the \textbf{learngene} is set to a few
+integral layers that can preserve the most commonality. (ii) \textit{Learngene}
+Condensing: we identify which layers among the ancestry model have the most
+similarity as one pseudo descendant model. (iii) \textit{Learngene} Inheriting:
+to construct distinct descendant models for specific downstream tasks, we stack
+some randomly initialized layers to the \textbf{learngene} layers. Extensive
+experiments of various settings, including using different network
+architectures like Vision Transformer (ViT) and Convolutional Neural Networks
+(CNNs) on different datasets, are carried out to confirm five advantages and
+two characteristics of \textit{Learngene}.
+</p></li>
+</ul>
+<h3>Title: DynamicStereo: Consistent Dynamic Depth from Stereo Videos. (arXiv:2305.02296v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.02296">http://arxiv.org/abs/2305.02296</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.02296] DynamicStereo: Consistent Dynamic Depth from Stereo Videos](http://arxiv.org/abs/2305.02296) #transformer</code></li>
+<li>Summary: <p>We consider the problem of reconstructing a dynamic scene observed from a
+stereo camera. Most existing methods for depth from stereo treat different
+stereo frames independently, leading to temporally inconsistent depth
+predictions. Temporal consistency is especially important for immersive AR or
+VR scenarios, where flickering greatly diminishes the user experience. We
+propose DynamicStereo, a novel transformer-based architecture to estimate
+disparity for stereo videos. The network learns to pool information from
+neighboring frames to improve the temporal consistency of its predictions. Our
+architecture is designed to process stereo videos efficiently through divided
+attention layers. We also introduce Dynamic Replica, a new benchmark dataset
+containing synthetic videos of people and animals in scanned environments,
+which provides complementary training and evaluation data for dynamic stereo
+closer to real applications than existing datasets. Training with this dataset
+further improves the quality of predictions of our proposed DynamicStereo as
+well as prior methods. Finally, it acts as a benchmark for consistent stereo
+methods.
+</p></li>
+</ul>
+<h3>Title: Real-Time Radiance Fields for Single-Image Portrait View Synthesis. (arXiv:2305.02310v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.02310">http://arxiv.org/abs/2305.02310</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.02310] Real-Time Radiance Fields for Single-Image Portrait View Synthesis](http://arxiv.org/abs/2305.02310) #transformer</code></li>
+<li>Summary: <p>We present a one-shot method to infer and render a photorealistic 3D
+representation from a single unposed image (e.g., face portrait) in real-time.
+Given a single RGB input, our image encoder directly predicts a canonical
+triplane representation of a neural radiance field for 3D-aware novel view
+synthesis via volume rendering. Our method is fast (24 fps) on consumer
+hardware, and produces higher quality results than strong GAN-inversion
+baselines that require test-time optimization. To train our triplane encoder
+pipeline, we use only synthetic data, showing how to distill the knowledge from
+a pretrained 3D GAN into a feedforward encoder. Technical contributions include
+a Vision Transformer-based triplane encoder, a camera data augmentation
+strategy, and a well-designed loss function for synthetic data training. We
+benchmark against the state-of-the-art methods, demonstrating significant
+improvements in robustness and image quality in challenging real-world
+settings. We showcase our results on portraits of faces (FFHQ) and cats (AFHQ),
+but our algorithm can also be applied in the future to other categories with a
+3D-aware image generator.
+</p></li>
+</ul>
+<h3>Title: SeqAug: Sequential Feature Resampling as a modality agnostic augmentation method. (arXiv:2305.01954v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01954">http://arxiv.org/abs/2305.01954</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01954] SeqAug: Sequential Feature Resampling as a modality agnostic augmentation method](http://arxiv.org/abs/2305.01954) #transformer</code></li>
+<li>Summary: <p>Data augmentation is a prevalent technique for improving performance in
+various machine learning applications. We propose SeqAug, a modality-agnostic
+augmentation method that is tailored towards sequences of extracted features.
+The core idea of SeqAug is to augment the sequence by resampling from the
+underlying feature distribution. Resampling is performed by randomly selecting
+feature dimensions and permuting them along the temporal axis. Experiments on
+CMU-MOSEI verify that SeqAug is modality agnostic; it can be successfully
+applied to a single modality or multiple modalities. We further verify its
+compatibility with both recurrent and transformer architectures, and also
+demonstrate comparable to state-of-the-art results.
+</p></li>
+</ul>
+<h3>Title: Towards Being Parameter-Efficient: A Stratified Sparsely Activated Transformer with Dynamic Capacity. (arXiv:2305.02176v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.02176">http://arxiv.org/abs/2305.02176</a></li>
+<li>Code URL: <a href="https://github.com/fe1ixxu/stratified_mixture_of_experts">https://github.com/fe1ixxu/stratified_mixture_of_experts</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.02176] Towards Being Parameter-Efficient: A Stratified Sparsely Activated Transformer with Dynamic Capacity](http://arxiv.org/abs/2305.02176) #transformer</code></li>
+<li>Summary: <p>Mixture-of-experts (MoE) models that employ sparse activation have
+demonstrated effectiveness in significantly increasing the number of parameters
+while maintaining low computational requirements per token. However, recent
+studies have established that MoE models are inherently parameter-inefficient
+as the improvement in performance diminishes with an increasing number of
+experts. We hypothesize this parameter inefficiency is a result of all experts
+having equal capacity, which may not adequately meet the varying complexity
+requirements of different tokens or tasks, e.g., in a multilingual setting,
+languages based on their resource levels might require different capacities. In
+light of this, we propose Stratified Mixture of Experts(SMoE) models, which
+feature a stratified structure and can assign dynamic capacity to different
+tokens. We demonstrate the effectiveness of SMoE on two multilingual machine
+translation benchmarks, where it outperforms multiple state-of-the-art MoE
+models. On a diverse 15-language dataset, SMoE improves the translation quality
+over vanilla MoE by +0.93 BLEU points on average. Additionally, SMoE is
+parameter-efficient, matching vanilla MoE performance with around 50\% fewer
+parameters.
+</p></li>
+</ul>
+<h3>Title: Exploring Linguistic Properties of Monolingual BERTs with Typological Classification among Languages. (arXiv:2305.02215v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.02215">http://arxiv.org/abs/2305.02215</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.02215] Exploring Linguistic Properties of Monolingual BERTs with Typological Classification among Languages](http://arxiv.org/abs/2305.02215) #transformer</code></li>
+<li>Summary: <p>The overwhelming success of transformers is a real conundrum stimulating a
+compelling question: are these machines replicating some traditional linguistic
+models or discovering radically new theories? In this paper, we propose a novel
+standpoint to investigate this important question. Using typological
+similarities among languages, we aim to layer-wise compare transformers for
+different languages to observe whether these similarities emerge for particular
+layers. For this investigation, we propose to use Centered kernel alignment to
+measure similarity among weight matrices. We discovered that syntactic
+typological similarity is consistent with the similarity among weights in the
+middle layers. This finding confirms results obtained by syntactically probing
+BERT and, thus, gives an important confirmation that BERT is replicating
+traditional linguistic models.
+</p></li>
+</ul>
+<h3>Title: A Lightweight CNN-Transformer Model for Learning Traveling Salesman Problems. (arXiv:2305.01883v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01883">http://arxiv.org/abs/2305.01883</a></li>
+<li>Code URL: <a href="https://github.com/cm8908/cnn_transformer3">https://github.com/cm8908/cnn_transformer3</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01883] A Lightweight CNN-Transformer Model for Learning Traveling Salesman Problems](http://arxiv.org/abs/2305.01883) #transformer</code></li>
+<li>Summary: <p>Transformer-based models show state-of-the-art performance even for
+large-scale Traveling Salesman Problems (TSPs). However, they are based on
+fully-connected attention models and suffer from large computational complexity
+and GPU memory usage. We propose a lightweight CNN-Transformer model based on a
+CNN embedding layer and partial self-attention. Our CNN-Transformer model is
+able to better learn spatial features from input data using a CNN embedding
+layer compared with the standard Transformer models. It also removes
+considerable redundancy in fully connected attention models using the proposed
+partial self-attention. Experiments show that the proposed model outperforms
+other state-of-the-art Transformer-based models in terms of TSP solution
+quality, GPU memory usage, and inference time. Our model consumes approximately
+20% less GPU memory usage and has 45% faster inference time compared with other
+state-of-the-art Transformer-based models. Our code is publicly available at
+https://github.com/cm8908/CNN_Transformer3
+</p></li>
+</ul>
+<h2>generative</h2>
+<h3>Title: Out-of-distribution detection algorithms for robust insect classification. (arXiv:2305.01823v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01823">http://arxiv.org/abs/2305.01823</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01823] Out-of-distribution detection algorithms for robust insect classification](http://arxiv.org/abs/2305.01823) #generative</code></li>
+<li>Summary: <p>Deep learning-based approaches have produced models with good insect
+classification accuracy; Most of these models are conducive for application in
+controlled environmental conditions. One of the primary emphasis of researchers
+is to implement identification and classification models in the real
+agriculture fields, which is challenging because input images that are wildly
+out of the distribution (e.g., images like vehicles, animals, humans, or a
+blurred image of an insect or insect class that is not yet trained on) can
+produce an incorrect insect classification. Out-of-distribution (OOD) detection
+algorithms provide an exciting avenue to overcome these challenge as it ensures
+that a model abstains from making incorrect classification prediction of
+non-insect and/or untrained insect class images. We generate and evaluate the
+performance of state-of-the-art OOD algorithms on insect detection classifiers.
+These algorithms represent a diversity of methods for addressing an OOD
+problem. Specifically, we focus on extrusive algorithms, i.e., algorithms that
+wrap around a well-trained classifier without the need for additional
+co-training. We compared three OOD detection algorithms: (i) Maximum Softmax
+Probability, which uses the softmax value as a confidence score, (ii)
+Mahalanobis distance-based algorithm, which uses a generative classification
+approach; and (iii) Energy-Based algorithm that maps the input data to a scalar
+value, called energy. We performed an extensive series of evaluations of these
+OOD algorithms across three performance axes: (a) \textit{Base model accuracy}:
+How does the accuracy of the classifier impact OOD performance? (b) How does
+the \textit{level of dissimilarity to the domain} impact OOD performance? and
+(c) \textit{Data imbalance}: How sensitive is OOD performance to the imbalance
+in per-class sample size?
+</p></li>
+</ul>
+<h3>Title: GANonymization: A GAN-based Face Anonymization Framework for Preserving Emotional Expressions. (arXiv:2305.02143v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.02143">http://arxiv.org/abs/2305.02143</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.02143] GANonymization: A GAN-based Face Anonymization Framework for Preserving Emotional Expressions](http://arxiv.org/abs/2305.02143) #generative</code></li>
+<li>Summary: <p>In recent years, the increasing availability of personal data has raised
+concerns regarding privacy and security. One of the critical processes to
+address these concerns is data anonymization, which aims to protect individual
+privacy and prevent the release of sensitive information. This research focuses
+on the importance of face anonymization. Therefore, we introduce
+GANonymization, a novel face anonymization framework with facial
+expression-preserving abilities. Our approach is based on a high-level
+representation of a face which is synthesized into an anonymized version based
+on a generative adversarial network (GAN). The effectiveness of the approach
+was assessed by evaluating its performance in removing identifiable facial
+attributes to increase the anonymity of the given individual face.
+Additionally, the performance of preserving facial expressions was evaluated on
+several affect recognition datasets and outperformed the state-of-the-art
+method in most categories. Finally, our approach was analyzed for its ability
+to remove various facial traits, such as jewelry, hair color, and multiple
+others. Here, it demonstrated reliable performance in removing these
+attributes. Our results suggest that GANonymization is a promising approach for
+anonymizing faces while preserving facial expressions.
+</p></li>
+</ul>
+<h3>Title: Making the Most of What You Have: Adapting Pre-trained Visual Language Models in the Low-data Regime. (arXiv:2305.02297v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.02297">http://arxiv.org/abs/2305.02297</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.02297] Making the Most of What You Have: Adapting Pre-trained Visual Language Models in the Low-data Regime](http://arxiv.org/abs/2305.02297) #generative</code></li>
+<li>Summary: <p>Large-scale visual language models are widely used as pre-trained models and
+then adapted for various downstream tasks. While humans are known to
+efficiently learn new tasks from a few examples, deep learning models struggle
+with adaptation from few examples. In this work, we look into task adaptation
+in the low-data regime, and provide a thorough study of the existing adaptation
+methods for generative Visual Language Models. And we show important benefits
+of self-labelling, i.e. using the model's own predictions to self-improve when
+having access to a larger number of unlabelled images of the same distribution.
+Our study demonstrates significant gains using our proposed task adaptation
+pipeline across a wide range of visual language tasks such as visual
+classification (ImageNet), visual captioning (COCO), detailed visual captioning
+(Localised Narratives) and visual question answering (VQAv2).
+</p></li>
+</ul>
+<h3>Title: AG3D: Learning to Generate 3D Avatars from 2D Image Collections. (arXiv:2305.02312v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.02312">http://arxiv.org/abs/2305.02312</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.02312] AG3D: Learning to Generate 3D Avatars from 2D Image Collections](http://arxiv.org/abs/2305.02312) #generative</code></li>
+<li>Summary: <p>While progress in 2D generative models of human appearance has been rapid,
+many applications require 3D avatars that can be animated and rendered.
+Unfortunately, most existing methods for learning generative models of 3D
+humans with diverse shape and appearance require 3D training data, which is
+limited and expensive to acquire. The key to progress is hence to learn
+generative models of 3D avatars from abundant unstructured 2D image
+collections. However, learning realistic and complete 3D appearance and
+geometry in this under-constrained setting remains challenging, especially in
+the presence of loose clothing such as dresses. In this paper, we propose a new
+adversarial generative model of realistic 3D people from 2D images. Our method
+captures shape and deformation of the body and loose clothing by adopting a
+holistic 3D generator and integrating an efficient and flexible articulation
+module. To improve realism, we train our model using multiple discriminators
+while also integrating geometric cues in the form of predicted 2D normal maps.
+We experimentally find that our method outperforms previous 3D- and
+articulation-aware methods in terms of geometry and appearance. We validate the
+effectiveness of our model and the importance of each component via systematic
+ablation studies.
+</p></li>
+</ul>
+<h3>Title: Learning Disentangled Semantic Spaces of Explanations via Invertible Neural Networks. (arXiv:2305.01713v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01713">http://arxiv.org/abs/2305.01713</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01713] Learning Disentangled Semantic Spaces of Explanations via Invertible Neural Networks](http://arxiv.org/abs/2305.01713) #generative</code></li>
+<li>Summary: <p>Disentangling sentence representations over continuous spaces can be a
+critical process in improving interpretability and semantic control by
+localising explicit generative factors. Such process confers to neural-based
+language models some of the advantages that are characteristic of symbolic
+models, while keeping their flexibility. This work presents a methodology for
+disentangling the hidden space of a BERT-GPT2 autoencoder by transforming it
+into a more separable semantic space with the support of a flow-based
+invertible neural network (INN). Experimental results indicate that the INN can
+transform the distributed hidden space into a better semantically disentangled
+latent space, resulting in better interpretability and controllability, when
+compared to recent state-of-the-art models.
+</p></li>
+</ul>
+<h3>Title: Generative Meta-Learning for Zero-Shot Relation Triplet Extraction. (arXiv:2305.01920v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01920">http://arxiv.org/abs/2305.01920</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01920] Generative Meta-Learning for Zero-Shot Relation Triplet Extraction](http://arxiv.org/abs/2305.01920) #generative</code></li>
+<li>Summary: <p>The zero-shot relation triplet extraction (ZeroRTE) task aims to extract
+relation triplets from a piece of text with unseen relation types. The seminal
+work adopts the pre-trained generative model to generate synthetic samples for
+new relations. However, current generative models lack the optimization process
+of model generalization on different tasks during training, and thus have
+limited generalization capability. For this reason, we propose a novel
+generative meta-learning framework which exploits the `learning-to-learn'
+ability of meta-learning to boost the generalization capability of generative
+models. Specifically, we first design a task-aware generative model which can
+learn the general knowledge by forcing the optimization process to be conducted
+across multiple tasks. Based on it, we then present three generative
+meta-learning approaches designated for three typical meta-learning categories.
+Extensive experimental results demonstrate that our framework achieves a new
+state-of-the-art performance for the ZeroRTE task.
+</p></li>
+</ul>
+<h3>Title: Nonparametric Generative Modeling with Conditional and Locally-Connected Sliced-Wasserstein Flows. (arXiv:2305.02164v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.02164">http://arxiv.org/abs/2305.02164</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.02164] Nonparametric Generative Modeling with Conditional and Locally-Connected Sliced-Wasserstein Flows](http://arxiv.org/abs/2305.02164) #generative</code></li>
+<li>Summary: <p>Sliced-Wasserstein Flow (SWF) is a promising approach to nonparametric
+generative modeling but has not been widely adopted due to its suboptimal
+generative quality and lack of conditional modeling capabilities. In this work,
+we make two major contributions to bridging this gap. First, based on a
+pleasant observation that (under certain conditions) the SWF of joint
+distributions coincides with those of conditional distributions, we propose
+Conditional Sliced-Wasserstein Flow (CSWF), a simple yet effective extension of
+SWF that enables nonparametric conditional modeling. Second, we introduce
+appropriate inductive biases of images into SWF with two techniques inspired by
+local connectivity and multiscale representation in vision research, which
+greatly improve the efficiency and quality of modeling images. With all the
+improvements, we achieve generative performance comparable with many deep
+parametric generative models on both conditional and unconditional tasks in a
+purely nonparametric fashion, demonstrating its great potential.
+</p></li>
+</ul>
+<h2>label correction</h2>
+<h2>noise</h2>
+<h3>Title: Inverse Global Illumination using a Neural Radiometric Prior. (arXiv:2305.02192v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.02192">http://arxiv.org/abs/2305.02192</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.02192] Inverse Global Illumination using a Neural Radiometric Prior](http://arxiv.org/abs/2305.02192) #noise</code></li>
+<li>Summary: <p>Inverse rendering methods that account for global illumination are becoming
+more popular, but current methods require evaluating and automatically
+differentiating millions of path integrals by tracing multiple light bounces,
+which remains expensive and prone to noise. Instead, this paper proposes a
+radiometric prior as a simple alternative to building complete path integrals
+in a traditional differentiable path tracer, while still correctly accounting
+for global illumination. Inspired by the Neural Radiosity technique, we use a
+neural network as a radiance function, and we introduce a prior consisting of
+the norm of the residual of the rendering equation in the inverse rendering
+loss. We train our radiance network and optimize scene parameters
+simultaneously using a loss consisting of both a photometric term between
+renderings and the multi-view input images, and our radiometric prior (the
+residual term). This residual term enforces a physical constraint on the
+optimization that ensures that the radiance field accounts for global
+illumination. We compare our method to a vanilla differentiable path tracer,
+and more advanced techniques such as Path Replay Backpropagation. Despite the
+simplicity of our approach, we can recover scene parameters with comparable and
+in some cases better quality, at considerably lower computation times.
+</p></li>
+</ul>
+<h3>Title: A Curriculum View of Robust Loss Functions. (arXiv:2305.02139v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.02139">http://arxiv.org/abs/2305.02139</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.02139] A Curriculum View of Robust Loss Functions](http://arxiv.org/abs/2305.02139) #noise</code></li>
+<li>Summary: <p>Robust loss functions are designed to combat the adverse impacts of label
+noise, whose robustness is typically supported by theoretical bounds agnostic
+to the training dynamics. However, these bounds may fail to characterize the
+empirical performance as it remains unclear why robust loss functions can
+underfit. We show that most loss functions can be rewritten into a form with
+the same class-score margin and different sample-weighting functions. The
+resulting curriculum view provides a straightforward analysis of the training
+dynamics, which helps attribute underfitting to diminished average sample
+weights and noise robustness to larger weights for clean samples. We show that
+simple fixes to the curriculums can make underfitting robust loss functions
+competitive with the state-of-the-art, and training schedules can substantially
+affect the noise robustness even with robust loss functions. Code is available
+at \url{github}.
+</p></li>
+</ul>
+<h3>Title: LearnDefend: Learning to Defend against Targeted Model-Poisoning Attacks on Federated Learning. (arXiv:2305.02022v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.02022">http://arxiv.org/abs/2305.02022</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.02022] LearnDefend: Learning to Defend against Targeted Model-Poisoning Attacks on Federated Learning](http://arxiv.org/abs/2305.02022) #noise</code></li>
+<li>Summary: <p>Targeted model poisoning attacks pose a significant threat to federated
+learning systems. Recent studies show that edge-case targeted attacks, which
+target a small fraction of the input space are nearly impossible to counter
+using existing fixed defense strategies. In this paper, we strive to design a
+learned-defense strategy against such attacks, using a small defense dataset.
+The defense dataset can be collected by the central authority of the federated
+learning task, and should contain a mix of poisoned and clean examples. The
+proposed framework, LearnDefend, estimates the probability of a client update
+being malicious. The examples in defense dataset need not be pre-marked as
+poisoned or clean. We also learn a poisoned data detector model which can be
+used to mark each example in the defense dataset as clean or poisoned. We
+estimate the poisoned data detector and the client importance models in a
+coupled optimization approach. Our experiments demonstrate that LearnDefend is
+capable of defending against state-of-the-art attacks where existing fixed
+defense strategies fail. We also show that LearnDefend is robust to size and
+noise in the marking of clean examples in the defense dataset.
+</p></li>
+</ul>
+<h2>diffusion</h2>
+<h3>Title: Multimodal Data Augmentation for Image Captioning using Diffusion Models. (arXiv:2305.01855v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01855">http://arxiv.org/abs/2305.01855</a></li>
+<li>Code URL: <a href="https://github.com/xiaochr/multimodal-augmentation-image-captioning">https://github.com/xiaochr/multimodal-augmentation-image-captioning</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01855] Multimodal Data Augmentation for Image Captioning using Diffusion Models](http://arxiv.org/abs/2305.01855) #diffusion</code></li>
+<li>Summary: <p>Image captioning, an important vision-language task, often requires a
+tremendous number of finely labeled image-caption pairs for learning the
+underlying alignment between images and texts. In this paper, we proposed a
+multimodal data augmentation method, leveraging a recent text-to-image model
+called Stable Diffusion, to expand the training set via high-quality generation
+of image-caption pairs. Extensive experiments on the MS COCO dataset
+demonstrate the advantages of our approach over several benchmark methods, and
+particularly a significant boost when having fewer training instances. In
+addition, models trained on our augmented datasets also outperform prior
+unpaired image captioning methods by a large margin. Finally, further
+improvement regarding the training efficiency and effectiveness can be obtained
+after intentionally filtering the generated data based on quality assessment.
+</p></li>
+</ul>
+<h3>Title: DiffFacto Controllable Part-Based 3D Point Cloud Generation with Cross Diffusion. (arXiv:2305.01921v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01921">http://arxiv.org/abs/2305.01921</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01921] DiffFacto Controllable Part-Based 3D Point Cloud Generation with Cross Diffusion](http://arxiv.org/abs/2305.01921) #diffusion</code></li>
+<li>Summary: <p>While the community of 3D point cloud generation has witnessed a big growth
+in recent years, there still lacks an effective way to enable intuitive user
+control in the generation process, hence limiting the general utility of such
+methods. Since an intuitive way of decomposing a shape is through its parts, we
+propose to tackle the task of controllable part-based point cloud generation.
+We introduce DiffFacto, a novel probabilistic generative model that learns the
+distribution of shapes with part-level control. We propose a factorization that
+models independent part style and part configuration distributions, and present
+a novel cross diffusion network that enables us to generate coherent and
+plausible shapes under our proposed factorization. Experiments show that our
+method is able to generate novel shapes with multiple axes of control. It
+achieves state-of-the-art part-level generation quality and generates plausible
+and coherent shape, while enabling various downstream editing applications such
+as shape interpolation, mixing and transformation editing. Code will be made
+publicly available.
+</p></li>
+</ul>
+<h3>Title: DiffuSum: Generation Enhanced Extractive Summarization with Diffusion. (arXiv:2305.01735v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01735">http://arxiv.org/abs/2305.01735</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01735] DiffuSum: Generation Enhanced Extractive Summarization with Diffusion](http://arxiv.org/abs/2305.01735) #diffusion</code></li>
+<li>Summary: <p>Extractive summarization aims to form a summary by directly extracting
+sentences from the source document. Existing works mostly formulate it as a
+sequence labeling problem by making individual sentence label predictions. This
+paper proposes DiffuSum, a novel paradigm for extractive summarization, by
+directly generating the desired summary sentence representations with diffusion
+models and extracting sentences based on sentence representation matching. In
+addition, DiffuSum jointly optimizes a contrastive sentence encoder with a
+matching loss for sentence representation alignment and a multi-class
+contrastive loss for representation diversity. Experimental results show that
+DiffuSum achieves the new state-of-the-art extractive results on CNN/DailyMail
+with ROUGE scores of $44.83/22.56/40.56$. Experiments on the other two datasets
+with different summary lengths also demonstrate the effectiveness of DiffuSum.
+The strong performance of our framework shows the great potential of adapting
+generative models for extractive summarization.
+</p></li>
+</ul>
+<h3>Title: Multimodal Procedural Planning via Dual Text-Image Prompting. (arXiv:2305.01795v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01795">http://arxiv.org/abs/2305.01795</a></li>
+<li>Code URL: <a href="https://github.com/yujielu10/mpp">https://github.com/yujielu10/mpp</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01795] Multimodal Procedural Planning via Dual Text-Image Prompting](http://arxiv.org/abs/2305.01795) #diffusion</code></li>
+<li>Summary: <p>Embodied agents have achieved prominent performance in following human
+instructions to complete tasks. However, the potential of providing
+instructions informed by texts and images to assist humans in completing tasks
+remains underexplored. To uncover this capability, we present the multimodal
+procedural planning (MPP) task, in which models are given a high-level goal and
+generate plans of paired text-image steps, providing more complementary and
+informative guidance than unimodal plans. The key challenges of MPP are to
+ensure the informativeness, temporal coherence,and accuracy of plans across
+modalities. To tackle this, we propose Text-Image Prompting (TIP), a
+dual-modality prompting method that jointly leverages zero-shot reasoning
+ability in large language models (LLMs) and compelling text-to-image generation
+ability from diffusion-based models. TIP improves the interaction in the dual
+modalities using Text-to-Image Bridge and Image-to-Text Bridge, allowing LLMs
+to guide the textual-grounded image plan generation and leveraging the
+descriptions of image plans to ground the textual plan reversely. To address
+the lack of relevant datasets, we collect WIKIPLAN and RECIPEPLAN as a testbed
+for MPP. Our results show compelling human preferences and automatic scores
+against unimodal and multimodal baselines on WIKIPLAN and RECIPEPLAN in terms
+of informativeness, temporal coherence, and plan accuracy. Our code and data:
+https://github.com/YujieLu10/MPP.
+</p></li>
+</ul>
+<h3>Title: Unpaired Downscaling of Fluid Flows with Diffusion Bridges. (arXiv:2305.01822v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01822">http://arxiv.org/abs/2305.01822</a></li>
+<li>Code URL: <a href="https://github.com/clima/diffusion-bridge-downscaling">https://github.com/clima/diffusion-bridge-downscaling</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01822] Unpaired Downscaling of Fluid Flows with Diffusion Bridges](http://arxiv.org/abs/2305.01822) #diffusion</code></li>
+<li>Summary: <p>We present a method to downscale idealized geophysical fluid simulations
+using generative models based on diffusion maps. By analyzing the Fourier
+spectra of images drawn from different data distributions, we show how one can
+chain together two independent conditional diffusion models for use in domain
+translation. The resulting transformation is a diffusion bridge between a low
+resolution and a high resolution dataset and allows for new sample generation
+of high-resolution images given specific low resolution features. The ability
+to generate new samples allows for the computation of any statistic of
+interest, without any additional calibration or training. Our unsupervised
+setup is also designed to downscale images without access to paired training
+data; this flexibility allows for the combination of multiple source and target
+domains without additional training. We demonstrate that the method enhances
+resolution and corrects context-dependent biases in geophysical fluid
+simulations, including in extreme events. We anticipate that the same method
+can be used to downscale the output of climate simulations, including
+temperature and precipitation fields, without needing to train a new model for
+each application and providing a significant computational cost savings.
+</p></li>
+</ul>
+<h2>LLM</h2>
+<h2>segmentation</h2>
+<h3>Title: DeepAqua: Self-Supervised Semantic Segmentation of Wetlands from SAR Images using Knowledge Distillation. (arXiv:2305.01698v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01698">http://arxiv.org/abs/2305.01698</a></li>
+<li>Code URL: <a href="https://github.com/melqkiades/deep-wetlands">https://github.com/melqkiades/deep-wetlands</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01698] DeepAqua: Self-Supervised Semantic Segmentation of Wetlands from SAR Images using Knowledge Distillation](http://arxiv.org/abs/2305.01698) #segmentation</code></li>
+<li>Summary: <p>Remote sensing has significantly advanced water detection by applying
+semantic segmentation techniques to satellite imagery. However, semantic
+segmentation remains challenging due to the substantial amount of annotated
+data required. This is particularly problematic in wetland detection, where
+water extent varies over time and space, necessitating multiple annotations for
+the same area. In this paper, we present DeepAqua, a self-supervised deep
+learning model that leverages knowledge distillation to eliminate the need for
+manual annotations during the training phase. DeepAqua utilizes the Normalized
+Difference Water Index (NDWI) as a teacher model to train a Convolutional
+Neural Network (CNN) for segmenting water from Synthetic Aperture Radar (SAR)
+images. To train the student model, we exploit cases where optical- and
+radar-based water masks coincide, enabling the detection of both open and
+vegetated water surfaces. Our model represents a significant advancement in
+computer vision techniques by effectively training semantic segmentation models
+without any manually annotated data. This approach offers a practical solution
+for monitoring wetland water extent changes without needing ground truth data,
+making it highly adaptable and scalable for wetland conservation efforts.
+</p></li>
+</ul>
+<h3>Title: Expectation Maximization Pseudo Labelling for Segmentation with Limited Annotations. (arXiv:2305.01747v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01747">http://arxiv.org/abs/2305.01747</a></li>
+<li>Code URL: <a href="https://github.com/moucheng2017/emssl">https://github.com/moucheng2017/emssl</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01747] Expectation Maximization Pseudo Labelling for Segmentation with Limited Annotations](http://arxiv.org/abs/2305.01747) #segmentation</code></li>
+<li>Summary: <p>We study pseudo labelling and its generalisation for semi-supervised
+segmentation of medical images. Pseudo labelling has achieved great empirical
+successes in semi-supervised learning, by utilising raw inferences on
+unlabelled data as pseudo labels for self-training. In our paper, we build a
+connection between pseudo labelling and the Expectation Maximization algorithm
+which partially explains its empirical successes. We thereby realise that the
+original pseudo labelling is an empirical estimation of its underlying full
+formulation. Following this insight, we demonstrate the full generalisation of
+pseudo labels under Bayes' principle, called Bayesian Pseudo Labels. We then
+provide a variational approach to learn to approximate Bayesian Pseudo Labels,
+by learning a threshold to select good quality pseudo labels. In the rest of
+the paper, we demonstrate the applications of Pseudo Labelling and its
+generalisation Bayesian Psuedo Labelling in semi-supervised segmentation of
+medical images on: 1) 3D binary segmentation of lung vessels from CT volumes;
+2) 2D multi class segmentation of brain tumours from MRI volumes; 3) 3D binary
+segmentation of brain tumours from MRI volumes. We also show that pseudo labels
+can enhance the robustness of the learnt representations.
+</p></li>
+</ul>
+<h3>Title: AV-SAM: Segment Anything Model Meets Audio-Visual Localization and Segmentation. (arXiv:2305.01836v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01836">http://arxiv.org/abs/2305.01836</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01836] AV-SAM: Segment Anything Model Meets Audio-Visual Localization and Segmentation](http://arxiv.org/abs/2305.01836) #segmentation</code></li>
+<li>Summary: <p>Segment Anything Model (SAM) has recently shown its powerful effectiveness in
+visual segmentation tasks. However, there is less exploration concerning how
+SAM works on audio-visual tasks, such as visual sound localization and
+segmentation. In this work, we propose a simple yet effective audio-visual
+localization and segmentation framework based on the Segment Anything Model,
+namely AV-SAM, that can generate sounding object masks corresponding to the
+audio. Specifically, our AV-SAM simply leverages pixel-wise audio-visual fusion
+across audio features and visual features from the pre-trained image encoder in
+SAM to aggregate cross-modal representations. Then, the aggregated cross-modal
+features are fed into the prompt encoder and mask decoder to generate the final
+audio-visual segmentation masks. We conduct extensive experiments on
+Flickr-SoundNet and AVSBench datasets. The results demonstrate that the
+proposed AV-SAM can achieve competitive performance on sounding object
+localization and segmentation.
+</p></li>
+</ul>
+<h3>Title: LineFormer: Rethinking Line Chart Data Extraction as Instance Segmentation. (arXiv:2305.01837v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01837">http://arxiv.org/abs/2305.01837</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01837] LineFormer: Rethinking Line Chart Data Extraction as Instance Segmentation](http://arxiv.org/abs/2305.01837) #segmentation</code></li>
+<li>Summary: <p>Data extraction from line-chart images is an essential component of the
+automated document understanding process, as line charts are a ubiquitous data
+visualization format. However, the amount of visual and structural variations
+in multi-line graphs makes them particularly challenging for automated parsing.
+Existing works, however, are not robust to all these variations, either taking
+an all-chart unified approach or relying on auxiliary information such as
+legends for line data extraction. In this work, we propose LineFormer, a robust
+approach to line data extraction using instance segmentation. We achieve
+state-of-the-art performance on several benchmark synthetic and real chart
+datasets. Our implementation is available at
+https://github.com/TheJaeLal/LineFormer .
+</p></li>
+</ul>
+<h3>Title: Morphological Classification of Galaxies Using SpinalNet. (arXiv:2305.01873v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01873">http://arxiv.org/abs/2305.01873</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01873] Morphological Classification of Galaxies Using SpinalNet](http://arxiv.org/abs/2305.01873) #segmentation</code></li>
+<li>Summary: <p>Deep neural networks (DNNs) with a step-by-step introduction of inputs, which
+is constructed by imitating the somatosensory system in human body, known as
+SpinalNet have been implemented in this work on a Galaxy Zoo dataset. The input
+segmentation in SpinalNet has enabled the intermediate layers to take some of
+the inputs as well as output of preceding layers thereby reducing the amount of
+the collected weights in the intermediate layers. As a result of these, the
+authors of SpinalNet reported to have achieved in most of the DNNs they tested,
+not only a remarkable cut in the error but also in the large reduction of the
+computational costs. Having applied it to the Galaxy Zoo dataset, we are able
+to classify the different classes and/or sub-classes of the galaxies. Thus, we
+have obtained higher classification accuracies of 98.2, 95 and 82 percents
+between elliptical and spirals, between these two and irregulars, and between
+10 sub-classes of galaxies, respectively.
+</p></li>
+</ul>
+<h3>Title: Distributional Instance Segmentation: Modeling Uncertainty and High Confidence Predictions with Latent-MaskRCNN. (arXiv:2305.01910v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01910">http://arxiv.org/abs/2305.01910</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01910] Distributional Instance Segmentation: Modeling Uncertainty and High Confidence Predictions with Latent-MaskRCNN](http://arxiv.org/abs/2305.01910) #segmentation</code></li>
+<li>Summary: <p>Object recognition and instance segmentation are fundamental skills in any
+robotic or autonomous system. Existing state-of-the-art methods are often
+unable to capture meaningful uncertainty in challenging or ambiguous scenes,
+and as such can cause critical errors in high-performance applications. In this
+paper, we explore a class of distributional instance segmentation models using
+latent codes that can model uncertainty over plausible hypotheses of object
+masks. For robotic picking applications, we propose a confidence mask method to
+achieve the high precision necessary in industrial use cases. We show that our
+method can significantly reduce critical errors in robotic systems, including
+our newly released dataset of ambiguous scenes in a robotic application. On a
+real-world apparel-picking robot, our method significantly reduces double pick
+errors while maintaining high performance.
+</p></li>
+</ul>
+<h3>Title: Zenseact Open Dataset: A large-scale and diverse multimodal dataset for autonomous driving. (arXiv:2305.02008v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.02008">http://arxiv.org/abs/2305.02008</a></li>
+<li>Code URL: <a href="https://github.com/zenseact/zod">https://github.com/zenseact/zod</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.02008] Zenseact Open Dataset: A large-scale and diverse multimodal dataset for autonomous driving](http://arxiv.org/abs/2305.02008) #segmentation</code></li>
+<li>Summary: <p>Existing datasets for autonomous driving (AD) often lack diversity and
+long-range capabilities, focusing instead on 360{\deg} perception and temporal
+reasoning. To address this gap, we introduce Zenseact Open Dataset (ZOD), a
+large-scale and diverse multimodal dataset collected over two years in various
+European countries, covering an area 9x that of existing datasets. ZOD boasts
+the highest range and resolution sensors among comparable datasets, coupled
+with detailed keyframe annotations for 2D and 3D objects (up to 245m), road
+instance/semantic segmentation, traffic sign recognition, and road
+classification. We believe that this unique combination will facilitate
+breakthroughs in long-range perception and multi-task learning. The dataset is
+composed of Frames, Sequences, and Drives, designed to encompass both data
+diversity and support for spatio-temporal learning, sensor fusion,
+localization, and mapping. Frames consist of 100k curated camera images with
+two seconds of other supporting sensor data, while the 1473 Sequences and 29
+Drives include the entire sensor suite for 20 seconds and a few minutes,
+respectively. ZOD is the only large-scale AD dataset released under a
+permissive license, allowing for both research and commercial use. The dataset
+is accompanied by an extensive development kit. Data and more information are
+available online (https://zod.zenseact.com).
+</p></li>
+</ul>
+<h3>Title: Scaling-up Remote Sensing Segmentation Dataset with Segment Anything Model. (arXiv:2305.02034v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.02034">http://arxiv.org/abs/2305.02034</a></li>
+<li>Code URL: <a href="https://github.com/vitae-transformer/samrs">https://github.com/vitae-transformer/samrs</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.02034] Scaling-up Remote Sensing Segmentation Dataset with Segment Anything Model](http://arxiv.org/abs/2305.02034) #segmentation</code></li>
+<li>Summary: <p>The success of the Segment Anything Model (SAM) demonstrates the significance
+of data-centric machine learning. However, due to the difficulties and high
+costs associated with annotating Remote Sensing (RS) images, a large amount of
+valuable RS data remains unlabeled, particularly at the pixel level. In this
+study, we leverage SAM and existing RS object detection datasets to develop an
+efficient pipeline for generating a large-scale RS segmentation dataset, dubbed
+SAMRS. SAMRS surpasses existing high-resolution RS segmentation datasets in
+size by several orders of magnitude, and provides object category, location,
+and instance information that can be used for semantic segmentation, instance
+segmentation, and object detection, either individually or in combination. We
+also provide a comprehensive analysis of SAMRS from various aspects. We hope it
+could facilitate research in RS segmentation, particularly in large model
+pre-training.
+</p></li>
+</ul>
+<h3>Title: CLUSTSEG: Clustering for Universal Segmentation. (arXiv:2305.02187v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.02187">http://arxiv.org/abs/2305.02187</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.02187] CLUSTSEG: Clustering for Universal Segmentation](http://arxiv.org/abs/2305.02187) #segmentation</code></li>
+<li>Summary: <p>We present CLUSTSEG, a general, transformer-based framework that tackles
+different image segmentation tasks (i.e., superpixel, semantic, instance, and
+panoptic) through a unified neural clustering scheme. Regarding queries as
+cluster centers, CLUSTSEG is innovative in two aspects:1) cluster centers are
+initialized in heterogeneous ways so as to pointedly address task-specific
+demands (e.g., instance- or category-level distinctiveness), yet without
+modifying the architecture; and 2) pixel-cluster assignment, formalized in a
+cross-attention fashion, is alternated with cluster center update, yet without
+learning additional parameters. These innovations closely link CLUSTSEG to EM
+clustering and make it a transparent and powerful framework that yields
+superior results across the above segmentation tasks.
+</p></li>
+</ul>
+<h2>object detection</h2>
+<h3>Title: Illicit item detection in X-ray images for security applications. (arXiv:2305.01936v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.01936">http://arxiv.org/abs/2305.01936</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.01936] Illicit item detection in X-ray images for security applications](http://arxiv.org/abs/2305.01936) #object detection</code></li>
+<li>Summary: <p>Automated detection of contraband items in X-ray images can significantly
+increase public safety, by enhancing the productivity and alleviating the
+mental load of security officers in airports, subways, customs/post offices,
+etc. The large volume and high throughput of passengers, mailed parcels, etc.,
+during rush hours make it a Big Data analysis task. Modern computer vision
+algorithms relying on Deep Neural Networks (DNNs) have proven capable of
+undertaking this task even under resource-constrained and embedded execution
+scenarios, e.g., as is the case with fast, single-stage, anchor-based object
+detectors. This paper proposes a two-fold improvement of such algorithms for
+the X-ray analysis domain, introducing two complementary novelties. Firstly,
+more efficient anchors are obtained by hierarchical clustering the sizes of the
+ground-truth training set bounding boxes; thus, the resulting anchors follow a
+natural hierarchy aligned with the semantic structure of the data. Secondly,
+the default Non-Maximum Suppression (NMS) algorithm at the end of the object
+detection pipeline is modified to better handle occluded object detection and
+to reduce the number of false predictions, by inserting the Efficient
+Intersection over Union (E-IoU) metric into the Weighted Cluster NMS method.
+E-IoU provides more discriminative geometrical correlations between the
+candidate bounding boxes/Regions-of-Interest (RoIs). The proposed method is
+implemented on a common single-stage object detector (YOLOv5) and its
+experimental evaluation on a relevant public dataset indicates significant
+accuracy gains over both the baseline and competing approaches. This highlights
+the potential of Big Data analysis in enhancing public safety.
+</p></li>
+</ul>
+<script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script>new ClipboardJS("#copy",{text:function(trigger){var res="[[2023-05-04]]\n\n";var input=document.querySelectorAll("input");for(var i=0;i<input.length;i++){if(input[i].type=="checkbox"&&input[i].checked){res+="- "+input[i].nextSibling.nodeValue+"\n"}}res+="\n";return res}}).on("success",function(e){e.clearSelection()});</script>
+<button id="copy">Copy All</button>
