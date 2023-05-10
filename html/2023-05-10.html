@@ -1,0 +1,1003 @@
+<h2>data-free</h2>
+<h2>transformer</h2>
+<h3>Title: Joint Moment Retrieval and Highlight Detection Via Natural Language Queries. (arXiv:2305.04961v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.04961">http://arxiv.org/abs/2305.04961</a></li>
+<li>Code URL: <a href="https://github.com/skyline-9/visionary-vids">https://github.com/skyline-9/visionary-vids</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.04961] Joint Moment Retrieval and Highlight Detection Via Natural Language Queries](http://arxiv.org/abs/2305.04961) #transformer</code></li>
+<li>Summary: <p>Video summarization has become an increasingly important task in the field of
+computer vision due to the vast amount of video content available on the
+internet. In this project, we propose a new method for natural language query
+based joint video summarization and highlight detection using multi-modal
+transformers. This approach will use both visual and audio cues to match a
+user's natural language query to retrieve the most relevant and interesting
+moments from a video. Our approach employs multiple recent techniques used in
+Vision Transformers (ViTs) to create a transformer-like encoder-decoder model.
+We evaluated our approach on multiple datasets such as YouTube Highlights and
+TVSum to demonstrate the flexibility of our proposed method.
+</p></li>
+</ul>
+<h3>Title: Hybrid Transformer and CNN Attention Network for Stereo Image Super-resolution. (arXiv:2305.05177v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05177">http://arxiv.org/abs/2305.05177</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05177] Hybrid Transformer and CNN Attention Network for Stereo Image Super-resolution](http://arxiv.org/abs/2305.05177) #transformer</code></li>
+<li>Summary: <p>Multi-stage strategies are frequently employed in image restoration tasks.
+While transformer-based methods have exhibited high efficiency in single-image
+super-resolution tasks, they have not yet shown significant advantages over
+CNN-based methods in stereo super-resolution tasks. This can be attributed to
+two key factors: first, current single-image super-resolution transformers are
+unable to leverage the complementary stereo information during the process;
+second, the performance of transformers is typically reliant on sufficient
+data, which is absent in common stereo-image super-resolution algorithms. To
+address these issues, we propose a Hybrid Transformer and CNN Attention Network
+(HTCAN), which utilizes a transformer-based network for single-image
+enhancement and a CNN-based network for stereo information fusion. Furthermore,
+we employ a multi-patch training strategy and larger window sizes to activate
+more input pixels for super-resolution. We also revisit other advanced
+techniques, such as data augmentation, data ensemble, and model ensemble to
+reduce overfitting and data bias. Finally, our approach achieved a score of
+23.90dB and emerged as the winner in Track 1 of the NTIRE 2023 Stereo Image
+Super-Resolution Challenge.
+</p></li>
+</ul>
+<h3>Title: Integrating Holistic and Local Information to Estimate Emotional Reaction Intensity. (arXiv:2305.05534v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05534">http://arxiv.org/abs/2305.05534</a></li>
+<li>Code URL: <a href="https://github.com/hkust-nisl/abaw5">https://github.com/hkust-nisl/abaw5</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05534] Integrating Holistic and Local Information to Estimate Emotional Reaction Intensity](http://arxiv.org/abs/2305.05534) #transformer</code></li>
+<li>Summary: <p>Video-based Emotional Reaction Intensity (ERI) estimation measures the
+intensity of subjects' reactions to stimuli along several emotional dimensions
+from videos of the subject as they view the stimuli. We propose a multi-modal
+architecture for video-based ERI combining video and audio information. Video
+input is encoded spatially first, frame-by-frame, combining features encoding
+holistic aspects of the subjects' facial expressions and features encoding
+spatially localized aspects of their expressions. Input is then combined across
+time: from frame-to-frame using gated recurrent units (GRUs), then globally by
+a transformer. We handle variable video length with a regression token that
+accumulates information from all frames into a fixed-dimensional vector
+independent of video length. Audio information is handled similarly: spectral
+information extracted within each frame is integrated across time by a cascade
+of GRUs and a transformer with regression token. The video and audio regression
+tokens' outputs are merged by concatenation, then input to a final fully
+connected layer producing intensity estimates. Our architecture achieved
+excellent performance on the Hume-Reaction dataset in the ERI Esimation
+Challenge of the Fifth Competition on Affective Behavior Analysis in-the-Wild
+(ABAW5). The Pearson Correlation Coefficients between estimated and subject
+self-reported scores, averaged across all emotions, were 0.455 on the
+validation dataset and 0.4547 on the test dataset, well above the baselines.
+The transformer's self-attention mechanism enables our architecture to focus on
+the most critical video frames regardless of length. Ablation experiments
+establish the advantages of combining holistic/local features and of
+multi-modal integration. Code available at https://github.com/HKUST-NISL/ABAW5.
+</p></li>
+</ul>
+<h3>Title: ColonMapper: topological mapping and localization for colonoscopy. (arXiv:2305.05546v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05546">http://arxiv.org/abs/2305.05546</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05546] ColonMapper: topological mapping and localization for colonoscopy](http://arxiv.org/abs/2305.05546) #transformer</code></li>
+<li>Summary: <p>Mapping and localization in endoluminal cavities from colonoscopies or
+gastroscopies has to overcome the challenge of significant shape and
+illumination changes between reobservations of the same endoluminal location.
+Instead of geometrical maps that strongly rely on a fixed scene geometry,
+topological maps are more adequate because they focus on visual place
+recognition, i.e. the capability to determine if two video shots are imaging
+the same location. We propose a topological mapping and localization system
+able to operate on real human colonoscopies. The map is a graph where each node
+codes a colon location by a set of real images of that location. The edges
+represent traversability between two nodes. For close-in-time images, where
+scene changes are minor, place recognition can be successfully managed with the
+recent transformers-based image-matching algorithms. However, under long-term
+changes -- such as different colonoscopies of the same patient -- feature-based
+matching fails. To address this, we propose a GeM global descriptor able to
+achieve high recall with significant changes in the scene. The addition of a
+Bayesian filter processing the map graph boosts the accuracy of the long-term
+place recognition, enabling relocalization in a previously built map. In the
+experiments, we construct a map during the withdrawal phase of a first
+colonoscopy. Subsequently, we prove the ability to relocalize within this map
+during a second colonoscopy of the same patient two weeks later. Code and
+models will be available upon acceptance.
+</p></li>
+</ul>
+<h3>Title: Group Activity Recognition via Dynamic Composition and Interaction. (arXiv:2305.05583v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05583">http://arxiv.org/abs/2305.05583</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05583] Group Activity Recognition via Dynamic Composition and Interaction](http://arxiv.org/abs/2305.05583) #transformer</code></li>
+<li>Summary: <p>Previous group activity recognition approaches were limited to reasoning
+using human relations or finding important subgroups and tended to ignore
+indispensable group composition and human-object interactions. This absence
+makes a partial interpretation of the scene and increases the interference of
+irrelevant actions on the results. Therefore, we propose our DynamicFormer with
+Dynamic composition Module (DcM) and Dynamic interaction Module (DiM) to model
+relations and locations of persons and discriminate the contribution of
+participants, respectively. Our findings on group composition and human-object
+interaction inspire our core idea. Group composition tells us the location of
+people and their relations inside the group, while interaction reflects the
+relation between humans and objects outside the group. We utilize spatial and
+temporal encoders in DcM to model our dynamic composition and build DiM to
+explore interaction with a novel GCN, which has a transformer inside to
+consider the temporal neighbors of human/object. Also, a Multi-level Dynamic
+Integration is employed to integrate features from different levels. We conduct
+extensive experiments on two public datasets and show that our method achieves
+state-of-the-art.
+</p></li>
+</ul>
+<h3>Title: SwinIA: Self-Supervised Blind-Spot Image Denoising with Zero Convolutions. (arXiv:2305.05651v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05651">http://arxiv.org/abs/2305.05651</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05651] SwinIA: Self-Supervised Blind-Spot Image Denoising with Zero Convolutions](http://arxiv.org/abs/2305.05651) #transformer</code></li>
+<li>Summary: <p>The essence of self-supervised image denoising is to restore the signal from
+the noisy image alone. State-of-the-art solutions for this task rely on the
+idea of masking pixels and training a fully-convolutional neural network to
+impute them. This most often requires multiple forward passes, information
+about the noise model, and intricate regularization functions. In this paper,
+we propose a Swin Transformer-based Image Autoencoder (SwinIA), the first
+convolution-free architecture for self-supervised denoising. It can be trained
+end-to-end with a simple mean squared error loss without masking and does not
+require any prior knowledge about clean data or noise distribution. Despite its
+simplicity, SwinIA establishes state-of-the-art on several common benchmarks.
+</p></li>
+</ul>
+<h3>Title: A transformer-based method for zero and few-shot biomedical named entity recognition. (arXiv:2305.04928v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.04928">http://arxiv.org/abs/2305.04928</a></li>
+<li>Code URL: <a href="https://github.com/br-ai-ns-institute/zero-shotner">https://github.com/br-ai-ns-institute/zero-shotner</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.04928] A transformer-based method for zero and few-shot biomedical named entity recognition](http://arxiv.org/abs/2305.04928) #transformer</code></li>
+<li>Summary: <p>Supervised named entity recognition (NER) in the biomedical domain is
+dependent on large sets of annotated texts with the given named entities, whose
+creation can be time-consuming and expensive. Furthermore, the extraction of
+new entities often requires conducting additional annotation tasks and
+retraining the model. To address these challenges, this paper proposes a
+transformer-based method for zero- and few-shot NER in the biomedical domain.
+The method is based on transforming the task of multi-class token
+classification into binary token classification (token contains the searched
+entity or does not contain the searched entity) and pre-training on a larger
+amount of datasets and biomedical entities, from where the method can learn
+semantic relations between the given and potential classes. We have achieved
+average F1 scores of 35.44% for zero-shot NER, 50.10% for one-shot NER, 69.94%
+for 10-shot NER, and 79.51% for 100-shot NER on 9 diverse evaluated biomedical
+entities with PubMedBERT fine-tuned model. The results demonstrate the
+effectiveness of the proposed method for recognizing new entities with limited
+examples, with comparable or better results from the state-of-the-art zero- and
+few-shot NER methods.
+</p></li>
+</ul>
+<h3>Title: Knowledge Graph Guided Semantic Evaluation of Language Models For User Trust. (arXiv:2305.04989v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.04989">http://arxiv.org/abs/2305.04989</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.04989] Knowledge Graph Guided Semantic Evaluation of Language Models For User Trust](http://arxiv.org/abs/2305.04989) #transformer</code></li>
+<li>Summary: <p>A fundamental question in natural language processing is - what kind of
+language structure and semantics is the language model capturing? Graph formats
+such as knowledge graphs are easy to evaluate as they explicitly express
+language semantics and structure. This study evaluates the semantics encoded in
+the self-attention transformers by leveraging explicit knowledge graph
+structures. We propose novel metrics to measure the reconstruction error when
+providing graph path sequences from a knowledge graph and trying to
+reproduce/reconstruct the same from the outputs of the self-attention
+transformer models. The opacity of language models has an immense bearing on
+societal issues of trust and explainable decision outcomes. Our findings
+suggest that language models are models of stochastic control processes for
+plausible language pattern generation. However, they do not ascribe object and
+concept-level meaning and semantics to the learned stochastic patterns such as
+those described in knowledge graphs. Furthermore, to enable robust evaluation
+of concept understanding by language models, we construct and make public an
+augmented language understanding benchmark built on the General Language
+Understanding Evaluation (GLUE) benchmark. This has significant
+application-level user trust implications as stochastic patterns without a
+strong sense of meaning cannot be trusted in high-stakes applications.
+</p></li>
+</ul>
+<h3>Title: Coherent Wave Dynamics and Language Generation of a Generative Pre-trained Transformer. (arXiv:2305.05061v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05061">http://arxiv.org/abs/2305.05061</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05061] Coherent Wave Dynamics and Language Generation of a Generative Pre-trained Transformer](http://arxiv.org/abs/2305.05061) #transformer</code></li>
+<li>Summary: <p>Large Language Models (LLMs), such as the Generative Pretrained Transformer
+(GPT), have achieved tremendous success in various language tasks, but their
+emergent abilities have also raised many questions, concerns, and challenges
+that need to be addressed. To gain a better understanding of the models' inner
+mechanisms, we analyze the hidden state and channel wave dynamics in a small
+GPT, focusing on the coherence of wave patterns in terms of cross-channel
+correlation and individual auto-correlation. Our findings suggest that wave
+dynamics offer consistent and repeatable intrinsic oscillation modes, along
+with context-aware plasticity and expressiveness in language generation. By
+analyzing wave patterns, coherence, and clustering, we provide a systematic way
+to identify and interpret the functionality of the hidden state channels,
+paving the way to understand and control higher-level language pattern
+formation. In addition, we investigate the Poisson statistics of spelling
+errors in text sequence generation across various levels of model training and
+observe a phase-transition-like process. As coherence builds up, there is a
+competition between the generation of correct and misspelled words. However,
+once the model is adequately trained and significant coherence has emerged, the
+coherent process becomes strong enough to effectively suppress spelling errors,
+preventing the cascade amplification of defects. The distribution of correct
+spellings transitions from Poissonian to Sub-Poissonian, while the distribution
+of misspellings shows the opposite trend. By leveraging concepts and techniques
+from quantum physics, we gain novel insights into the dynamics of the small
+GPT. This approach can be extended to larger language models that exhibit more
+complex coherent language patterns, opening up opportunities to interpret their
+emergent capabilities and develop more specialized models.
+</p></li>
+</ul>
+<h3>Title: Detection of depression on social networks using transformers and ensembles. (arXiv:2305.05325v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05325">http://arxiv.org/abs/2305.05325</a></li>
+<li>Code URL: <a href="https://gitlab.com/teletton/diploma">https://gitlab.com/teletton/diploma</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05325] Detection of depression on social networks using transformers and ensembles](http://arxiv.org/abs/2305.05325) #transformer</code></li>
+<li>Summary: <p>As the impact of technology on our lives is increasing, we witness increased
+use of social media that became an essential tool not only for communication
+but also for sharing information with community about our thoughts and
+feelings. This can be observed also for people with mental health disorders
+such as depression where they use social media for expressing their thoughts
+and asking for help. This opens a possibility to automatically process social
+media posts and detect signs of depression. We build several large pre-trained
+language model based classifiers for depression detection from social media
+posts. Besides fine-tuning BERT, RoBERTA, BERTweet, and mentalBERT were also
+construct two types of ensembles. We analyze the performance of our models on
+two data sets of posts from social platforms Reddit and Twitter, and
+investigate also the performance of transfer learning across the two data sets.
+The results show that transformer ensembles improve over the single
+transformer-based classifiers.
+</p></li>
+</ul>
+<h3>Title: Investigating the effect of sub-word segmentation on the performance of transformer language models. (arXiv:2305.05480v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05480">http://arxiv.org/abs/2305.05480</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05480] Investigating the effect of sub-word segmentation on the performance of transformer language models](http://arxiv.org/abs/2305.05480) #transformer</code></li>
+<li>Summary: <p>We would like to explore how morphemes can affect the performance of a
+language model. We trained GPT-2 and Bert model with StateMorph for both
+Finnish and Russian, which is a morpheme segmenting algorithm. As a comparison,
+we also trained a model with BPE and Morfessor. Our preliminary result shows
+that StateMorph can help the model to converge more efficiently and achieve a
+better validation score.
+</p></li>
+</ul>
+<h3>Title: The emergence of clusters in self-attention dynamics. (arXiv:2305.05465v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05465">http://arxiv.org/abs/2305.05465</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05465] The emergence of clusters in self-attention dynamics](http://arxiv.org/abs/2305.05465) #transformer</code></li>
+<li>Summary: <p>Viewing Transformers as interacting particle systems, we describe the
+geometry of learned representations when the weights are not time dependent. We
+show that particles, representing tokens, tend to cluster toward particular
+limiting objects as time tends to infinity. The type of limiting object that
+emerges depends on the spectrum of the value matrix. Additionally, in the
+one-dimensional case we prove that the self-attention matrix converges to a
+low-rank Boolean matrix. The combination of these results mathematically
+confirms the empirical observation made by Vaswani et al.
+\cite{vaswani2017attention} that \emph{leaders} appear in a sequence of tokens
+when processed by Transformers.
+</p></li>
+</ul>
+<h2>generative</h2>
+<h3>Title: GPT-NAS: Neural Architecture Search with the Generative Pre-Trained Model. (arXiv:2305.05351v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05351">http://arxiv.org/abs/2305.05351</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05351] GPT-NAS: Neural Architecture Search with the Generative Pre-Trained Model](http://arxiv.org/abs/2305.05351) #generative</code></li>
+<li>Summary: <p>Neural Architecture Search (NAS) has emerged as one of the effective methods
+to design the optimal neural network architecture automatically. Although
+neural architectures have achieved human-level performances in several tasks,
+few of them are obtained from the NAS method. The main reason is the huge
+search space of neural architectures, making NAS algorithms inefficient. This
+work presents a novel architecture search algorithm, called GPT-NAS, that
+optimizes neural architectures by Generative Pre-Trained (GPT) model. In
+GPT-NAS, we assume that a generative model pre-trained on a large-scale corpus
+could learn the fundamental law of building neural architectures. Therefore,
+GPT-NAS leverages the generative pre-trained (GPT) model to propose reasonable
+architecture components given the basic one. Such an approach can largely
+reduce the search space by introducing prior knowledge in the search process.
+Extensive experimental results show that our GPT-NAS method significantly
+outperforms seven manually designed neural architectures and thirteen
+architectures provided by competing NAS methods. In addition, our ablation
+study indicates that the proposed algorithm improves the performance of finely
+tuned neural architectures by up to about 12% compared to those without GPT,
+further demonstrating its effectiveness in searching neural architectures.
+</p></li>
+</ul>
+<h3>Title: Fashion CUT: Unsupervised domain adaptation for visual pattern classification in clothes using synthetic data and pseudo-labels. (arXiv:2305.05580v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05580">http://arxiv.org/abs/2305.05580</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05580] Fashion CUT: Unsupervised domain adaptation for visual pattern classification in clothes using synthetic data and pseudo-labels](http://arxiv.org/abs/2305.05580) #generative</code></li>
+<li>Summary: <p>Accurate product information is critical for e-commerce stores to allow
+customers to browse, filter, and search for products. Product data quality is
+affected by missing or incorrect information resulting in poor customer
+experience. While machine learning can be used to correct inaccurate or missing
+information, achieving high performance on fashion image classification tasks
+requires large amounts of annotated data, but it is expensive to generate due
+to labeling costs. One solution can be to generate synthetic data which
+requires no manual labeling. However, training a model with a dataset of solely
+synthetic images can lead to poor generalization when performing inference on
+real-world data because of the domain shift. We introduce a new unsupervised
+domain adaptation technique that converts images from the synthetic domain into
+the real-world domain. Our approach combines a generative neural network and a
+classifier that are jointly trained to produce realistic images while
+preserving the synthetic label information. We found that using real-world
+pseudo-labels during training helps the classifier to generalize in the
+real-world domain, reducing the synthetic bias. We successfully train a visual
+pattern classification model in the fashion domain without real-world
+annotations. Experiments show that our method outperforms other unsupervised
+domain adaptation algorithms.
+</p></li>
+</ul>
+<h3>Title: Revisiting Relation Extraction in the era of Large Language Models. (arXiv:2305.05003v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05003">http://arxiv.org/abs/2305.05003</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05003] Revisiting Relation Extraction in the era of Large Language Models](http://arxiv.org/abs/2305.05003) #generative</code></li>
+<li>Summary: <p>Relation extraction (RE) is the core NLP task of inferring semantic
+relationships between entities from text. Standard supervised RE techniques
+entail training modules to tag tokens comprising entity spans and then predict
+the relationship between them. Recent work has instead treated the problem as a
+\emph{sequence-to-sequence} task, linearizing relations between entities as
+target strings to be generated conditioned on the input. Here we push the
+limits of this approach, using larger language models (GPT-3 and Flan-T5 large)
+than considered in prior work and evaluating their performance on standard RE
+tasks under varying levels of supervision. We address issues inherent to
+evaluating generative approaches to RE by doing human evaluations, in lieu of
+relying on exact matching. Under this refined evaluation, we find that: (1)
+Few-shot prompting with GPT-3 achieves near SOTA performance, i.e., roughly
+equivalent to existing fully supervised models; (2) Flan-T5 is not as capable
+in the few-shot setting, but supervising and fine-tuning it with
+Chain-of-Thought (CoT) style explanations (generated via GPT-3) yields SOTA
+results. We release this model as a new baseline for RE tasks.
+</p></li>
+</ul>
+<h3>Title: Consistent Text Categorization using Data Augmentation in e-Commerce. (arXiv:2305.05402v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05402">http://arxiv.org/abs/2305.05402</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05402] Consistent Text Categorization using Data Augmentation in e-Commerce](http://arxiv.org/abs/2305.05402) #generative</code></li>
+<li>Summary: <p>The categorization of massive e-Commerce data is a crucial, well-studied
+task, which is prevalent in industrial settings. In this work, we aim to
+improve an existing product categorization model that is already in use by a
+major web company, serving multiple applications. At its core, the product
+categorization model is a text classification model that takes a product title
+as an input and outputs the most suitable category out of thousands of
+available candidates. Upon a closer inspection, we found inconsistencies in the
+labeling of similar items. For example, minor modifications of the product
+title pertaining to colors or measurements majorly impacted the model's output.
+This phenomenon can negatively affect downstream recommendation or search
+applications, leading to a sub-optimal user experience.
+</p></li>
+</ul>
+<p>To address this issue, we propose a new framework for consistent text
+categorization. Our goal is to improve the model's consistency while
+maintaining its production-level performance. We use a semi-supervised approach
+for data augmentation and presents two different methods for utilizing
+unlabeled samples. One method relies directly on existing catalogs, while the
+other uses a generative model. We compare the pros and cons of each approach
+and present our experimental results.
+</p>
+
+<h3>Title: Towards Building the Federated GPT: Federated Instruction Tuning. (arXiv:2305.05644v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05644">http://arxiv.org/abs/2305.05644</a></li>
+<li>Code URL: <a href="https://github.com/jayzhang42/federatedgpt-shepherd">https://github.com/jayzhang42/federatedgpt-shepherd</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05644] Towards Building the Federated GPT: Federated Instruction Tuning](http://arxiv.org/abs/2305.05644) #generative</code></li>
+<li>Summary: <p>While ``instruction-tuned" generative large language models (LLMs) have
+demonstrated an impressive ability to generalize to new tasks, the training
+phases heavily rely on large amounts of diverse and high-quality instruction
+data (such as ChatGPT and GPT-4). Unfortunately, acquiring high-quality data,
+especially when it comes to human-written data, can pose significant challenges
+both in terms of cost and accessibility. Moreover, concerns related to privacy
+can further limit access to such data, making the process of obtaining it a
+complex and nuanced undertaking. Consequently, this hinders the generality of
+the tuned models and may restrict their effectiveness in certain contexts. To
+tackle this issue, our study introduces a new approach called Federated
+Instruction Tuning (FedIT), which leverages federated learning (FL) as the
+learning framework for the instruction tuning of LLMs. This marks the first
+exploration of FL-based instruction tuning for LLMs. This is especially
+important since text data is predominantly generated by end users. Therefore,
+it is imperative to design and adapt FL approaches to effectively leverage
+these users' diverse instructions stored on local devices, while preserving
+privacy and ensuring data security. In the current paper, by conducting widely
+used GPT-4 auto-evaluation, we demonstrate that by exploiting the heterogeneous
+and diverse sets of instructions on the client's end with the proposed
+framework FedIT, we improved the performance of LLMs compared to centralized
+training with only limited local instructions. Further, in this paper, we
+developed a Github repository named Shepherd. This repository offers a
+foundational framework for exploring federated fine-tuning of LLMs using
+heterogeneous instructions across diverse categories.
+</p></li>
+</ul>
+<h3>Title: Leveraging Generative AI Models for Synthetic Data Generation in Healthcare: Balancing Research and Privacy. (arXiv:2305.05247v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05247">http://arxiv.org/abs/2305.05247</a></li>
+<li>Code URL: <a href="https://github.com/aryan-jadon/synthetic-data-medical-generative-ai">https://github.com/aryan-jadon/synthetic-data-medical-generative-ai</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05247] Leveraging Generative AI Models for Synthetic Data Generation in Healthcare: Balancing Research and Privacy](http://arxiv.org/abs/2305.05247) #generative</code></li>
+<li>Summary: <p>The widespread adoption of electronic health records and digital healthcare
+data has created a demand for data-driven insights to enhance patient outcomes,
+diagnostics, and treatments. However, using real patient data presents privacy
+and regulatory challenges, including compliance with HIPAA and GDPR. Synthetic
+data generation, using generative AI models like GANs and VAEs offers a
+promising solution to balance valuable data access and patient privacy
+protection. In this paper, we examine generative AI models for creating
+realistic, anonymized patient data for research and training, explore synthetic
+data applications in healthcare, and discuss its benefits, challenges, and
+future research directions. Synthetic data has the potential to revolutionize
+healthcare by providing anonymized patient data while preserving privacy and
+enabling versatile applications.
+</p></li>
+</ul>
+<h3>Title: FedHB: Hierarchical Bayesian Federated Learning. (arXiv:2305.04979v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.04979">http://arxiv.org/abs/2305.04979</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.04979] FedHB: Hierarchical Bayesian Federated Learning](http://arxiv.org/abs/2305.04979) #generative</code></li>
+<li>Summary: <p>We propose a novel hierarchical Bayesian approach to Federated Learning (FL),
+where our model reasonably describes the generative process of clients' local
+data via hierarchical Bayesian modeling: constituting random variables of local
+models for clients that are governed by a higher-level global variate.
+Interestingly, the variational inference in our Bayesian model leads to an
+optimisation problem whose block-coordinate descent solution becomes a
+distributed algorithm that is separable over clients and allows them not to
+reveal their own private data at all, thus fully compatible with FL. We also
+highlight that our block-coordinate algorithm has particular forms that subsume
+the well-known FL algorithms including Fed-Avg and Fed-Prox as special cases.
+Beyond introducing novel modeling and derivations, we also offer convergence
+analysis showing that our block-coordinate FL algorithm converges to an (local)
+optimum of the objective at the rate of $O(1/\sqrt{t})$, the same rate as
+regular (centralised) SGD, as well as the generalisation error analysis where
+we prove that the test error of our model on unseen data is guaranteed to
+vanish as we increase the training data size, thus asymptotically optimal.
+</p></li>
+</ul>
+<h2>label correction</h2>
+<h3>Title: DomainInv: Domain Invariant Fine Tuning and Adversarial Label Correction For QA Domain Adaptation. (arXiv:2305.05589v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05589">http://arxiv.org/abs/2305.05589</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05589] DomainInv: Domain Invariant Fine Tuning and Adversarial Label Correction For QA Domain Adaptation](http://arxiv.org/abs/2305.05589) #label correction</code></li>
+<li>Summary: <p>Existing Question Answering (QA) systems limited by the capability of
+answering questions from unseen domain or any out-of-domain distributions
+making them less reliable for deployment to real scenarios. Most importantly
+all the existing QA domain adaptation methods are either based on generating
+synthetic data or pseudo labeling the target domain data. The domain adaptation
+methods based on synthetic data and pseudo labeling suffers either from the
+requirement of computational resources or an extra overhead of carefully
+selecting the confidence threshold to separate the noisy examples from being in
+the training dataset. In this paper, we propose the unsupervised domain
+adaptation for unlabeled target domain by transferring the target
+representation near to source domain while still using the supervision from
+source domain. Towards that we proposed the idea of domain invariant fine
+tuning along with adversarial label correction to identify the target instances
+which lie far apart from the source domain, so that the feature encoder can be
+learnt to minimize the distance between such target instances and source
+instances class wisely, removing the possibility of learning the features of
+target domain which are still near to source support but are ambiguous.
+Evaluation of our QA domain adaptation method namely, DomainInv on multiple
+target QA dataset reveal the performance improvement over the strongest
+baseline.
+</p></li>
+</ul>
+<h2>noise</h2>
+<h3>Title: Privacy-preserving Adversarial Facial Features. (arXiv:2305.05391v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05391">http://arxiv.org/abs/2305.05391</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05391] Privacy-preserving Adversarial Facial Features](http://arxiv.org/abs/2305.05391) #noise</code></li>
+<li>Summary: <p>Face recognition service providers protect face privacy by extracting compact
+and discriminative facial features (representations) from images, and storing
+the facial features for real-time recognition. However, such features can still
+be exploited to recover the appearance of the original face by building a
+reconstruction network. Although several privacy-preserving methods have been
+proposed, the enhancement of face privacy protection is at the expense of
+accuracy degradation. In this paper, we propose an adversarial features-based
+face privacy protection (AdvFace) approach to generate privacy-preserving
+adversarial features, which can disrupt the mapping from adversarial features
+to facial images to defend against reconstruction attacks. To this end, we
+design a shadow model which simulates the attackers' behavior to capture the
+mapping function from facial features to images and generate adversarial latent
+noise to disrupt the mapping. The adversarial features rather than the original
+features are stored in the server's database to prevent leaked features from
+exposing facial information. Moreover, the AdvFace requires no changes to the
+face recognition network and can be implemented as a privacy-enhancing plugin
+in deployed face recognition systems. Extensive experimental results
+demonstrate that AdvFace outperforms the state-of-the-art face
+privacy-preserving methods in defending against reconstruction attacks while
+maintaining face recognition accuracy.
+</p></li>
+</ul>
+<h3>Title: Restormer-Plus for Real World Image Deraining: One State-of-the-Art Solution to the GT-RAIN Challenge (CVPR 2023 UG$^2$+ Track 3). (arXiv:2305.05454v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05454">http://arxiv.org/abs/2305.05454</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05454] Restormer-Plus for Real World Image Deraining: One State-of-the-Art Solution to the GT-RAIN Challenge (CVPR 2023 UG$^2$+ Track 3)](http://arxiv.org/abs/2305.05454) #noise</code></li>
+<li>Summary: <p>This technical report presents our Restormer-Plus approach, which was
+submitted to the GT-RAIN Challenge (CVPR 2023 UG$^2$+ Track 3). Details
+regarding the challenge are available at
+<a href="http://cvpr2023.ug2challenge.org/track3.html.">this http URL</a> Our Restormer-Plus outperformed
+all other submitted solutions in terms of peak signal-to-noise ratio (PSNR). It
+consists mainly of four modules: the single image de-raining module, the median
+filtering module, the weighted averaging module, and the post-processing
+module. We named the single-image de-raining module Restormer-X, which is built
+on Restormer and performed on each rainy image. The median filtering module is
+employed as a median operator for the 300 rainy images associated with each
+scene. The weighted averaging module combines the median filtering results with
+that of Restormer-X to alleviate overfitting if we only use Restormer-X.
+Finally, the post-processing module is used to improve the brightness
+restoration. Together, these modules render Restormer-Plus to be one
+state-of-the-art solution to the GT-RAIN Challenge. Our code is available at
+https://github.com/ZJLAB-AMMI/Restormer-Plus.
+</p></li>
+</ul>
+<h3>Title: PET-NeuS: Positional Encoding Tri-Planes for Neural Surfaces. (arXiv:2305.05594v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05594">http://arxiv.org/abs/2305.05594</a></li>
+<li>Code URL: <a href="https://github.com/yiqun-wang/pet-neus">https://github.com/yiqun-wang/pet-neus</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05594] PET-NeuS: Positional Encoding Tri-Planes for Neural Surfaces](http://arxiv.org/abs/2305.05594) #noise</code></li>
+<li>Summary: <p>A signed distance function (SDF) parametrized by an MLP is a common
+ingredient of neural surface reconstruction. We build on the successful recent
+method NeuS to extend it by three new components. The first component is to
+borrow the tri-plane representation from EG3D and represent signed distance
+fields as a mixture of tri-planes and MLPs instead of representing it with MLPs
+only. Using tri-planes leads to a more expressive data structure but will also
+introduce noise in the reconstructed surface. The second component is to use a
+new type of positional encoding with learnable weights to combat noise in the
+reconstruction process. We divide the features in the tri-plane into multiple
+frequency scales and modulate them with sin and cos functions of different
+frequencies. The third component is to use learnable convolution operations on
+the tri-plane features using self-attention convolution to produce features
+with different frequency bands. The experiments show that PET-NeuS achieves
+high-fidelity surface reconstruction on standard datasets. Following previous
+work and using the Chamfer metric as the most important way to measure surface
+reconstruction quality, we are able to improve upon the NeuS baseline by 57% on
+Nerf-synthetic (0.84 compared to 1.97) and by 15.5% on DTU (0.71 compared to
+0.84). The qualitative evaluation reveals how our method can better control the
+interference of high-frequency noise. Code available at
+\url{https://github.com/yiqun-wang/PET-NeuS}.
+</p></li>
+</ul>
+<h3>Title: Utilizing Lexical Similarity to Enable Zero-Shot Machine Translation for Extremely Low-resource Languages. (arXiv:2305.05214v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05214">http://arxiv.org/abs/2305.05214</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05214] Utilizing Lexical Similarity to Enable Zero-Shot Machine Translation for Extremely Low-resource Languages](http://arxiv.org/abs/2305.05214) #noise</code></li>
+<li>Summary: <p>We address the task of machine translation from an extremely low-resource
+language (LRL) to English using cross-lingual transfer from a closely related
+high-resource language (HRL). For many of these languages, no parallel corpora
+are available, even monolingual corpora are limited and representations in
+pre-trained sequence-to-sequence models are absent. These factors limit the
+benefits of cross-lingual transfer from shared embedding spaces in multilingual
+models. However, many extremely LRLs have a high level of lexical similarity
+with related HRLs. We utilize this property by injecting character and
+character-span noise into the training data of the HRL prior to learning the
+vocabulary. This serves as a regularizer which makes the model more robust to
+lexical divergences between the HRL and LRL and better facilitates
+cross-lingual transfer. On closely related HRL and LRL pairs from multiple
+language families, we observe that our method significantly outperforms the
+baseline MT as well as approaches proposed previously to address cross-lingual
+transfer between closely related languages. We also show that the proposed
+character-span noise injection performs better than the unigram-character noise
+injection.
+</p></li>
+</ul>
+<h3>Title: Exploiting Pseudo Image Captions for Multimodal Summarization. (arXiv:2305.05496v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05496">http://arxiv.org/abs/2305.05496</a></li>
+<li>Code URL: <a href="https://github.com/sitaproject/sita">https://github.com/sitaproject/sita</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05496] Exploiting Pseudo Image Captions for Multimodal Summarization](http://arxiv.org/abs/2305.05496) #noise</code></li>
+<li>Summary: <p>Cross-modal contrastive learning in vision language pretraining (VLP) faces
+the challenge of (partial) false negatives. In this paper, we study this
+problem from the perspective of Mutual Information (MI) optimization. It is
+common sense that InfoNCE loss used in contrastive learning will maximize the
+lower bound of MI between anchors and their positives, while we theoretically
+prove that MI involving negatives also matters when noises commonly exist.
+Guided by a more general lower bound form for optimization, we propose a
+contrastive learning strategy regulated by progressively refined cross-modal
+similarity, to more accurately optimize MI between an image/text anchor and its
+negative texts/images instead of improperly minimizing it. Our method performs
+competitively on four downstream cross-modal tasks and systematically balances
+the beneficial and harmful effects of (partial) false negative samples under
+theoretical guidance.
+</p></li>
+</ul>
+<h3>Title: Probabilistic Detection of GNSS Spoofing using Opportunistic Information. (arXiv:2305.05404v1 [cs.CR])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05404">http://arxiv.org/abs/2305.05404</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05404] Probabilistic Detection of GNSS Spoofing using Opportunistic Information](http://arxiv.org/abs/2305.05404) #noise</code></li>
+<li>Summary: <p>Global Navigation Satellite Systems (GNSS) are integrated into many devices.
+However, civilian GNSS signals are usually not cryptographically protected.
+This makes attacks that forge signals relatively easy. Considering modern
+devices often have network connections and onboard sensors, the proposed here
+Probabilistic Detection of GNSS Spoofing (PDS) scheme is based on such
+opportunistic information. PDS has at its core two parts. First, a regression
+problem with motion model constraints, which equalizes the noise of all
+locations considering the motion model of the device. Second, a Gaussian
+process, that analyzes statistical properties of location data to construct
+uncertainty. Then, a likelihood function, that fuses the two parts, as a basis
+for a Neyman-Pearson lemma (NPL)-based detection strategy. Our experimental
+evaluation shows a performance gain over the state-of-the-art, in terms of
+attack detection effectiveness.
+</p></li>
+</ul>
+<h3>Title: Communication-Robust Multi-Agent Learning by Adaptable Auxiliary Multi-Agent Adversary Generation. (arXiv:2305.05116v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05116">http://arxiv.org/abs/2305.05116</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05116] Communication-Robust Multi-Agent Learning by Adaptable Auxiliary Multi-Agent Adversary Generation](http://arxiv.org/abs/2305.05116) #noise</code></li>
+<li>Summary: <p>Communication can promote coordination in cooperative Multi-Agent
+Reinforcement Learning (MARL). Nowadays, existing works mainly focus on
+improving the communication efficiency of agents, neglecting that real-world
+communication is much more challenging as there may exist noise or potential
+attackers. Thus the robustness of the communication-based policies becomes an
+emergent and severe issue that needs more exploration. In this paper, we posit
+that the ego system trained with auxiliary adversaries may handle this
+limitation and propose an adaptable method of Multi-Agent Auxiliary Adversaries
+Generation for robust Communication, dubbed MA3C, to obtain a robust
+communication-based policy. In specific, we introduce a novel message-attacking
+approach that models the learning of the auxiliary attacker as a cooperative
+problem under a shared goal to minimize the coordination ability of the ego
+system, with which every information channel may suffer from distinct message
+attacks. Furthermore, as naive adversarial training may impede the
+generalization ability of the ego system, we design an attacker population
+generation approach based on evolutionary learning. Finally, the ego system is
+paired with an attacker population and then alternatively trained against the
+continuously evolving attackers to improve its robustness, meaning that both
+the ego system and the attackers are adaptable. Extensive experiments on
+multiple benchmarks indicate that our proposed MA3C provides comparable or
+better robustness and generalization ability than other baselines.
+</p></li>
+</ul>
+<h3>Title: FedNoRo: Towards Noise-Robust Federated Learning by Addressing Class Imbalance and Label Noise Heterogeneity. (arXiv:2305.05230v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05230">http://arxiv.org/abs/2305.05230</a></li>
+<li>Code URL: <a href="https://github.com/wnn2000/fednoro">https://github.com/wnn2000/fednoro</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05230] FedNoRo: Towards Noise-Robust Federated Learning by Addressing Class Imbalance and Label Noise Heterogeneity](http://arxiv.org/abs/2305.05230) #noise</code></li>
+<li>Summary: <p>Federated noisy label learning (FNLL) is emerging as a promising tool for
+privacy-preserving multi-source decentralized learning. Existing research,
+relying on the assumption of class-balanced global data, might be incapable to
+model complicated label noise, especially in medical scenarios. In this paper,
+we first formulate a new and more realistic federated label noise problem where
+global data is class-imbalanced and label noise is heterogeneous, and then
+propose a two-stage framework named FedNoRo for noise-robust federated
+learning. Specifically, in the first stage of FedNoRo, per-class loss
+indicators followed by Gaussian Mixture Model are deployed for noisy client
+identification. In the second stage, knowledge distillation and a
+distance-aware aggregation function are jointly adopted for noise-robust
+federated model updating. Experimental results on the widely-used ICH and
+ISIC2019 datasets demonstrate the superiority of FedNoRo against the
+state-of-the-art FNLL methods for addressing class imbalance and label noise
+heterogeneity in real-world FL scenarios.
+</p></li>
+</ul>
+<h2>diffusion</h2>
+<h3>Title: Atmospheric Turbulence Correction via Variational Deep Diffusion. (arXiv:2305.05077v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05077">http://arxiv.org/abs/2305.05077</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05077] Atmospheric Turbulence Correction via Variational Deep Diffusion](http://arxiv.org/abs/2305.05077) #diffusion</code></li>
+<li>Summary: <p>Atmospheric Turbulence (AT) correction is a challenging restoration task as
+it consists of two distortions: geometric distortion and spatially variant
+blur. Diffusion models have shown impressive accomplishments in photo-realistic
+image synthesis and beyond. In this paper, we propose a novel deep conditional
+diffusion model under a variational inference framework to solve the AT
+correction problem. We use this framework to improve performance by learning
+latent prior information from the input and degradation processes. We use the
+learned information to further condition the diffusion model. Experiments are
+conducted in a comprehensive synthetic AT dataset. We show that the proposed
+framework achieves good quantitative and qualitative results.
+</p></li>
+</ul>
+<h3>Title: SUR-adapter: Enhancing Text-to-Image Pre-trained Diffusion Models with Large Language Models. (arXiv:2305.05189v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05189">http://arxiv.org/abs/2305.05189</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05189] SUR-adapter: Enhancing Text-to-Image Pre-trained Diffusion Models with Large Language Models](http://arxiv.org/abs/2305.05189) #diffusion</code></li>
+<li>Summary: <p>Diffusion models, which have emerged to become popular text-to-image
+generation models, can produce high-quality and content-rich images guided by
+textual prompts. However, there are limitations to semantic understanding and
+commonsense reasoning in existing models when the input prompts are concise
+narrative, resulting in low-quality image generation. To improve the capacities
+for narrative prompts, we propose a simple-yet-effective parameter-efficient
+fine-tuning approach called the Semantic Understanding and Reasoning adapter
+(SUR-adapter) for pre-trained diffusion models. To reach this goal, we first
+collect and annotate a new dataset SURD which consists of more than 57,000
+semantically corrected multi-modal samples. Each sample contains a simple
+narrative prompt, a complex keyword-based prompt, and a high-quality image.
+Then, we align the semantic representation of narrative prompts to the complex
+prompts and transfer knowledge of large language models (LLMs) to our
+SUR-adapter via knowledge distillation so that it can acquire the powerful
+semantic understanding and reasoning capabilities to build a high-quality
+textual semantic representation for text-to-image generation. We conduct
+experiments by integrating multiple LLMs and popular pre-trained diffusion
+models to show the effectiveness of our approach in enabling diffusion models
+to understand and reason concise natural language without image quality
+degradation. Our approach can make text-to-image diffusion models easier to use
+with better user experience, which demonstrates our approach has the potential
+for further advancing the development of user-friendly text-to-image generation
+models by bridging the semantic gap between simple narrative prompts and
+complex keyword-based prompts.
+</p></li>
+</ul>
+<h3>Title: Style-A-Video: Agile Diffusion for Arbitrary Text-based Video Style Transfer. (arXiv:2305.05464v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05464">http://arxiv.org/abs/2305.05464</a></li>
+<li>Code URL: <a href="https://github.com/haha-lisa/style-a-video">https://github.com/haha-lisa/style-a-video</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05464] Style-A-Video: Agile Diffusion for Arbitrary Text-based Video Style Transfer](http://arxiv.org/abs/2305.05464) #diffusion</code></li>
+<li>Summary: <p>Large-scale text-to-video diffusion models have demonstrated an exceptional
+ability to synthesize diverse videos. However, due to the lack of extensive
+text-to-video datasets and the necessary computational resources for training,
+directly applying these models for video stylization remains difficult. Also,
+given that the noise addition process on the input content is random and
+destructive, fulfilling the style transfer task's content preservation criteria
+is challenging. This paper proposes a zero-shot video stylization method named
+Style-A-Video, which utilizes a generative pre-trained transformer with an
+image latent diffusion model to achieve a concise text-controlled video
+stylization. We improve the guidance condition in the denoising process,
+establishing a balance between artistic expression and structure preservation.
+Furthermore, to decrease inter-frame flicker and avoid the formation of
+additional artifacts, we employ a sampling optimization and a temporal
+consistency module. Extensive experiments show that we can attain superior
+content preservation and stylistic performance while incurring less consumption
+than previous solutions. Code will be available at
+https://github.com/haha-lisa/Style-A-Video.
+</p></li>
+</ul>
+<h2>LLM</h2>
+<h2>segmentation</h2>
+<h3>Title: Dual flow fusion model for concrete surface crack segmentation. (arXiv:2305.05132v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05132">http://arxiv.org/abs/2305.05132</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05132] Dual flow fusion model for concrete surface crack segmentation](http://arxiv.org/abs/2305.05132) #segmentation</code></li>
+<li>Summary: <p>Cracks and other diseases are important factors that threaten the safe
+operation of transportation infrastructure. Traditional manual detection and
+ultrasonic instrument detection consume a lot of time and resource costs. With
+the development of deep learning technology, many deep learning models are
+widely used in actual visual segmentation tasks. The detection method based on
+the deep learning model has the advantages of high detection accuracy, fast
+detection speed and simple operation. However, the crack segmentation based on
+deep learning has problems such as sensitivity to background noise, rough
+edges, and lack of robustness. Therefore, this paper proposes a fissure
+segmentation model based on two-stream fusion, which simultaneously inputs
+images into two designed processing streams to independently extract
+long-distance dependent and local detail features, and realizes adaptive
+prediction through a dual-head mechanism. At the same time, a new interactive
+fusion mechanism is proposed to guide the complementarity of different levels
+of features to realize the location and identification of cracks in complex
+backgrounds. Finally, we propose an edge optimization method to improve
+segmentation accuracy. Experiments have proved that the F1 value of the
+segmentation results on the DeepCrack[1] public dataset reached 93.7%, and the
+IOU value reached 86.6%; the F1 value of the segmentation results on the
+CRACK500[2] dataset reached 78.1%, and the IOU value reached 66.0%.
+</p></li>
+</ul>
+<h3>Title: Multi-Granularity Denoising and Bidirectional Alignment for Weakly Supervised Semantic Segmentation. (arXiv:2305.05154v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05154">http://arxiv.org/abs/2305.05154</a></li>
+<li>Code URL: <a href="https://github.com/nust-machine-intelligence-laboratory/mdba">https://github.com/nust-machine-intelligence-laboratory/mdba</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05154] Multi-Granularity Denoising and Bidirectional Alignment for Weakly Supervised Semantic Segmentation](http://arxiv.org/abs/2305.05154) #segmentation</code></li>
+<li>Summary: <p>Weakly supervised semantic segmentation (WSSS) models relying on class
+activation maps (CAMs) have achieved desirable performance comparing to the
+non-CAMs-based counterparts. However, to guarantee WSSS task feasible, we need
+to generate pseudo labels by expanding the seeds from CAMs which is complex and
+time-consuming, thus hindering the design of efficient end-to-end
+(single-stage) WSSS approaches. To tackle the above dilemma, we resort to the
+off-the-shelf and readily accessible saliency maps for directly obtaining
+pseudo labels given the image-level class labels. Nevertheless, the salient
+regions may contain noisy labels and cannot seamlessly fit the target objects,
+and saliency maps can only be approximated as pseudo labels for simple images
+containing single-class objects. As such, the achieved segmentation model with
+these simple images cannot generalize well to the complex images containing
+multi-class objects. To this end, we propose an end-to-end multi-granularity
+denoising and bidirectional alignment (MDBA) model, to alleviate the noisy
+label and multi-class generalization issues. Specifically, we propose the
+online noise filtering and progressive noise detection modules to tackle
+image-level and pixel-level noise, respectively. Moreover, a bidirectional
+alignment mechanism is proposed to reduce the data distribution gap at both
+input and output space with simple-to-complex image synthesis and
+complex-to-simple adversarial learning. MDBA can reach the mIoU of 69.5\% and
+70.2\% on validation and test sets for the PASCAL VOC 2012 dataset. The source
+codes and models have been made available at
+\url{https://github.com/NUST-Machine-Intelligence-Laboratory/MDBA}.
+</p></li>
+</ul>
+<h3>Title: DC3DCD: unsupervised learning for multiclass 3D point cloud change detection. (arXiv:2305.05421v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05421">http://arxiv.org/abs/2305.05421</a></li>
+<li>Code URL: <a href="https://github.com/idegelis/torch-points3d-dc3dcd">https://github.com/idegelis/torch-points3d-dc3dcd</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05421] DC3DCD: unsupervised learning for multiclass 3D point cloud change detection](http://arxiv.org/abs/2305.05421) #segmentation</code></li>
+<li>Summary: <p>In a constant evolving world, change detection is of prime importance to keep
+updated maps. To better sense areas with complex geometry (urban areas in
+particular), considering 3D data appears to be an interesting alternative to
+classical 2D images. In this context, 3D point clouds (PCs) obtained by LiDAR
+or photogrammetry are very interesting. While recent studies showed the
+considerable benefit of using deep learning-based methods to detect and
+characterize changes into raw 3D PCs, these studies rely on large annotated
+training data to obtain accurate results. The collection of these annotations
+are tricky and time-consuming. The availability of unsupervised or weakly
+supervised approaches is then of prime interest. In this paper, we propose an
+unsupervised method, called DeepCluster 3D Change Detection (DC3DCD), to detect
+and categorize multiclass changes at point level. We classify our approach in
+the unsupervised family given the fact that we extract in a completely
+unsupervised way a number of clusters associated with potential changes. Let us
+precise that in the end of the process, the user has only to assign a label to
+each of these clusters to derive the final change map. Our method builds upon
+the DeepCluster approach, originally designed for image classification, to
+handle complex raw 3D PCs and perform change segmentation task. An assessment
+of the method on both simulated and real public dataset is provided. The
+proposed method allows to outperform fully-supervised traditional machine
+learning algorithm and to be competitive with fully-supervised deep learning
+networks applied on rasterization of 3D PCs with a mean of IoU over classes of
+change of 57.06% and 66.69% for the simulated and the real datasets,
+respectively.
+</p></li>
+</ul>
+<h3>Title: Real-time instance segmentation with polygons using an Intersection-over-Union loss. (arXiv:2305.05490v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05490">http://arxiv.org/abs/2305.05490</a></li>
+<li>Code URL: <a href="https://github.com/katiajdl/centerpoly-v2">https://github.com/katiajdl/centerpoly-v2</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05490] Real-time instance segmentation with polygons using an Intersection-over-Union loss](http://arxiv.org/abs/2305.05490) #segmentation</code></li>
+<li>Summary: <p>Predicting a binary mask for an object is more accurate but also more
+computationally expensive than a bounding box. Polygonal masks as developed in
+CenterPoly can be a good compromise. In this paper, we improve over CenterPoly
+by enhancing the classical regression L1 loss with a novel region-based loss
+and a novel order loss, as well as with a new training process for the vertices
+prediction head. Moreover, the previous methods that predict polygonal masks
+use different coordinate systems, but it is not clear if one is better than
+another, if we abstract the architecture requirement. We therefore investigate
+their impact on the prediction. We also use a new evaluation protocol with
+oracle predictions for the detection head, to further isolate the segmentation
+process and better compare the polygonal masks with binary masks. Our instance
+segmentation method is trained and tested with challenging datasets containing
+urban scenes, with a high density of road users. Experiments show, in
+particular, that using a combination of a regression loss and a region-based
+loss allows significant improvements on the Cityscapes and IDD test set
+compared to CenterPoly. Moreover the inference stage remains fast enough to
+reach real-time performance with an average of 0.045 s per frame for
+2048$\times$1024 images on a single RTX 2070 GPU. The code is available
+$\href{https://github.com/KatiaJDL/CenterPoly-v2}{\text{here}}$.
+</p></li>
+</ul>
+<h3>Title: Self-supervised dense representation learning for live-cell microscopy with time arrow prediction. (arXiv:2305.05511v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05511">http://arxiv.org/abs/2305.05511</a></li>
+<li>Code URL: <a href="https://github.com/weigertlab/tarrow">https://github.com/weigertlab/tarrow</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05511] Self-supervised dense representation learning for live-cell microscopy with time arrow prediction](http://arxiv.org/abs/2305.05511) #segmentation</code></li>
+<li>Summary: <p>State-of-the-art object detection and segmentation methods for microscopy
+images rely on supervised machine learning, which requires laborious manual
+annotation of training data. Here we present a self-supervised method based on
+time arrow prediction pre-training that learns dense image representations from
+raw, unlabeled live-cell microscopy videos. Our method builds upon the task of
+predicting the correct order of time-flipped image regions via a single-image
+feature extractor and a subsequent time arrow prediction head. We show that the
+resulting dense representations capture inherently time-asymmetric biological
+processes such as cell divisions on a pixel-level. We furthermore demonstrate
+the utility of these representations on several live-cell microscopy datasets
+for detection and segmentation of dividing cells, as well as for cell state
+classification. Our method outperforms supervised methods, particularly when
+only limited ground truth annotations are available as is commonly the case in
+practice. We provide code at https://github.com/weigertlab/tarrow.
+</p></li>
+</ul>
+<h3>Title: Can point cloud networks learn statistical shape models of anatomies?. (arXiv:2305.05610v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05610">http://arxiv.org/abs/2305.05610</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05610] Can point cloud networks learn statistical shape models of anatomies?](http://arxiv.org/abs/2305.05610) #segmentation</code></li>
+<li>Summary: <p>Statistical Shape Modeling (SSM) is a valuable tool for investigating and
+quantifying anatomical variations within populations of anatomies. However,
+traditional correspondence-based SSM generation methods require a
+time-consuming re-optimization process each time a new subject is added to the
+cohort, making the inference process prohibitive for clinical research.
+Additionally, they require complete geometric proxies (e.g., high-resolution
+binary volumes or surface meshes) as input shapes to construct the SSM.
+Unordered 3D point cloud representations of shapes are more easily acquired
+from various medical imaging practices (e.g., thresholded images and surface
+scanning). Point cloud deep networks have recently achieved remarkable success
+in learning permutation-invariant features for different point cloud tasks
+(e.g., completion, semantic segmentation, classification). However, their
+application to learning SSM from point clouds is to-date unexplored. In this
+work, we demonstrate that existing point cloud encoder-decoder-based completion
+networks can provide an untapped potential for SSM, capturing population-level
+statistical representations of shapes while reducing the inference burden and
+relaxing the input requirement. We discuss the limitations of these techniques
+to the SSM application and suggest future improvements. Our work paves the way
+for further exploration of point cloud deep learning for SSM, a promising
+avenue for advancing shape analysis literature and broadening SSM to diverse
+use cases.
+</p></li>
+</ul>
+<h3>Title: VCSUM: A Versatile Chinese Meeting Summarization Dataset. (arXiv:2305.05280v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05280">http://arxiv.org/abs/2305.05280</a></li>
+<li>Code URL: <a href="https://github.com/hahahawu/vcsum">https://github.com/hahahawu/vcsum</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05280] VCSUM: A Versatile Chinese Meeting Summarization Dataset](http://arxiv.org/abs/2305.05280) #segmentation</code></li>
+<li>Summary: <p>Compared to news and chat summarization, the development of meeting
+summarization is hugely decelerated by the limited data. To this end, we
+introduce a versatile Chinese meeting summarization dataset, dubbed VCSum,
+consisting of 239 real-life meetings, with a total duration of over 230 hours.
+We claim our dataset is versatile because we provide the annotations of topic
+segmentation, headlines, segmentation summaries, overall meeting summaries, and
+salient sentences for each meeting transcript. As such, the dataset can adapt
+to various summarization tasks or methods, including segmentation-based
+summarization, multi-granularity summarization and retrieval-then-generate
+summarization. Our analysis confirms the effectiveness and robustness of VCSum.
+We also provide a set of benchmark models regarding different downstream
+summarization tasks on VCSum to facilitate further research. The dataset and
+code will be released at \url{https://github.com/hahahawu/VCSum}.
+</p></li>
+</ul>
+<h2>object detection</h2>
+<h3>Title: Guided Focal Stack Refinement Network for Light Field Salient Object Detection. (arXiv:2305.05260v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05260">http://arxiv.org/abs/2305.05260</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05260] Guided Focal Stack Refinement Network for Light Field Salient Object Detection](http://arxiv.org/abs/2305.05260) #object detection</code></li>
+<li>Summary: <p>Light field salient object detection (SOD) is an emerging research direction
+attributed to the richness of light field data. However, most existing methods
+lack effective handling of focal stacks, therefore making the latter involved
+in a lot of interfering information and degrade the performance of SOD. To
+address this limitation, we propose to utilize multi-modal features to refine
+focal stacks in a guided manner, resulting in a novel guided focal stack
+refinement network called GFRNet. To this end, we propose a guided refinement
+and fusion module (GRFM) to refine focal stacks and aggregate multi-modal
+features. In GRFM, all-in-focus (AiF) and depth modalities are utilized to
+refine focal stacks separately, leading to two novel sub-modules for different
+modalities, namely AiF-based refinement module (ARM) and depth-based refinement
+module (DRM). Such refinement modules enhance structural and positional
+information of salient objects in focal stacks, and are able to improve SOD
+accuracy. Experimental results on four benchmark datasets demonstrate the
+superiority of our GFRNet model against 12 state-of-the-art models.
+</p></li>
+</ul>
+<h3>Title: High-throughput Cotton Phenotyping Big Data Pipeline Lambda Architecture Computer Vision Deep Neural Networks. (arXiv:2305.05423v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05423">http://arxiv.org/abs/2305.05423</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05423] High-throughput Cotton Phenotyping Big Data Pipeline Lambda Architecture Computer Vision Deep Neural Networks](http://arxiv.org/abs/2305.05423) #object detection</code></li>
+<li>Summary: <p>In this study, we propose a big data pipeline for cotton bloom detection
+using a Lambda architecture, which enables real-time and batch processing of
+data. Our proposed approach leverages Azure resources such as Data Factory,
+Event Grids, Rest APIs, and Databricks. This work is the first to develop and
+demonstrate the implementation of such a pipeline for plant phenotyping through
+Azure's cloud computing service. The proposed pipeline consists of data
+preprocessing, object detection using a YOLOv5 neural network model trained
+through Azure AutoML, and visualization of object detection bounding boxes on
+output images. The trained model achieves a mean Average Precision (mAP) score
+of 0.96, demonstrating its high performance for cotton bloom classification. We
+evaluate our Lambda architecture pipeline using 9000 images yielding an
+optimized runtime of 34 minutes. The results illustrate the scalability of the
+proposed pipeline as a solution for deep learning object detection, with the
+potential for further expansion through additional Azure processing cores. This
+work advances the scientific research field by providing a new method for
+cotton bloom detection on a large dataset and demonstrates the potential of
+utilizing cloud computing resources, specifically Azure, for efficient and
+accurate big data processing in precision agriculture.
+</p></li>
+</ul>
+<h3>Title: Effects of Real-Life Traffic Sign Alteration on YOLOv7- an Object Recognition Model. (arXiv:2305.05499v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2305.05499">http://arxiv.org/abs/2305.05499</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2305.05499] Effects of Real-Life Traffic Sign Alteration on YOLOv7- an Object Recognition Model](http://arxiv.org/abs/2305.05499) #object detection</code></li>
+<li>Summary: <p>The advancement of Image Processing has led to the widespread use of Object
+Recognition (OR) models in various applications, such as airport security and
+mail sorting. These models have become essential in signifying the capabilities
+of AI and supporting vital services like national postal operations. However,
+the performance of OR models can be impeded by real-life scenarios, such as
+traffic sign alteration. Therefore, this research investigates the effects of
+altered traffic signs on the accuracy and performance of object recognition
+models. To this end, a publicly available dataset was used to create different
+types of traffic sign alterations, including changes to size, shape, color,
+visibility, and angles. The impact of these alterations on the YOLOv7 (You Only
+Look Once) model's detection and classification abilities were analyzed. It
+reveals that the accuracy of object detection models decreases significantly
+when exposed to modified traffic signs under unlikely conditions. This study
+highlights the significance of enhancing the robustness of object detection
+models in real-life scenarios and the need for further investigation in this
+area to improve their accuracy and reliability.
+</p></li>
+</ul>
+<script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script>new ClipboardJS("#copy",{text:function(trigger){var res="[[2023-05-10]]\n\n";var input=document.querySelectorAll("input");for(var i=0;i<input.length;i++){if(input[i].type=="checkbox"&&input[i].checked){res+="- "+input[i].nextSibling.nodeValue+"\n"}}res+="\n";return res}}).on("success",function(e){e.clearSelection()});</script>
+<button id="copy">Copy All</button>
