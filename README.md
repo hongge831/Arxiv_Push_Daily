@@ -1,9 +1,10 @@
 # arxiv-daily
-updated on 2023-05-08
+updated on 2023-05-09
 | keyword | count |
 | - | - |
-| diffusion | 0 |
+| diffusion | 8 |
 | data-free | 0 |
-| generative | 6 |
-| language model | 20 |
-| transformer | 2 |
+| generative | 16 |
+| language model | 64 |
+| segmentation | 10 |
+| object detection | 22 |

@@ -21,7 +21,7 @@ import time
 # 设置 OpenAI 的 API key
 # os.environ['OPENAI_API_KEY'] = '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'
 # openai.api_key = os.getenv('OPENAI_API_KEY')
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = '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'
 headers = {
     'User-Agent':
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44',
@@ -123,6 +123,7 @@ def get_accept_info(comment):
 def get_affiliation_by_langchain(text):
     template = """
         Extract the first organization name from the given text: {content}.
+        only return the name of the organization, any other information are no needed.
         if you can not find any organization, just return 'None' without any other information.
         """
     prompt = PromptTemplate(
@@ -143,7 +144,7 @@ def get_affiliation_by_langchain(text):
 
 
 def get_abstract_by_langchain(abstract):
-    template = """Write a concise summary of the following:
+    template = """Write a very concise summary of the following:
     
     "{content}"
     
@@ -226,7 +227,7 @@ def get_daily_arxiv_papers(args, cat_lst, keyword_lst, keywords_bin, paper_set, 
         abstract_zh = 'placeholder'
         code_url = 'null'
 
-        # num_pages, affiliation, abstract_zh = open_pdf_and_get_affiliation_and_abstruct(paper_key, paper_abstract)
+        num_pages, affiliation, abstract_zh = open_pdf_and_get_affiliation_and_abstruct(paper_key, paper_abstract)
 
         if num_pages < 8:
             continue
@@ -257,7 +258,6 @@ def get_daily_arxiv_papers(args, cat_lst, keyword_lst, keywords_bin, paper_set, 
         item += f'* 点击拷贝: `<input type="checkbox">[[{paper_url.split("/")[-1]}] {paper_title.split(".")[0]}]({paper_url}) #{keyword_lst[0]}`\n\n'
         keywords_bin[keyword_lst[0]].append(item)
         keywords_bin[keyword_lst[0]].append(item2)
-        print('s')
 
     return keywords_bin, paper_set
 
@@ -284,7 +284,7 @@ def make_md_and_html(args, keyword_lst, keywords_bin):
     with open(f'only_md_file/{file}', 'w', buffering=1) as fp:
         for keyword in keyword_lst:
             fp.write(f'## {keyword}\n')
-            for idx, tem in enumerate(keywords_bin[keyword]):
+            for idx, item in enumerate(keywords_bin[keyword]):
                 if idx % 2 != 0:
                     fp.write(item)
 
@@ -303,7 +303,7 @@ def main():
     args = init_args()
     cat_lst = ['cs.CV', 'cv.AI', 'cs.CL']
     # cat_lst = ['cs.CV', 'cv.AI']
-    keyword_lst = ['diffusion', 'data-free', 'generative', 'language model', 'transformer']
+    keyword_lst = ['diffusion', 'data-free', 'generative', 'language model', 'segmentation', 'object detection']
     # keyword_lst = []
     keywords_bin = {k: list() for k in keyword_lst}
     paper_set = set()
@@ -312,8 +312,8 @@ def main():
         key_words_in_lst = [key]
         keywords_bin, paper_set = get_daily_arxiv_papers(args, cat_lst, key_words_in_lst, keywords_bin, paper_set,
                                                          max_results)
-
-    make_md_and_html(args, keyword_lst, keywords_bin)
+    if len(paper_set) > 0:
+        make_md_and_html(args, keyword_lst, keywords_bin)
 
 
 if __name__ == '__main__':
