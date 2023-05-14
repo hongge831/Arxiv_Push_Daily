@@ -1,5 +1,6 @@
 .gitignore
 __pycache__/
 .idea
+.github/workflows/.DS_Store
 ./html/.DS_Store
 ./rss/.DS_Store
