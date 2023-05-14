@@ -19,12 +19,12 @@ jobs:
       - name: install dependecies
         run: |
           python -m pip install --upgrade pip
-          pip install feedparser requests markdown pdfplumber re langchain time openai arxiv tqdm
+          pip install feedparser requests markdown pdfplumber langchain openai arxiv
 
       - name: run script
         run: |
           git pull
-          python get_arxiv_paper_release.py
+          python rss_daily.py
 
       - name: push markdown file
         run: |
